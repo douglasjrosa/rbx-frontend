@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import type { NavLink } from '@/lib/content/types';
+import { buildTrackingRedirectUrl } from '@/lib/analytics/tracking-redirect';
 import { scrollToSection } from '@/lib/scroll-to-section';
 
 interface CustomLinkProps {
@@ -35,6 +36,21 @@ export default function CustomLink({
   onNavigate,
 }: CustomLinkProps) {
   const pathname = usePathname();
+
+  if (link.trackingCtaId) {
+    return (
+      <a
+        href={buildTrackingRedirectUrl(link.trackingCtaId)}
+        className={className}
+        target={link.newTab ? '_blank' : undefined}
+        rel={link.newTab ? 'noopener noreferrer' : undefined}
+        onClick={onNavigate}
+      >
+        {children}
+      </a>
+    );
+  }
+
   const homeHash = parseHomeHash(link.url);
 
   if (homeHash !== null) {

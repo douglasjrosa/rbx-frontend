@@ -17,7 +17,7 @@ export default function WhatsAppButton({
     <div className="z-30">
       <a
         href={buildWhatsAppUrl(phone, message)}
-        className="fixed bottom-24 right-5 block w-[90px]"
+        className="buttonizer fixed bottom-24 right-5 block w-[90px]"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Botão Whatsapp"

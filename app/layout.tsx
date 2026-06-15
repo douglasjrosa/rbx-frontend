@@ -1,5 +1,8 @@
 import type { Metadata, Viewport } from 'next';
 import SiteLayout from '@/components/layout';
+import TrackingScripts, {
+  GoogleTagManagerNoScript,
+} from '@/components/analytics/tracking-scripts';
 import { siteConfig } from '@/content/site';
 import './globals.css';
 
@@ -43,6 +46,8 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body>
+        <GoogleTagManagerNoScript />
+        <TrackingScripts />
         <SiteLayout>{children}</SiteLayout>
       </body>
     </html>

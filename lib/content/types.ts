@@ -10,6 +10,7 @@ export interface NavLink {
   newTab: boolean;
   url: string;
   text: string;
+  trackingCtaId?: number;
 }
 
 export interface PageMetadata {
