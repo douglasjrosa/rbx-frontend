@@ -1,4 +1,5 @@
 import Image from '@/components/elements/image';
+import { HOME_SECTIONS } from '@/lib/home-sections';
 import type { HomeAbout } from '@/lib/content/types';
 
 interface HomeAboutProps {
@@ -7,7 +8,10 @@ interface HomeAboutProps {
 
 export default function HomeAboutSection({ about }: HomeAboutProps) {
   return (
-    <section className="relative py-12 md:py-16">
+    <section
+      id={HOME_SECTIONS.aribermax}
+      className="scroll-mt-[72px] relative py-12 md:py-16"
+    >
       <div className="absolute inset-0 bg-rbx-brown-panel" aria-hidden />
       <div
         className={
