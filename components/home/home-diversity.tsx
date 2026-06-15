@@ -79,8 +79,8 @@ export default function HomeDiversitySection({
                 <p
                   key={`diversity-paragraph-${index}`}
                   className={
-                    'text-lg leading-loose tracking-wide md:text-xl ' +
-                    'md:leading-8'
+                    'text-xl leading-loose tracking-wide md:text-2xl ' +
+                    'md:leading-9'
                   }
                 >
                   {paragraph}
