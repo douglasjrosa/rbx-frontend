@@ -51,6 +51,6 @@ export function mergeSeoContentBlocks(
 
   return {
     bodyBlocks,
-    ctaBlock: callToAction.trim(),
+    ctaBlock: splitPeriodsIntoParagraphs(callToAction.trim()),
   };
 }
