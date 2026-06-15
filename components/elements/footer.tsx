@@ -68,24 +68,28 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className="space-y-1">
-            <h2 className={FOOTER_HEADING_CLASS}>{footer.contactsTitle}</h2>
-            {footer.contacts.map((contact) => (
-              <div
-                key={contact.email}
-                className="text-base leading-relaxed"
-              >
-                <p>{contact.label}</p>
-                <p>
-                  <a
-                    href={`mailto:${contact.email}`}
-                    className="hover:underline"
-                  >
-                    {contact.email}
-                  </a>
-                </p>
-              </div>
-            ))}
+          <div>
+            <h2 className={`${FOOTER_HEADING_CLASS} mb-4`}>
+              {footer.contactsTitle}
+            </h2>
+            <div className="space-y-5">
+              {footer.contacts.map((contact) => (
+                <div
+                  key={contact.email}
+                  className="text-base leading-relaxed"
+                >
+                  <p>{contact.label}</p>
+                  <p>
+                    <a
+                      href={`mailto:${contact.email}`}
+                      className="hover:underline"
+                    >
+                      {contact.email}
+                    </a>
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
 
           <div>
