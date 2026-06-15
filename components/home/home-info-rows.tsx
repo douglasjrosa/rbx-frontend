@@ -22,10 +22,12 @@ function InfoRow({ row }: { row: HomeInfoRow }) {
 
   const textBlock = (
     <div className="flex flex-col justify-center gap-4 md:gap-6">
-      <h2 className="text-2xl font-bold text-white md:text-3xl">
+      <h2 className="text-3xl font-bold text-white md:text-4xl">
         {row.title}
       </h2>
-      <p className="text-base leading-relaxed text-white">{row.description}</p>
+      <p className="text-lg leading-relaxed text-white md:text-xl">
+        {row.description}
+      </p>
       <div className="pt-2">
         <ButtonLink
           button={row.button}
@@ -34,6 +36,7 @@ function InfoRow({ row }: { row: HomeInfoRow }) {
               ? 'rbx-secondary'
               : 'rbx-primary'
           }
+          large
         />
       </div>
     </div>

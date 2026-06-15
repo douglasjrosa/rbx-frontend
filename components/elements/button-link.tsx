@@ -6,18 +6,21 @@ interface ButtonLinkProps {
   button: NavLink & { type?: string };
   appearance: string;
   compact?: boolean;
+  large?: boolean;
 }
 
 function ButtonContent({
   button,
   appearance,
   compact,
+  large,
 }: ButtonLinkProps) {
   return (
     <div
       className={classNames(
         'block w-full lg:w-auto text-center uppercase tracking-wide ' +
-          'font-semibold text-base md:text-sm border-2 rounded-md',
+          'font-semibold border-2 rounded-md',
+        large ? 'text-lg' : 'text-base md:text-sm',
         { 'px-8 py-4': !compact },
         { 'px-6 py-2': compact },
         {
@@ -59,6 +62,7 @@ export default function ButtonLink({
   button,
   appearance,
   compact = false,
+  large = false,
 }: ButtonLinkProps) {
   return (
     <CustomLink link={button}>
@@ -66,6 +70,7 @@ export default function ButtonLink({
         button={button}
         appearance={appearance}
         compact={compact}
+        large={large}
       />
     </CustomLink>
   );
