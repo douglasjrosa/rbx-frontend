@@ -107,16 +107,16 @@ export const siteConfig: SiteConfig = {
     contactsTitle: 'Contatos',
     contacts: [
       {
-        label: 'Atendimento Comercial',
-        email: 'vendas2.ribermax@gmail.com',
+        label: 'Daniela Medeiros - Comercial',
+        email: 'contato@ribermax.com.br',
       },
       {
-        label: 'Daniela – Compras',
+        label: 'Daniela Alves – Compras e Financeiro',
         email: 'financeiro.ribermax@gmail.com',
       },
       {
         label: 'Jesuilla – RH (Currículos)',
-        email: 'rh.ribermax@gmail.com',
+        email: 'rh@ribermax.com.br',
       },
     ],
     addressTitle: 'Endereço',
