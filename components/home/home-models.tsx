@@ -73,7 +73,7 @@ export default function HomeModelsSection({ models }: HomeModelsProps) {
       className="scroll-mt-[72px] relative pb-16 pt-10 md:pb-20 md:pt-12"
     >
       <div
-        className="absolute inset-0 bg-center bg-repeat-y"
+        className="absolute inset-0 bg-fixed bg-center bg-repeat-y"
         style={{
           backgroundImage: "url('/images/wood-pannel.jpg')",
           backgroundSize: '100% auto',
