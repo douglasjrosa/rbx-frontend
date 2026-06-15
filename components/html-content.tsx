@@ -4,6 +4,9 @@ const ALLOWED_TAGS = [
   'h1',
   'h2',
   'h3',
+  'h4',
+  'p',
+  'i',
   'div',
   'strong',
   'em',
@@ -14,6 +17,9 @@ const ALLOWED_TAGS = [
   'a',
   'img',
   'br',
+  'details',
+  'summary',
+  'span',
 ];
 
 const ALLOWED_ATTRIBUTES: sanitizeHtml.IOptions['allowedAttributes'] = {
@@ -23,6 +29,8 @@ const ALLOWED_ATTRIBUTES: sanitizeHtml.IOptions['allowedAttributes'] = {
   h1: ['style'],
   h2: ['style'],
   h3: ['style'],
+  h4: ['style'],
+  span: ['style'],
 };
 
 function transformTags(html: string): string {

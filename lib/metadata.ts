@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import type { HomePage } from '@/lib/content/types';
+import type { HomePage, LegalPage } from '@/lib/content/types';
 import type { SeoPage } from '@/lib/content/types';
 import { siteConfig } from '@/content/site';
 
@@ -33,6 +33,22 @@ export function buildSeoMetadata(page: SeoPage): Metadata {
     twitter: {
       card: 'summary_large_image',
       title: page.keyword,
+      description: page.metaDescription,
+    },
+  };
+}
+
+export function buildLegalMetadata(page: LegalPage): Metadata {
+  return {
+    title: page.title,
+    description: page.metaDescription,
+    openGraph: {
+      title: `${page.title} | ${siteConfig.metaTitleSuffix}`,
+      description: page.metaDescription,
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: page.title,
       description: page.metaDescription,
     },
   };

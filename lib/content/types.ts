@@ -174,6 +174,13 @@ export interface SeoPage {
   callToAction: string;
 }
 
+export interface LegalPage {
+  slug: string;
+  title: string;
+  metaDescription: string;
+  content: string;
+}
+
 export interface SiteConfig {
   metaTitleSuffix: string;
   metadata: PageMetadata;

@@ -1,4 +1,5 @@
 import type { MetadataRoute } from 'next';
+import { getAllLegalPageSlugs } from '@/lib/content/legal-pages';
 import { getAllSeoSlugs } from '@/lib/content/seo';
 
 const BASE_URL = 'https://ribermax.com.br';
@@ -20,5 +21,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }));
 
-  return [...homeEntry, ...seoEntries];
+  const legalEntries: MetadataRoute.Sitemap = getAllLegalPageSlugs().map(
+    (slug) => ({
+      url: `${BASE_URL}/${slug}`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.5,
+    }),
+  );
+
+  return [...homeEntry, ...seoEntries, ...legalEntries];
 }
