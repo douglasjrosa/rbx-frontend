@@ -29,7 +29,7 @@ export default function HomeCustomPackagingSection({
         <div
           className={
             'grid h-full grid-cols-1 items-stretch gap-8 ' +
-            'rounded-[20px] bg-[#F3F3F3] p-7 ' +
+            'rounded-[20px] bg-[#F3F3F3] p-10 ' +
             `${CARD_SHADOW_CLASS} md:grid-cols-2 md:gap-10`
           }
         >
