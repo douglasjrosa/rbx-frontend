@@ -612,6 +612,12 @@ export const homePage: HomePage = {
       'Fale com um Especialista em Embalagens de Madeira. Seja lá qual ' +
       'for o seu caso, conte com a gente, estamos prontos para te atender. ' +
       'Nossa equipe está treinada para tirar todas as suas dúvidas técnicas.',
+    specialistImage: mediaAsset(
+      'especialista-min.webp',
+      'Especialista em embalagens de madeira com paquímetro sobre projeto técnico',
+      1200,
+      675,
+    ),
     visitTitle: 'Faça-nos uma visita!',
     visitDescription:
       'Nossa fábrica está em Ribeirão Preto SP, no norte do estado de ' +
