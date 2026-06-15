@@ -437,10 +437,11 @@ export const homePage: HomePage = {
         'correr o risco de chegar quebrado no cliente.',
     ],
     title: 'Conheça nossa diversidade em Embalagens de Madeira',
-    description:
+    paragraphs: [
       'Fabricamos embalagens de madeira para diversas situações, sob ' +
-      'medida e personalizada para você. Conheça um pouco melhor sobre ' +
-      'nossos produtos.',
+        'medida e personalizada para você.',
+      'Conheça um pouco melhor sobre nossos produtos.',
+    ],
     cards: [
       {
         title: 'Caixa de Madeira Fumigada para Exportação',

@@ -123,7 +123,7 @@ export interface HomeDiversity {
   whenTitle: string;
   whenItems: string[];
   title: string;
-  description: string;
+  paragraphs: string[];
   cards: HomeDiversityCard[];
 }
 

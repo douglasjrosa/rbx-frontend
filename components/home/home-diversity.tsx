@@ -58,9 +58,19 @@ export default function HomeDiversitySection({
             >
               {diversity.title}
             </h2>
-            <p className="text-base leading-relaxed md:text-lg">
-              {diversity.description}
-            </p>
+            <div className="space-y-4">
+              {diversity.paragraphs.map((paragraph, index) => (
+                <p
+                  key={`diversity-paragraph-${index}`}
+                  className={
+                    'text-lg leading-loose tracking-wide md:text-xl ' +
+                    'md:leading-8'
+                  }
+                >
+                  {paragraph}
+                </p>
+              ))}
+            </div>
           </div>
 
           <DiversityCarousel cards={diversity.cards} />

@@ -8,6 +8,7 @@ import type { HomeDiversityCard } from '@/lib/content/types';
 
 const AUTOPLAY_INTERVAL_MS = 3500;
 const SLIDE_TRANSITION_MS = 300;
+const SLIDE_GAP_CLASS = 'px-3 md:px-4';
 
 interface DiversityCarouselProps {
   cards: HomeDiversityCard[];
@@ -124,7 +125,7 @@ export default function DiversityCarousel({ cards }: DiversityCarouselProps) {
           {cards.map((card, index) => (
             <div
               key={`diversity-slide-${index}`}
-              className="w-full shrink-0"
+              className={`w-full shrink-0 ${SLIDE_GAP_CLASS}`}
               role="group"
               aria-roledescription="slide"
               aria-label={`${index + 1} de ${cards.length}`}
