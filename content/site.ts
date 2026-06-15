@@ -18,11 +18,19 @@ export const siteConfig: SiteConfig = {
       731,
     ),
   },
-  notificationBanner: {
-    type: 'info',
-    text:
-      'Este site faz uso de cookies para obter dados apenas da sua ' +
-      'navegação em nosso site para melhorar sua experiência.',
+  cookieConsent: {
+    title: 'Gerenciar o consentimento',
+    message:
+      'Para fornecer as melhores experiências, usamos tecnologias como ' +
+      'cookies para armazenar e/ou acessar informações do dispositivo. ' +
+      'O consentimento para essas tecnologias nos permitirá processar ' +
+      'dados como comportamento de navegação ou IDs exclusivos neste ' +
+      'site. Não consentir ou retirar o consentimento pode afetar ' +
+      'negativamente certos recursos e funções.',
+    acceptLabel: 'Aceitar',
+    denyLabel: 'Negar',
+    policyLabel: 'Política de Cookies',
+    policyUrl: '/politica-de-cookies-br',
   },
   navbar: {
     links: [

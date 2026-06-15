@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import Navbar from './elements/navbar';
 import Footer from './elements/footer';
-import NotificationBanner from './elements/notification-banner';
+import CookieConsentBanner from './elements/cookie-consent-banner';
 import WhatsAppButton from './elements/whatsapp-button';
 import { siteConfig } from '@/content/site';
 
@@ -13,7 +13,6 @@ interface SiteLayoutProps {
 }
 
 export default function SiteLayout({ children }: SiteLayoutProps) {
-  const [bannerIsShown, setBannerIsShown] = useState(true);
   const [mounted, setMounted] = useState(false);
   const pathname = usePathname();
   const isHome = pathname === '/';
@@ -23,7 +22,7 @@ export default function SiteLayout({ children }: SiteLayoutProps) {
   }, []);
 
   const {
-    notificationBanner,
+    cookieConsent,
     whatsappImage,
     whatsappContacts,
     whatsappMsg,
@@ -47,11 +46,8 @@ export default function SiteLayout({ children }: SiteLayoutProps) {
           msg={whatsappMsg}
         />
       )}
-      {mounted && notificationBanner && bannerIsShown && (
-        <NotificationBanner
-          data={notificationBanner}
-          closeSelf={() => setBannerIsShown(false)}
-        />
+      {mounted && cookieConsent && (
+        <CookieConsentBanner data={cookieConsent} />
       )}
     </div>
   );

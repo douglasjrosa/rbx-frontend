@@ -181,10 +181,19 @@ export interface LegalPage {
   content: string;
 }
 
+export interface CookieConsentConfig {
+  title: string;
+  message: string;
+  acceptLabel: string;
+  denyLabel: string;
+  policyLabel: string;
+  policyUrl: string;
+}
+
 export interface SiteConfig {
   metaTitleSuffix: string;
   metadata: PageMetadata;
-  notificationBanner: { type: string; text: string };
+  cookieConsent: CookieConsentConfig;
   navbar: {
     links: NavLink[];
     button: NavLink & { type: string };
