@@ -438,8 +438,7 @@ export const homePage: HomePage = {
     ],
     title: 'ARTIGOS TÉCNICOS SOBRE O ASSUNTO',
     paragraphs: [
-      'Fabricamos embalagens de madeira para diversas situações, sob ' +
-        'medida e personalizada para você.',
+      'Saiba mais sobre o mercado de Embalagens de Madeira.',
       'Conheça um pouco melhor sobre nossos produtos.',
     ],
     cards: [
