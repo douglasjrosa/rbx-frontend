@@ -1,5 +1,4 @@
 import Image from '@/components/elements/image';
-import { HOME_SECTIONS } from '@/lib/home-sections';
 import type { HomeHighlights, HomeStatCard } from '@/lib/content/types';
 
 interface HomeHighlightsProps {
@@ -66,10 +65,7 @@ export default function HomeHighlightsSection({
   highlights,
 }: HomeHighlightsProps) {
   return (
-    <section
-      id={HOME_SECTIONS.produtos}
-      className="scroll-mt-[72px] w-full bg-white py-16 md:py-24"
-    >
+    <section className="w-full bg-white py-16 md:py-24">
       <div className="container">
         <div className="mb-12 grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-6">
           {highlights.stats.map((stat, index) => (

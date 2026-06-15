@@ -98,79 +98,87 @@ export default function Navbar() {
             : 'bg-white shadow-[0_10px_15px_rgba(0,0,0,0.25)]')
         }
       >
-        <div className="container flex flex-row items-center justify-between">
-          <div className="flex flex-row items-center">
-            <Link
-              href="/"
-              aria-label="Página inicial"
-              className="w-[150px]"
-            >
-              <Image
-                media={logo}
-                className="h-10 w-auto object-contain"
-                alternativeText="Logomarca Ribermax"
-                width={150}
-                height={39}
-                priority
-              />
-            </Link>
-            <ul
-              className={
-                'hidden list-none md:flex flex-row gap-1 items-baseline ' +
-                'ml-10 text-lg'
-              }
-            >
-              {navbar.links.map((navLink, index) => {
-                const linkHash = parseHomeHash(navLink.url);
-                const isActive =
-                  isHome &&
-                  (linkHash === ''
-                    ? !activeHash || activeHash === `#${HOME_SECTIONS.hero}`
-                    : activeHash === linkHash);
-
-                return (
-                  <li key={`nav-${index}`}>
-                    <CustomLink link={navLink}>
-                      <span
-                        className={
-                          `rounded px-3 py-1 transition-colors ${navLinkClass} ` +
-                          (isActive ? activeLinkClass : '')
-                        }
-                      >
-                        {navLink.text}
-                      </span>
-                    </CustomLink>
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
-          <button
-            type="button"
-            onClick={() => setMobileMenuIsShown(true)}
-            className="p-1 block md:hidden"
-            aria-label="Menu principal"
+        <div
+          className={
+            'grid w-full grid-cols-[auto_1fr_auto] items-center ' +
+            'gap-4 px-4 sm:px-6 lg:px-8'
+          }
+        >
+          <Link
+            href="/"
+            aria-label="Página inicial"
+            className="w-[150px] shrink-0"
           >
-            <MdMenu
-              className={
-                'h-8 w-auto ' +
-                (isHeroTransparent ? 'text-white' : 'text-gray-900')
-              }
+            <Image
+              media={logo}
+              className="h-10 w-auto object-contain"
+              alternativeText="Logomarca Ribermax"
+              width={150}
+              height={39}
+              priority
             />
-          </button>
-          {navbar.button && (
-            <div className="hidden md:block">
-              <ButtonLink
-                button={navbar.button}
-                appearance={
-                  isHeroTransparent
-                    ? 'hero-primary'
-                    : getButtonAppearance(navbar.button.type, 'light')
+          </Link>
+
+          <ul
+            className={
+              'hidden list-none md:flex flex-row flex-1 items-center ' +
+              'justify-around text-lg max-w-[600px] mx-[50px]'
+            }
+          >
+            {navbar.links.map((navLink, index) => {
+              const linkHash = parseHomeHash(navLink.url);
+              const isActive =
+                isHome &&
+                (linkHash === ''
+                  ? !activeHash || activeHash === `#${HOME_SECTIONS.hero}`
+                  : activeHash === linkHash);
+
+              return (
+                <li key={`nav-${index}`}>
+                  <CustomLink link={navLink}>
+                    <span
+                      className={
+                        `whitespace-nowrap rounded px-3 py-1 ` +
+                        `transition-colors ${navLinkClass} ` +
+                        (isActive ? activeLinkClass : '')
+                      }
+                    >
+                      {navLink.text}
+                    </span>
+                  </CustomLink>
+                </li>
+              );
+            })}
+          </ul>
+
+          <div className="flex shrink-0 items-center justify-end gap-2">
+            <button
+              type="button"
+              onClick={() => setMobileMenuIsShown(true)}
+              className="p-1 block md:hidden"
+              aria-label="Menu principal"
+            >
+              <MdMenu
+                className={
+                  'h-8 w-auto ' +
+                  (isHeroTransparent ? 'text-white' : 'text-gray-900')
                 }
-                compact
               />
-            </div>
-          )}
+            </button>
+            {navbar.button && (
+              <div className="hidden md:block">
+                <ButtonLink
+                  button={navbar.button}
+                  appearance={
+                    isHeroTransparent
+                      ? 'hero-primary'
+                      : getButtonAppearance(navbar.button.type, 'light')
+                  }
+                  compact
+                />
+              </div>
+            )}
+          </div>
         </div>
       </nav>
       {mobileMenuIsShown && (

@@ -1,5 +1,6 @@
 import ButtonLink from '@/components/elements/button-link';
 import Image from '@/components/elements/image';
+import { HOME_SECTIONS } from '@/lib/home-sections';
 import type { HomeInfoRow, HomeInfoRows } from '@/lib/content/types';
 
 interface HomeInfoRowsProps {
@@ -64,7 +65,7 @@ function InfoRow({ row }: { row: HomeInfoRow }) {
 
 export default function HomeInfoRowsSection({ infoRows }: HomeInfoRowsProps) {
   return (
-    <section className="relative -mt-[60px] py-16 md:py-24">
+    <section className="relative z-10 -mt-[60px] pt-[153px] pb-16 md:pb-24">
       <div
         className="absolute inset-0 bg-cover bg-bottom bg-no-repeat"
         style={{
@@ -78,8 +79,14 @@ export default function HomeInfoRowsSection({ infoRows }: HomeInfoRowsProps) {
         aria-hidden
       />
       <div className="container relative z-10 space-y-16 md:space-y-20">
-        {infoRows.rows.map((row, index) => (
-          <InfoRow key={`info-row-${index}`} row={row} />
+        <InfoRow row={infoRows.rows[0]} />
+        <div
+          id={HOME_SECTIONS.aribermax}
+          className="scroll-mt-[72px]"
+          aria-hidden
+        />
+        {infoRows.rows.slice(1).map((row, index) => (
+          <InfoRow key={`info-row-${index + 1}`} row={row} />
         ))}
       </div>
     </section>

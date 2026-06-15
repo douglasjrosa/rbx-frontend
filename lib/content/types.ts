@@ -80,8 +80,59 @@ export interface HomeDifferentials {
   image: MediaAsset;
   differentialsTitle: string;
   differentialsItems: string[];
+}
+
+export interface HomeCta {
+  text: string;
+  button: NavLink;
+}
+
+export interface HomeProductModelSpec {
+  label: string;
+  value: string;
+}
+
+export interface HomeProductModel {
+  title: string;
+  image: MediaAsset;
+  specs: HomeProductModelSpec[];
+}
+
+export interface HomeModels {
+  title: string;
+  description: string;
+  models: HomeProductModel[];
+  button: NavLink;
+}
+
+export interface HomeCustomPackaging {
+  title: string;
+  paragraphs: string[];
+  button: NavLink;
+  image: MediaAsset;
+}
+
+export interface HomeDiversityCard {
+  title: string;
+  description: string;
+  link: NavLink;
+  image: MediaAsset;
+}
+
+export interface HomeDiversity {
   whenTitle: string;
   whenItems: string[];
+  title: string;
+  description: string;
+  cards: HomeDiversityCard[];
+}
+
+export interface HomeContact {
+  doubtsTitle: string;
+  doubtsDescription: string;
+  visitTitle: string;
+  visitDescription: string;
+  address: string;
 }
 
 export interface HomeBanner {
@@ -103,10 +154,14 @@ export interface HomePage {
   hero?: HomeHero;
   banner?: HomeBanner;
   highlights?: HomeHighlights;
+  cta?: HomeCta;
+  models?: HomeModels;
+  customPackaging?: HomeCustomPackaging;
   infoRows?: HomeInfoRows;
   about?: HomeAbout;
   differentials?: HomeDifferentials;
-  contactSections?: ContentSection[];
+  diversity?: HomeDiversity;
+  contact?: HomeContact;
 }
 
 export interface SeoPage {
