@@ -1,4 +1,10 @@
+import GoogleMapEmbed from '@/components/elements/google-map-embed';
 import { HOME_SECTIONS } from '@/lib/home-sections';
+import {
+  getRibermaxDirectionsUrl,
+  getRibermaxMapEmbedUrl,
+  RIBERMAX_LOCATION,
+} from '@/lib/contact-location';
 import { SECTION_SCROLL_MARGIN_CLASS } from '@/lib/navbar-offset';
 import type { HomeContact } from '@/lib/content/types';
 
@@ -6,30 +12,82 @@ interface HomeContactProps {
   contact: HomeContact;
 }
 
+const SPECIALIST_CARD_SHADOW_CLASS =
+  'shadow-[0_8px_24px_rgba(0,0,0,0.12)]';
+
 export default function HomeContactSection({ contact }: HomeContactProps) {
+  const mapEmbedUrl = getRibermaxMapEmbedUrl();
+  const directionsUrl = getRibermaxDirectionsUrl();
+
   return (
     <section
       id={HOME_SECTIONS.contato}
-      className={`${SECTION_SCROLL_MARGIN_CLASS} bg-rbx-porto bg-fixed bg-cover py-16 md:py-24`}
+      className={`${SECTION_SCROLL_MARGIN_CLASS} bg-[#e8eef3] py-12 md:py-16`}
     >
-      <div className="container space-y-12">
-        <div className="mx-auto max-w-3xl text-center text-white">
-          <h2 className="mb-4 text-3xl font-bold md:text-4xl">
-            {contact.doubtsTitle}
-          </h2>
-          <p className="text-lg leading-relaxed">
-            {contact.doubtsDescription}
-          </p>
-        </div>
+      <div className="container">
+        <h2
+          className={
+            'mb-8 text-3xl font-bold text-rbx-accent md:text-4xl'
+          }
+        >
+          {contact.doubtsTitle}
+        </h2>
 
-        <div className="mx-auto max-w-3xl text-center text-white">
-          <h2 className="mb-4 text-3xl font-bold md:text-4xl">
-            {contact.visitTitle}
-          </h2>
-          <p className="mb-4 text-lg leading-relaxed">
-            {contact.visitDescription}
-          </p>
-          <p className="text-lg font-semibold">{contact.address}</p>
+        <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-2 lg:gap-12">
+          <article
+            className={
+              'rounded-2xl bg-[#d5dde6] px-8 py-10 md:px-10 md:py-12 ' +
+              SPECIALIST_CARD_SHADOW_CLASS
+            }
+          >
+            <p
+              className={
+                'text-lg leading-relaxed text-rbx-accent md:text-xl ' +
+                'md:leading-8'
+              }
+            >
+              {contact.doubtsDescription}
+            </p>
+          </article>
+
+          <div>
+            <h3
+              className={
+                'mb-4 text-2xl font-bold text-rbx-accent md:text-3xl'
+              }
+            >
+              {contact.visitTitle}
+            </h3>
+            <p
+              className={
+                'mb-6 text-lg leading-relaxed text-rbx-accent ' +
+                'md:text-xl md:leading-8'
+              }
+            >
+              {contact.visitDescription}
+            </p>
+
+            <GoogleMapEmbed
+              title={`Mapa de localização da ${RIBERMAX_LOCATION.businessName}`}
+              src={mapEmbedUrl}
+              className="shadow-[0_4px_16px_rgba(0,0,0,0.12)]"
+            />
+
+            <p className="mt-4 text-lg leading-relaxed text-rbx-accent">
+              <strong>Endereço:</strong> {contact.address}
+            </p>
+            <a
+              href={directionsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={
+                'mt-2 inline-block text-base font-semibold text-rbx-green-dark ' +
+                'underline hover:text-rbx-green'
+              }
+            >
+              Como chegar no Google Maps
+            </a>
+          </div>
         </div>
       </div>
     </section>
