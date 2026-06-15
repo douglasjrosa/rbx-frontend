@@ -72,7 +72,7 @@ export interface HomeInfoRows {
 
 export interface HomeAbout {
   title: string;
-  description: string;
+  paragraphs: string[];
   image: MediaAsset;
 }
 

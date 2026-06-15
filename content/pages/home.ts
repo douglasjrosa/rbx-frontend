@@ -394,12 +394,13 @@ export const homePage: HomePage = {
   },
   about: {
     title: 'Ribermax Embalagens de Madeira Fumigada',
-    description:
+    paragraphs: [
       'Desde o início nosso único foco tem sido a fabricação de embalagens ' +
-      'de madeira para equipamentos e peças em geral. Fundada em 1996, tem ' +
-      'experiência no segmento de embalagens de médio porte para produtos ' +
-      'volumosos e delicados. Toda a nossa madeira tem origem de ' +
-      'reflorestamento.',
+        'de madeira para equipamentos e peças em geral.',
+      'Fundada em 1996, tem experiência no segmento de embalagens de médio ' +
+        'porte para produtos volumosos e delicados. Toda a nossa madeira ' +
+        'tem origem de reflorestamento.',
+    ],
     image: mediaAsset(
       'ribermax_fabrica.png',
       'Fábrica Ribermax em Ribeirão Preto',

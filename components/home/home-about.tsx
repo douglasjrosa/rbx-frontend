@@ -28,9 +28,19 @@ export default function HomeAboutSection({ about }: HomeAboutProps) {
             >
               {about.title}
             </h2>
-            <p className="text-lg leading-relaxed text-white">
-              {about.description}
-            </p>
+            <div className="space-y-4 pl-6 md:pl-10">
+              {about.paragraphs.map((paragraph, index) => (
+                <p
+                  key={`about-paragraph-${index}`}
+                  className={
+                    'text-lg leading-loose tracking-wide text-white ' +
+                    'md:text-xl md:leading-8'
+                  }
+                >
+                  {paragraph}
+                </p>
+              ))}
+            </div>
           </div>
           <div className="overflow-hidden rounded-2xl">
             <Image
