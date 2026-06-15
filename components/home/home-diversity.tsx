@@ -1,6 +1,7 @@
 import FeatureBulletList from '@/components/elements/feature-bullet-list';
 import DiversityCarousel from '@/components/home/diversity-carousel';
 import { HOME_SECTIONS } from '@/lib/home-sections';
+import { SECTION_SCROLL_MARGIN_CLASS } from '@/lib/navbar-offset';
 import type { HomeDiversity } from '@/lib/content/types';
 
 interface HomeDiversityProps {
@@ -31,7 +32,7 @@ export default function HomeDiversitySection({
 
           <div
             id={HOME_SECTIONS.informacoes}
-            className="scroll-mt-[72px]"
+            className={SECTION_SCROLL_MARGIN_CLASS}
             aria-hidden
           />
         </div>

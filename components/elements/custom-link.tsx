@@ -13,6 +13,10 @@ interface CustomLinkProps {
 }
 
 function parseHomeHash(url: string): string | null {
+  if (url === '/' || url === '/#') {
+    return '';
+  }
+
   if (url.startsWith('/#')) {
     return url.slice(1);
   }
@@ -33,8 +37,8 @@ export default function CustomLink({
   const pathname = usePathname();
   const homeHash = parseHomeHash(link.url);
 
-  if (homeHash) {
-    const href = `/${homeHash}`;
+  if (homeHash !== null) {
+    const href = homeHash ? `/${homeHash}` : '/';
 
     const handleClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
       if (pathname === '/') {

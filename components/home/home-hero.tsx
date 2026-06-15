@@ -1,4 +1,5 @@
 import ButtonLink from '@/components/elements/button-link';
+import { SECTION_SCROLL_MARGIN_CLASS } from '@/lib/navbar-offset';
 import type { HomeHero } from '@/lib/content/types';
 
 interface HomeHeroProps {
@@ -9,7 +10,7 @@ export default function HomeHeroSection({ hero }: HomeHeroProps) {
   return (
     <section
       id="home-hero"
-      className="scroll-mt-[72px] relative min-h-screen bg-cover bg-center bg-no-repeat"
+      className={`${SECTION_SCROLL_MARGIN_CLASS} relative min-h-screen bg-cover bg-center bg-no-repeat`}
       style={{ backgroundImage: `url('${hero.backgroundImage}')` }}
     >
       <div

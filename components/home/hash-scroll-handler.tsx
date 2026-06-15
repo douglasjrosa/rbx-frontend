@@ -2,6 +2,7 @@
 
 import { useEffect } from 'react';
 import { scrollToSection } from '@/lib/scroll-to-section';
+import { syncNavbarHeightCssVar } from '@/lib/navbar-offset';
 
 export default function HashScrollHandler() {
   useEffect(() => {
@@ -9,8 +10,12 @@ export default function HashScrollHandler() {
       return;
     }
 
+    syncNavbarHeightCssVar();
+
     const frame = window.requestAnimationFrame(() => {
-      scrollToSection(window.location.hash);
+      window.requestAnimationFrame(() => {
+        scrollToSection(window.location.hash);
+      });
     });
 
     return () => {

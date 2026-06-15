@@ -1,6 +1,7 @@
 import ButtonLink from '@/components/elements/button-link';
 import Image from '@/components/elements/image';
 import { HOME_SECTIONS } from '@/lib/home-sections';
+import { SECTION_SCROLL_MARGIN_CLASS } from '@/lib/navbar-offset';
 import type { HomeModels, HomeProductModel } from '@/lib/content/types';
 
 interface HomeModelsProps {
@@ -70,7 +71,7 @@ export default function HomeModelsSection({ models }: HomeModelsProps) {
   return (
     <section
       id={HOME_SECTIONS.produtos}
-      className="scroll-mt-[72px] relative pb-16 pt-10 md:pb-20 md:pt-12"
+      className={`${SECTION_SCROLL_MARGIN_CLASS} relative pb-16 pt-10 md:pb-20 md:pt-12`}
     >
       <div
         className="absolute inset-0 bg-fixed bg-center bg-repeat-y"

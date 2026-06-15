@@ -12,16 +12,16 @@ import { siteConfig } from '@/content/site';
 import {
   getActiveHomeSectionHash,
   HOME_SECTIONS,
-  NAVBAR_OFFSET_PX,
 } from '@/lib/home-sections';
+import { getNavbarOffsetPx } from '@/lib/navbar-offset';
 
 function parseHomeHash(url: string): string | null {
-  if (url.startsWith('/#')) {
-    return url.slice(1);
+  if (url === '/' || url === '/#') {
+    return '';
   }
 
-  if (url === '/') {
-    return '';
+  if (url.startsWith('/#')) {
+    return url.slice(1);
   }
 
   return null;
@@ -49,12 +49,14 @@ export default function Navbar() {
       return;
     }
 
+    const navbarOffset = getNavbarOffsetPx();
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         setHeroScrolled(!entry.isIntersecting);
       },
       {
-        rootMargin: `-${NAVBAR_OFFSET_PX}px 0px 0px 0px`,
+        rootMargin: `-${navbarOffset}px 0px 0px 0px`,
         threshold: 0,
       },
     );

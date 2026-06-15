@@ -9,6 +9,8 @@ export const HOME_SECTIONS = {
 export type HomeSectionId =
   (typeof HOME_SECTIONS)[keyof typeof HOME_SECTIONS];
 
+import { getNavbarOffsetPx } from '@/lib/navbar-offset';
+
 export const NAVBAR_OFFSET_PX = 72;
 
 export const NAV_SCROLL_SECTIONS = [
@@ -29,7 +31,7 @@ export function getActiveHomeSectionHash(): string {
       continue;
     }
 
-    if (element.getBoundingClientRect().top <= NAVBAR_OFFSET_PX) {
+    if (element.getBoundingClientRect().top <= getNavbarOffsetPx()) {
       activeHash = section.hash;
     }
   }

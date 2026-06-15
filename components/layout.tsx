@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Navbar from './elements/navbar';
+import NavbarHeightSync from './navbar-height-sync';
 import Footer from './elements/footer';
 import CookieConsentBanner from './elements/cookie-consent-banner';
 import WhatsAppButton from './elements/whatsapp-button';
@@ -28,8 +29,9 @@ export default function SiteLayout({ children }: SiteLayoutProps) {
   return (
     <div className="flex flex-col min-h-screen">
       <div className="flex-1">
-        <div className="fixed w-full z-50">
+        <div className="fixed w-full z-50" data-site-navbar>
           <Navbar />
+          <NavbarHeightSync />
         </div>
         <div className="relative z-10">
           {children}

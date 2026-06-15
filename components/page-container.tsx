@@ -1,5 +1,3 @@
-import { NAVBAR_OFFSET_PX } from '@/lib/home-sections';
-
 interface PageContainerProps {
   children: React.ReactNode;
   variant?: 'porto' | 'wood';
@@ -18,7 +16,7 @@ export default function PageContainer({
     <div
       id="main-container"
       className={themeClass}
-      style={{ paddingTop: NAVBAR_OFFSET_PX }}
+      style={{ paddingTop: 'var(--navbar-height, 72px)' }}
     >
       {children}
     </div>

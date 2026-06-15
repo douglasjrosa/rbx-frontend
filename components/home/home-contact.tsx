@@ -1,4 +1,5 @@
 import { HOME_SECTIONS } from '@/lib/home-sections';
+import { SECTION_SCROLL_MARGIN_CLASS } from '@/lib/navbar-offset';
 import type { HomeContact } from '@/lib/content/types';
 
 interface HomeContactProps {
@@ -9,7 +10,7 @@ export default function HomeContactSection({ contact }: HomeContactProps) {
   return (
     <section
       id={HOME_SECTIONS.contato}
-      className="scroll-mt-[72px] bg-rbx-porto bg-fixed bg-cover py-16 md:py-24"
+      className={`${SECTION_SCROLL_MARGIN_CLASS} bg-rbx-porto bg-fixed bg-cover py-16 md:py-24`}
     >
       <div className="container space-y-12">
         <div className="mx-auto max-w-3xl text-center text-white">
