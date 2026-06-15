@@ -25,9 +25,19 @@ function InfoRow({ row }: { row: HomeInfoRow }) {
       <h2 className="text-3xl font-bold text-white md:text-4xl">
         {row.title}
       </h2>
-      <p className="text-lg leading-relaxed text-white md:text-xl">
-        {row.description}
-      </p>
+      <div className="space-y-4 pl-6 md:pl-10">
+        {row.paragraphs.map((paragraph, index) => (
+          <p
+            key={`info-row-paragraph-${index}`}
+            className={
+              'text-lg leading-loose tracking-wide text-white ' +
+              'md:text-xl md:leading-8'
+            }
+          >
+            {paragraph}
+          </p>
+        ))}
+      </div>
       <div className="pt-2">
         <ButtonLink
           button={row.button}

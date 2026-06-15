@@ -345,12 +345,14 @@ export const homePage: HomePage = {
     rows: [
       {
         title: 'Problemas com a transportadora?',
-        description:
+        paragraphs: [
           'Muitos dos nossos clientes nos procuram pela primeira vez por ' +
-          'encontrar problemas com a transportadora na hora de expedir seus ' +
-          'produtos. Algumas transportadoras exigem a embalagem de madeira, ' +
-          'outras simplesmente não se responsabilizam pela integridade do ' +
-          'produto transportado por causa da falta da embalagem...',
+            'encontrar problemas com a transportadora na hora de expedir ' +
+            'seus produtos.',
+          'Algumas transportadoras exigem a embalagem de madeira, outras ' +
+            'simplesmente não se responsabilizam pela integridade do ' +
+            'produto transportado por causa da falta da embalagem...',
+        ],
         button: {
           newTab: false,
           url: homeSectionHref(HOME_SECTIONS.contato),
@@ -367,12 +369,13 @@ export const homePage: HomePage = {
       },
       {
         title: 'Madeira Fumigada - Tratamento para Exportação',
-        description:
+        paragraphs: [
           'Outra razão pela qual somos muito procurados, é a necessidade de ' +
-          'Embalagens de Madeira Fumigadas para Exportação. Ao proceder com ' +
-          'um processo de exportação, sendo o produto pesado ou grande, é ' +
-          'necessário uma embalagem forte e paletizada, mas também com o ' +
-          'devido tratamento fitosanitário.',
+            'Embalagens de Madeira Fumigadas para Exportação. Ao proceder ' +
+            'com um processo de exportação, sendo o produto pesado ou ' +
+            'grande, é necessário uma embalagem forte e paletizada, mas ' +
+            'também com o devido tratamento fitosanitário.',
+        ],
         button: {
           newTab: false,
           url: '/caixa-madeira-fumigada',

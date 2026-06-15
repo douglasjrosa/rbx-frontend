@@ -59,7 +59,7 @@ export interface HomeHighlights {
 
 export interface HomeInfoRow {
   title: string;
-  description: string;
+  paragraphs: string[];
   button: NavLink;
   image: MediaAsset;
   imagePosition: 'left' | 'right';
