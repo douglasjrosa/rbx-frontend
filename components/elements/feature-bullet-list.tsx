@@ -9,15 +9,22 @@ interface FeatureBulletListProps {
 
 const VARIANT_STYLES: Record<
   FeatureBulletListVariant,
-  { itemHover: string; iconWrap: string; Icon: typeof MdCheck }
+  {
+    item: string;
+    itemHover: string;
+    iconWrap: string;
+    Icon: typeof MdCheck;
+  }
 > = {
   success: {
-    itemHover: 'hover:bg-emerald-50/60',
+    item: 'border-emerald-600/25 bg-emerald-600/10',
+    itemHover: 'hover:bg-emerald-600/15',
     iconWrap: 'bg-rbx-green/15 text-rbx-green-dark',
     Icon: MdCheck,
   },
   danger: {
-    itemHover: 'hover:bg-red-50/60',
+    item: 'border-red-600/25 bg-red-600/10',
+    itemHover: 'hover:bg-red-600/15',
     iconWrap: 'bg-red-100 text-red-600',
     Icon: MdWarning,
   },
@@ -27,7 +34,7 @@ export default function FeatureBulletList({
   items,
   variant = 'success',
 }: FeatureBulletListProps) {
-  const { itemHover, iconWrap, Icon } = VARIANT_STYLES[variant];
+  const { item, itemHover, iconWrap, Icon } = VARIANT_STYLES[variant];
 
   return (
     <ul className="space-y-3">
@@ -35,8 +42,8 @@ export default function FeatureBulletList({
         <li
           key={`item-${index}`}
           className={
-            'flex items-start gap-3 rounded-xl border border-gray-100 ' +
-            `bg-gray-50 px-4 py-3 transition-colors ${itemHover}`
+            'flex items-start gap-3 rounded-xl border px-4 py-3 ' +
+            `transition-colors ${item} ${itemHover}`
           }
         >
           <span
