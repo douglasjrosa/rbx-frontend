@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
 import Image from '@/components/elements/image';
 import CustomLink from '@/components/elements/custom-link';
@@ -12,6 +12,8 @@ const SLIDE_GAP_PX = 24;
 const DESKTOP_SLIDE_WIDTH_VW = 58;
 const MOBILE_SLIDE_WIDTH_VW = 78;
 const DESKTOP_MEDIA_QUERY = '(min-width: 768px)';
+const DRAG_THRESHOLD_PX = 48;
+const DRAG_CLICK_GUARD_PX = 6;
 
 interface DiversityCarouselProps {
   cards: HomeDiversityCard[];
@@ -21,14 +23,24 @@ function getSlideWidthVw(matchesDesktop: boolean): number {
   return matchesDesktop ? DESKTOP_SLIDE_WIDTH_VW : MOBILE_SLIDE_WIDTH_VW;
 }
 
-function getTrackOffset(activeIndex: number, slideWidthVw: number): string {
+function getTrackOffset(
+  activeIndex: number,
+  slideWidthVw: number,
+  dragOffsetPx = 0,
+): string {
   const centerOffsetVw = (100 - slideWidthVw) / 2;
   const slideStep = `(${slideWidthVw}vw + ${SLIDE_GAP_PX}px)`;
+  const dragPart = dragOffsetPx === 0 ? '' : ` + ${dragOffsetPx}px`;
 
-  return `calc(${centerOffsetVw}vw - ${activeIndex} * ${slideStep})`;
+  return `calc(${centerOffsetVw}vw - ${activeIndex} * ${slideStep}${dragPart})`;
 }
 
-function CarouselSlide({ card }: { card: HomeDiversityCard }) {
+interface CarouselSlideProps {
+  card: HomeDiversityCard;
+  onDraggedClick: (event: React.MouseEvent) => void;
+}
+
+function CarouselSlide({ card, onDraggedClick }: CarouselSlideProps) {
   return (
     <article
       className={
@@ -36,6 +48,7 @@ function CarouselSlide({ card }: { card: HomeDiversityCard }) {
         'rounded-[21px] bg-white shadow-[0_8px_24px_rgba(0,0,0,0.2)] ' +
         'md:min-h-[280px] md:grid-cols-2'
       }
+      onClickCapture={onDraggedClick}
     >
       <div
         className={
@@ -88,6 +101,13 @@ export default function DiversityCarousel({ cards }: DiversityCarouselProps) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
   const [slideWidthVw, setSlideWidthVw] = useState(DESKTOP_SLIDE_WIDTH_VW);
+  const [dragOffset, setDragOffset] = useState(0);
+  const [isDragging, setIsDragging] = useState(false);
+
+  const pointerStartXRef = useRef(0);
+  const dragOffsetRef = useRef(0);
+  const isDraggingRef = useRef(false);
+  const didDragRef = useRef(false);
 
   const goTo = useCallback(
     (index: number) => {
@@ -105,6 +125,74 @@ export default function DiversityCarousel({ cards }: DiversityCarouselProps) {
     goTo(activeIndex - 1);
   }, [activeIndex, goTo]);
 
+  const finishDrag = useCallback(() => {
+    if (!isDraggingRef.current) {
+      return;
+    }
+
+    isDraggingRef.current = false;
+    setIsDragging(false);
+
+    const delta = dragOffsetRef.current;
+
+    if (delta <= -DRAG_THRESHOLD_PX) {
+      goNext();
+    } else if (delta >= DRAG_THRESHOLD_PX) {
+      goPrev();
+    }
+
+    dragOffsetRef.current = 0;
+    setDragOffset(0);
+  }, [goNext, goPrev]);
+
+  const handlePointerDown = (event: React.PointerEvent<HTMLDivElement>) => {
+    if (cards.length <= 1 || event.button !== 0) {
+      return;
+    }
+
+    setIsPaused(true);
+    isDraggingRef.current = true;
+    setIsDragging(true);
+    didDragRef.current = false;
+    pointerStartXRef.current = event.clientX;
+    dragOffsetRef.current = 0;
+    setDragOffset(0);
+    event.currentTarget.setPointerCapture(event.pointerId);
+  };
+
+  const handlePointerMove = (event: React.PointerEvent<HTMLDivElement>) => {
+    if (!isDraggingRef.current) {
+      return;
+    }
+
+    const delta = event.clientX - pointerStartXRef.current;
+
+    if (Math.abs(delta) > DRAG_CLICK_GUARD_PX) {
+      didDragRef.current = true;
+    }
+
+    dragOffsetRef.current = delta;
+    setDragOffset(delta);
+  };
+
+  const handlePointerUp = (event: React.PointerEvent<HTMLDivElement>) => {
+    if (event.currentTarget.hasPointerCapture(event.pointerId)) {
+      event.currentTarget.releasePointerCapture(event.pointerId);
+    }
+
+    finishDrag();
+  };
+
+  const handleDraggedClick = (event: React.MouseEvent) => {
+    if (!didDragRef.current) {
+      return;
+    }
+
+    event.preventDefault();
+    event.stopPropagation();
+    didDragRef.current = false;
+  };
+
   useEffect(() => {
     const mediaQuery = window.matchMedia(DESKTOP_MEDIA_QUERY);
 
@@ -121,13 +209,13 @@ export default function DiversityCarousel({ cards }: DiversityCarouselProps) {
   }, []);
 
   useEffect(() => {
-    if (isPaused || cards.length <= 1) {
+    if (isPaused || isDragging || cards.length <= 1) {
       return undefined;
     }
 
     const timer = window.setInterval(goNext, AUTOPLAY_INTERVAL_MS);
     return () => window.clearInterval(timer);
-  }, [isPaused, goNext, cards.length]);
+  }, [isPaused, isDragging, goNext, cards.length]);
 
   if (cards.length === 0) {
     return null;
@@ -149,13 +237,28 @@ export default function DiversityCarousel({ cards }: DiversityCarouselProps) {
       onFocus={() => setIsPaused(true)}
       onBlur={() => setIsPaused(false)}
     >
-      <div className="overflow-hidden">
+      <div
+        className={
+          'overflow-hidden touch-pan-y select-none ' +
+          (isDragging ? 'cursor-grabbing' : 'cursor-grab')
+        }
+        onPointerDown={handlePointerDown}
+        onPointerMove={handlePointerMove}
+        onPointerUp={handlePointerUp}
+        onPointerCancel={handlePointerUp}
+      >
         <div
           className="flex"
           style={{
             gap: SLIDE_GAP_PX,
-            transform: `translateX(${getTrackOffset(activeIndex, slideWidthVw)})`,
-            transition: `transform ${SLIDE_TRANSITION_MS}ms ease-in-out`,
+            transform: `translateX(${getTrackOffset(
+              activeIndex,
+              slideWidthVw,
+              dragOffset,
+            )})`,
+            transition: isDragging
+              ? 'none'
+              : `transform ${SLIDE_TRANSITION_MS}ms ease-in-out`,
           }}
         >
           {cards.map((card, index) => (
@@ -167,7 +270,10 @@ export default function DiversityCarousel({ cards }: DiversityCarouselProps) {
               aria-label={`${index + 1} de ${cards.length}`}
               aria-hidden={index !== activeIndex}
             >
-              <CarouselSlide card={card} />
+              <CarouselSlide
+                card={card}
+                onDraggedClick={handleDraggedClick}
+              />
             </div>
           ))}
         </div>
