@@ -424,9 +424,13 @@ export const homePage: HomePage = {
   diversity: {
     whenTitle: 'Mas afinal, quando usar Embalagens de Madeira?',
     whenItems: [
-      'Quando o seu produto é grande, delicado ou pesado;',
-      'Quando a caixa de papelão não é forte o bastante;',
-      'Quando a transportadora exige uma boa embalagem.',
+      'Quando o seu produto é GRANDE, DELICADO ou PESADO;',
+      'Quando a caixa de papelão NÃO é forte o bastante;',
+      'Quando a transportadora EXIGE uma boa embalagem;',
+      'Quando seu produto é de ALTO VALOR e o prejuízo pode ser grande ' +
+        'se quebrar;',
+      'Quando o produto é para EXPORTAÇÃO ou vai para longe e NÃO pode ' +
+        'correr o risco de chegar quebrado no cliente.',
     ],
     title: 'Conheça nossa diversidade em Embalagens de Madeira',
     description:

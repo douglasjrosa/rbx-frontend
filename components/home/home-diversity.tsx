@@ -1,22 +1,11 @@
 import Image from '@/components/elements/image';
 import CustomLink from '@/components/elements/custom-link';
+import FeatureBulletList from '@/components/elements/feature-bullet-list';
 import { HOME_SECTIONS } from '@/lib/home-sections';
 import type { HomeDiversity, HomeDiversityCard } from '@/lib/content/types';
 
 interface HomeDiversityProps {
   diversity: HomeDiversity;
-}
-
-function BulletList({ items }: { items: string[] }) {
-  return (
-    <ul className="list-disc space-y-2 pl-5 text-rbx-accent">
-      {items.map((item, index) => (
-        <li key={`item-${index}`} className="leading-relaxed">
-          {item}
-        </li>
-      ))}
-    </ul>
-  );
 }
 
 function DiversityCard({ card }: { card: HomeDiversityCard }) {
@@ -60,7 +49,7 @@ export default function HomeDiversitySection({
           >
             {diversity.whenTitle}
           </h2>
-          <BulletList items={diversity.whenItems} />
+          <FeatureBulletList items={diversity.whenItems} />
         </div>
 
         <div
