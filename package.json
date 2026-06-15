@@ -6,9 +6,11 @@
     "clean": "node -e \"require('fs').rmSync('.next',{recursive:true,force:true})\"",
     "dev": "npx next dev --turbopack",
     "dev:clean": "npm run clean && npm run dev",
-    "build": "npx next build",
+    "build": "npm run validate-seo && npx next build",
     "start": "npx next start",
     "lint": "npx next lint",
+    "validate-seo": "node scripts/validate-seo-images.mjs",
+    "generate-seo-images": "node scripts/generate-seo-page-images.mjs",
     "download-images": "node scripts/download-images.mjs"
   },
   "dependencies": {

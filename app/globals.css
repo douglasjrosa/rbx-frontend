@@ -57,6 +57,18 @@ html {
   margin: auto;
 }
 
+.seo-article {
+  text-align: left;
+}
+
+.seo-article__figure img {
+  margin: 0;
+}
+
+.seo-article__cta {
+  background-color: #fffaf5;
+}
+
 .prose-rbx {
   @apply prose prose-lg max-w-none prose-headings:text-rbx-green-dark;
 }
