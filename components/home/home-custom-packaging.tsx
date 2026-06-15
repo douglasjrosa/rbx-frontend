@@ -6,18 +6,20 @@ interface HomeCustomPackagingProps {
   customPackaging: HomeCustomPackaging;
 }
 
-interface HomeCustomPackagingProps {
-  customPackaging: HomeCustomPackaging;
-}
-
-const CARD_HEIGHT_CLASS = 'h-[530px]';
+const SECTION_HEIGHT_CLASS = 'h-[530px]';
+const CARD_HEIGHT_CLASS = 'h-[550px]';
 const CARD_SHADOW_CLASS = 'shadow-[0_10px_28px_rgba(0,0,0,0.38)]';
 
 export default function HomeCustomPackagingSection({
   customPackaging,
 }: HomeCustomPackagingProps) {
   return (
-    <section className="relative z-20 overflow-visible bg-white pt-8 pb-0">
+    <section
+      className={
+        `relative z-20 overflow-visible bg-white pt-8 pb-0 ` +
+        SECTION_HEIGHT_CLASS
+      }
+    >
       <div
         className={
           'container absolute left-1/2 top-8 z-10 w-[80%] ' +
