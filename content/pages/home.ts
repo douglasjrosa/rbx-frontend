@@ -436,7 +436,7 @@ export const homePage: HomePage = {
       'Quando o produto é para EXPORTAÇÃO ou vai para longe e NÃO pode ' +
         'correr o risco de chegar quebrado no cliente.',
     ],
-    title: 'Conheça nossa diversidade em Embalagens de Madeira',
+    title: 'ARTIGOS TÉCNICOS SOBRE O ASSUNTO',
     paragraphs: [
       'Fabricamos embalagens de madeira para diversas situações, sob ' +
         'medida e personalizada para você.',
