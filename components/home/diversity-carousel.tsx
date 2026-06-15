@@ -108,7 +108,7 @@ export default function DiversityCarousel({ cards }: DiversityCarouselProps) {
       role="region"
       aria-roledescription="carousel"
       aria-label="Carrossel de embalagens"
-      className="relative"
+      className="relative w-full"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
       onFocus={() => setIsPaused(true)}
@@ -143,8 +143,9 @@ export default function DiversityCarousel({ cards }: DiversityCarouselProps) {
             type="button"
             onClick={goPrev}
             className={
-              'absolute left-0 top-1/2 z-10 -translate-y-1/2 ' +
-              'rounded-full p-1 text-white transition-opacity hover:opacity-80'
+              'absolute left-2 top-1/2 z-10 -translate-y-1/2 ' +
+              'rounded-full p-1 text-white transition-opacity ' +
+              'hover:opacity-80 md:left-4'
             }
             aria-label="Anterior"
           >
@@ -154,8 +155,9 @@ export default function DiversityCarousel({ cards }: DiversityCarouselProps) {
             type="button"
             onClick={goNext}
             className={
-              'absolute right-0 top-1/2 z-10 -translate-y-1/2 ' +
-              'rounded-full p-1 text-white transition-opacity hover:opacity-80'
+              'absolute right-2 top-1/2 z-10 -translate-y-1/2 ' +
+              'rounded-full p-1 text-white transition-opacity ' +
+              'hover:opacity-80 md:right-4'
             }
             aria-label="Próximo"
           >

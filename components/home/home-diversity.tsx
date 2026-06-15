@@ -75,7 +75,9 @@ export default function HomeDiversitySection({
               ))}
             </div>
           </div>
+        </div>
 
+        <div className="relative z-10 w-full">
           <DiversityCarousel cards={diversity.cards} />
         </div>
       </section>
