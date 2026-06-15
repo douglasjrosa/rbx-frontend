@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { usePathname } from 'next/navigation';
 import Navbar from './elements/navbar';
 import Footer from './elements/footer';
 import CookieConsentBanner from './elements/cookie-consent-banner';
@@ -14,8 +13,6 @@ interface SiteLayoutProps {
 
 export default function SiteLayout({ children }: SiteLayoutProps) {
   const [mounted, setMounted] = useState(false);
-  const pathname = usePathname();
-  const isHome = pathname === '/';
 
   useEffect(() => {
     setMounted(true);
@@ -34,7 +31,7 @@ export default function SiteLayout({ children }: SiteLayoutProps) {
         <div className="fixed w-full z-50">
           <Navbar />
         </div>
-        <div className={isHome ? 'relative z-10' : 'relative z-10 pt-[72px]'}>
+        <div className="relative z-10">
           {children}
         </div>
       </div>
