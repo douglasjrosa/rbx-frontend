@@ -614,10 +614,10 @@ export const homePage: HomePage = {
       'para te atender. Nossa equipe está treinada para tirar todas as ' +
       'suas dúvidas técnicas.',
     specialistImage: mediaAsset(
-      'especialista-min.webp',
-      'Especialista em embalagens de madeira com paquímetro sobre projeto técnico',
-      1200,
-      675,
+      'desenhista-tecnico-cotas.webp',
+      'Desenhista técnico trabalhando com paquímetro e desenho técnico',
+      1920,
+      1280,
     ),
     visitTitle: 'Faça-nos uma visita!',
     visitDescription:
