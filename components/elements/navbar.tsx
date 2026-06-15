@@ -217,9 +217,7 @@ export default function Navbar() {
               <div className="hidden md:block">
                 <ButtonLink
                   button={navbar.button}
-                  appearance={
-                    isHeroTransparent ? 'hero-primary' : 'rbx-primary'
-                  }
+                  appearance="rbx-primary"
                   compact
                 />
               </div>
