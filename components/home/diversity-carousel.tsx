@@ -15,6 +15,11 @@ const DESKTOP_MEDIA_QUERY = '(min-width: 768px)';
 const DRAG_THRESHOLD_PX = 48;
 const DRAG_CLICK_GUARD_PX = 6;
 const INACTIVE_SLIDE_SCALE = 0.7;
+const INTERACTIVE_SELECTOR = 'a, button';
+
+function isInteractiveTarget(target: EventTarget | null): boolean {
+  return target instanceof Element && Boolean(target.closest(INTERACTIVE_SELECTOR));
+}
 
 interface DiversityCarouselProps {
   cards: HomeDiversityCard[];
@@ -153,7 +158,11 @@ export default function DiversityCarousel({ cards }: DiversityCarouselProps) {
   }, [goNext, goPrev]);
 
   const handlePointerDown = (event: React.PointerEvent<HTMLDivElement>) => {
-    if (cards.length <= 1 || event.button !== 0) {
+    if (
+      cards.length <= 1 ||
+      event.button !== 0 ||
+      isInteractiveTarget(event.target)
+    ) {
       return;
     }
 
@@ -191,6 +200,10 @@ export default function DiversityCarousel({ cards }: DiversityCarouselProps) {
   };
 
   const handleDraggedClick = (event: React.MouseEvent) => {
+    if (isInteractiveTarget(event.target)) {
+      return;
+    }
+
     if (!didDragRef.current) {
       return;
     }
