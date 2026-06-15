@@ -9,7 +9,11 @@ import ButtonLink from './button-link';
 import Image from './image';
 import CustomLink from './custom-link';
 import { siteConfig } from '@/content/site';
-import { HOME_SECTIONS, NAVBAR_OFFSET_PX } from '@/lib/home-sections';
+import {
+  getActiveHomeSectionHash,
+  HOME_SECTIONS,
+  NAVBAR_OFFSET_PX,
+} from '@/lib/home-sections';
 
 function parseHomeHash(url: string): string | null {
   if (url.startsWith('/#')) {
@@ -68,15 +72,36 @@ export default function Navbar() {
       return;
     }
 
-    const updateHash = () => {
-      setActiveHash(window.location.hash);
+    let frameId = 0;
+
+    const updateActiveSection = () => {
+      setActiveHash(getActiveHomeSectionHash());
     };
 
-    updateHash();
-    window.addEventListener('hashchange', updateHash);
+    const onScroll = () => {
+      if (frameId) {
+        return;
+      }
+
+      frameId = window.requestAnimationFrame(() => {
+        frameId = 0;
+        updateActiveSection();
+      });
+    };
+
+    updateActiveSection();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('hashchange', updateActiveSection);
+    window.addEventListener('resize', updateActiveSection);
 
     return () => {
-      window.removeEventListener('hashchange', updateHash);
+      if (frameId) {
+        window.cancelAnimationFrame(frameId);
+      }
+
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('hashchange', updateActiveSection);
+      window.removeEventListener('resize', updateActiveSection);
     };
   }, [isHome]);
 
