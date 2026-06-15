@@ -363,7 +363,7 @@ export const homePage: HomePage = {
           495,
         ),
         imagePosition: 'right',
-        buttonVariant: 'secondary',
+        buttonVariant: 'primary',
       },
       {
         title: 'Madeira Fumigada - Tratamento para Exportação',
