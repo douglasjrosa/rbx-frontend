@@ -10,7 +10,7 @@ export default function HomeDifferentialsSection({
   differentials,
 }: HomeDifferentialsProps) {
   return (
-    <section className="bg-white py-12 md:py-16">
+    <section className="bg-rbx-white bg-auto bg-repeat py-12 md:py-16">
       <div className="container">
         <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-2 lg:gap-12">
           <div className="overflow-hidden rounded-2xl">
