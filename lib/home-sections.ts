@@ -9,7 +9,9 @@ export const HOME_SECTIONS = {
 export type HomeSectionId =
   (typeof HOME_SECTIONS)[keyof typeof HOME_SECTIONS];
 
-import { getNavbarOffsetPx, getSectionAnchorTop } from '@/lib/navbar-offset';
+import { getNavbarOffsetPx } from '@/lib/navbar-offset';
+
+const SECTION_ACTIVE_TOLERANCE_PX = 1;
 
 export const NAVBAR_OFFSET_PX = 72;
 
@@ -23,6 +25,8 @@ export const NAV_SCROLL_SECTIONS = [
 
 export function getActiveHomeSectionHash(): string {
   let activeHash: string = NAV_SCROLL_SECTIONS[0].hash;
+  const navbarOffset = getNavbarOffsetPx();
+  const activationLine = navbarOffset + SECTION_ACTIVE_TOLERANCE_PX;
 
   for (const section of NAV_SCROLL_SECTIONS) {
     const element = document.getElementById(section.id);
@@ -31,7 +35,7 @@ export function getActiveHomeSectionHash(): string {
       continue;
     }
 
-    if (getSectionAnchorTop(element) <= getNavbarOffsetPx()) {
+    if (element.getBoundingClientRect().top <= activationLine) {
       activeHash = section.hash;
     }
   }
