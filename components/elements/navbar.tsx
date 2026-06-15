@@ -82,8 +82,8 @@ export default function Navbar() {
 
   const logo = isHeroTransparent ? navbar.logoLight : navbar.logo;
   const navLinkClass = isHeroTransparent
-    ? 'text-white hover:text-white/80'
-    : 'text-gray-900 hover:text-rbx-brown';
+    ? 'font-bold text-white hover:text-white/80'
+    : 'font-bold text-rbx-green-dark hover:text-rbx-green';
   const activeLinkClass = isHeroTransparent
     ? 'bg-rbx-green-dark/80 text-white'
     : 'bg-emerald-100 text-rbx-green-dark';

@@ -29,7 +29,9 @@ export default function MobileNavMenu({
           {navbar.links.map((link, index) => (
             <li key={`mobile-${index}`}>
               <CustomLink link={link} onNavigate={closeSelf}>
-                <span>{link.text}</span>
+                <span className="font-bold text-rbx-green-dark">
+                  {link.text}
+                </span>
               </CustomLink>
             </li>
           ))}
