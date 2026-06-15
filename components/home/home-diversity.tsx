@@ -35,7 +35,10 @@ export default function HomeDiversitySection({
               />
             </div>
             <div
-              className={`overflow-hidden rounded-2xl ${IMAGE_CARD_SHADOW_CLASS}`}
+              className={
+                `overflow-hidden rounded-2xl bg-white ` +
+                `${IMAGE_CARD_SHADOW_CLASS}`
+              }
               style={{ padding: WHEN_IMAGE_CARD_PADDING_PX }}
             >
               <Image
