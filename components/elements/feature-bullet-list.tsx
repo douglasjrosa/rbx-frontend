@@ -16,12 +16,12 @@ const VARIANT_STYLES: Record<
   }
 > = {
   success: {
-    itemClass: 'border-emerald-600/25 bg-emerald-600/10',
+    itemClass: 'border-emerald-600/30 bg-emerald-600/20',
     iconWrap: 'bg-rbx-green/15 text-rbx-green-dark',
     Icon: MdCheck,
   },
   danger: {
-    itemClass: 'border-red-600/25 bg-red-600/10',
+    itemClass: 'border-red-600/30 bg-red-600/20',
     iconWrap: 'bg-red-100 text-red-600',
     Icon: MdWarning,
   },
