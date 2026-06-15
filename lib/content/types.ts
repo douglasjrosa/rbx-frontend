@@ -207,7 +207,7 @@ export interface SiteConfig {
     logo: MediaAsset;
   };
   favicon: MediaAsset;
-  whatsappContacts: { nome: string; fone: string }[];
+  whatsappPhone: string;
   whatsappImage: MediaAsset;
   whatsappMsg: string;
 }
