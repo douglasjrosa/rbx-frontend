@@ -1,82 +1,71 @@
-import Image from '@/components/elements/image';
-import CustomLink from '@/components/elements/custom-link';
 import FeatureBulletList from '@/components/elements/feature-bullet-list';
+import DiversityCarousel from '@/components/home/diversity-carousel';
 import { HOME_SECTIONS } from '@/lib/home-sections';
-import type { HomeDiversity, HomeDiversityCard } from '@/lib/content/types';
+import type { HomeDiversity } from '@/lib/content/types';
 
 interface HomeDiversityProps {
   diversity: HomeDiversity;
-}
-
-function DiversityCard({ card }: { card: HomeDiversityCard }) {
-  return (
-    <article className="card-rbx flex h-full flex-col text-left">
-      <div className="mb-4 overflow-hidden rounded-lg">
-        <Image
-          media={card.image}
-          className="h-auto w-full object-cover"
-          width={card.image.width}
-          height={card.image.height}
-        />
-      </div>
-      <h3 className="mb-3 text-xl font-bold text-rbx-green-primary">
-        {card.title}
-      </h3>
-      <p className="mb-4 flex-1 text-sm leading-relaxed text-gray-700">
-        {card.description}
-      </p>
-      <CustomLink link={card.link}>
-        <span className="text-sm font-semibold text-sky-600 hover:underline">
-          {card.link.text}
-        </span>
-      </CustomLink>
-    </article>
-  );
 }
 
 export default function HomeDiversitySection({
   diversity,
 }: HomeDiversityProps) {
   return (
-    <section className="bg-rbx-white bg-cover py-12 md:py-16">
-      <div className="container">
-        <div className="mb-10">
-          <h2
-            className={
-              'mb-4 text-2xl font-bold text-rbx-green-primary ' +
-              'md:text-3xl'
-            }
-          >
-            {diversity.whenTitle}
-          </h2>
-          <FeatureBulletList items={diversity.whenItems} />
-        </div>
+    <>
+      <section className="bg-rbx-white bg-cover py-12 md:py-16">
+        <div className="container">
+          <div className="mb-10">
+            <h2
+              className={
+                'mb-4 text-2xl font-bold text-rbx-green-primary ' +
+                'md:text-3xl'
+              }
+            >
+              {diversity.whenTitle}
+            </h2>
+            <FeatureBulletList items={diversity.whenItems} />
+          </div>
 
+          <div
+            id={HOME_SECTIONS.informacoes}
+            className="scroll-mt-[72px]"
+            aria-hidden
+          />
+        </div>
+      </section>
+
+      <section className="relative py-12 md:py-16">
         <div
-          id={HOME_SECTIONS.informacoes}
-          className="scroll-mt-[72px]"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundColor: '#D6D6D6',
+            backgroundImage: "url('/images/pattern_01.png')",
+          }}
+          aria-hidden
+        />
+        <div
+          className="absolute inset-0 bg-rbx-green-primary/50"
           aria-hidden
         />
 
-        <div className="mb-10 text-center">
-          <h2
-            className={
-              'mb-4 text-3xl font-bold text-rbx-green-primary md:text-4xl'
-            }
-          >
-            {diversity.title}
-          </h2>
-          <p className="mx-auto max-w-3xl text-base text-gray-700 md:text-lg">
-            {diversity.description}
-          </p>
-        </div>
+        <div className="container relative z-10">
+          <div className="mx-auto mb-10 max-w-4xl text-center text-white">
+            <h2
+              className={
+                'mb-4 text-3xl font-extrabold leading-tight ' +
+                'md:text-5xl'
+              }
+            >
+              {diversity.title}
+            </h2>
+            <p className="text-base leading-relaxed md:text-lg">
+              {diversity.description}
+            </p>
+          </div>
 
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 xl:grid-cols-3">
-          {diversity.cards.map((card, index) => (
-            <DiversityCard key={`diversity-${index}`} card={card} />
-          ))}
+          <DiversityCarousel cards={diversity.cards} />
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }
