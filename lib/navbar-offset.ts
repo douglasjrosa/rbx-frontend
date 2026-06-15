@@ -29,3 +29,15 @@ export function syncNavbarHeightCssVar(): void {
     `${getNavbarOffsetPx()}px`,
   );
 }
+
+export function getScrollMarginTop(element: HTMLElement): number {
+  const parsed = Number.parseFloat(
+    window.getComputedStyle(element).scrollMarginTop,
+  );
+
+  return Number.isFinite(parsed) ? parsed : 0;
+}
+
+export function getSectionAnchorTop(element: HTMLElement): number {
+  return element.getBoundingClientRect().top - getScrollMarginTop(element);
+}

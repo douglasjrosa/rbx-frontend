@@ -9,7 +9,7 @@ export const HOME_SECTIONS = {
 export type HomeSectionId =
   (typeof HOME_SECTIONS)[keyof typeof HOME_SECTIONS];
 
-import { getNavbarOffsetPx } from '@/lib/navbar-offset';
+import { getNavbarOffsetPx, getSectionAnchorTop } from '@/lib/navbar-offset';
 
 export const NAVBAR_OFFSET_PX = 72;
 
@@ -31,7 +31,7 @@ export function getActiveHomeSectionHash(): string {
       continue;
     }
 
-    if (element.getBoundingClientRect().top <= getNavbarOffsetPx()) {
+    if (getSectionAnchorTop(element) <= getNavbarOffsetPx()) {
       activeHash = section.hash;
     }
   }

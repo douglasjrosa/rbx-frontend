@@ -50,16 +50,13 @@ export default function HomeDiversitySection({
               />
             </div>
           </div>
-
-          <div
-            id={HOME_SECTIONS.informacoes}
-            className={SECTION_SCROLL_MARGIN_CLASS}
-            aria-hidden
-          />
         </div>
       </section>
 
-      <section className="relative py-12 md:py-16">
+      <section
+        id={HOME_SECTIONS.informacoes}
+        className={`relative py-12 md:py-16 ${SECTION_SCROLL_MARGIN_CLASS}`}
+      >
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
