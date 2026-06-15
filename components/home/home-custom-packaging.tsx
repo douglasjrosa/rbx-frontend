@@ -10,11 +10,13 @@ export default function HomeCustomPackagingSection({
   customPackaging,
 }: HomeCustomPackagingProps) {
   return (
-    <section className="relative z-20 bg-white pt-8 pb-0">
+    <section
+      className="relative z-20 h-[530px] bg-white pt-8 pb-0"
+    >
       <div
         className={
-          'container absolute left-1/2 top-8 z-10 h-[550px] w-[80%] ' +
-          '-translate-x-1/2 !max-w-none px-4 sm:px-6'
+          'container absolute left-1/2 top-8 z-10 h-[calc(530px-2rem)] ' +
+          'w-[80%] -translate-x-1/2 !max-w-none px-4 sm:px-6'
         }
       >
         <div
