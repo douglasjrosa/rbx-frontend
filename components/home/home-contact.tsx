@@ -41,6 +41,13 @@ export default function HomeContactSection({ contact }: HomeContactProps) {
               SPECIALIST_CARD_SHADOW_CLASS
             }
           >
+            <h3
+              className={
+                'mb-4 text-2xl font-bold text-rbx-accent md:text-3xl'
+              }
+            >
+              {contact.specialistTitle}
+            </h3>
             <p
               className={
                 'text-lg leading-relaxed text-rbx-accent md:text-xl ' +
