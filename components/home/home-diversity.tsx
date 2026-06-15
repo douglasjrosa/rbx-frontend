@@ -69,7 +69,8 @@ export default function HomeDiversitySection({
           aria-hidden
         />
         <div
-          className="absolute inset-0 bg-rbx-green-primary/50"
+          className="absolute inset-0"
+          style={{ backgroundColor: '#00000014' }}
           aria-hidden
         />
 
