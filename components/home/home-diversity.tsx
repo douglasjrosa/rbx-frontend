@@ -12,7 +12,7 @@ export default function HomeDiversitySection({
 }: HomeDiversityProps) {
   return (
     <>
-      <section className="bg-rbx-white bg-cover py-12 md:py-16">
+      <section className="bg-rbx-white bg-auto bg-repeat py-12 md:py-16">
         <div className="container">
           <div className="mb-10">
             <h2
