@@ -371,9 +371,9 @@ export const homePage: HomePage = {
         title: 'Madeira Fumigada - Tratamento para Exportação',
         paragraphs: [
           'Outra razão pela qual somos muito procurados, é a necessidade de ' +
-            'Embalagens de Madeira Fumigadas para Exportação. Ao proceder ' +
-            'com um processo de exportação, sendo o produto pesado ou ' +
-            'grande, é necessário uma embalagem forte e paletizada, mas ' +
+            'Embalagens de Madeira Fumigadas para Exportação.',
+          'Ao proceder com um processo de exportação, sendo o produto pesado ' +
+            'ou grande, é necessário uma embalagem forte e paletizada, mas ' +
             'também com o devido tratamento fitosanitário.',
         ],
         button: {
