@@ -76,9 +76,7 @@ export const siteConfig: SiteConfig = {
     ),
   },
   footer: {
-    tagline:
-      'Seja lá qual for a sua necessidade, conte com a gente, estamos ' +
-      'prontos para te atender.',
+    tagline: 'Acompanhe-nos em nossas redes sociais.',
     logo: mediaAsset(
       'ribermax_logo_branca.png',
       'Logomarca Ribermax Embalagens',
