@@ -27,7 +27,7 @@ export default function Footer() {
             'md:gap-8 lg:gap-12'
           }
         >
-          <div className="flex flex-col items-center gap-2.5 md:items-start">
+          <div className="flex flex-col items-center gap-2.5 text-center">
             <Image
               media={footer.logo}
               className="h-auto w-[45%] md:w-[62%]"
@@ -37,13 +37,12 @@ export default function Footer() {
             />
             <p
               className={
-                'max-w-sm text-center text-[15px] leading-relaxed ' +
-                'text-white md:text-left'
+                'max-w-sm text-[15px] leading-relaxed text-white'
               }
             >
               {footer.tagline}
             </p>
-            <ul className="flex items-center gap-3.5 pt-1">
+            <ul className="flex items-center justify-center gap-3.5 pt-1">
               {footer.socialLinks.map((social) => {
                 const Icon = SOCIAL_ICON_COMPONENTS[social.icon];
 
