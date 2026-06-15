@@ -23,7 +23,10 @@ export default function HomeDiversitySection({
             >
               {diversity.whenTitle}
             </h2>
-            <FeatureBulletList items={diversity.whenItems} />
+            <FeatureBulletList
+              items={diversity.whenItems}
+              variant="danger"
+            />
           </div>
 
           <div
