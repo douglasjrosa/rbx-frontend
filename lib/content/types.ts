@@ -122,6 +122,7 @@ export interface HomeDiversityCard {
 export interface HomeDiversity {
   whenTitle: string;
   whenItems: string[];
+  whenImage: MediaAsset;
   title: string;
   paragraphs: string[];
   cards: HomeDiversityCard[];

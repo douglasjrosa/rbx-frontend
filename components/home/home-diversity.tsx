@@ -1,4 +1,5 @@
 import FeatureBulletList from '@/components/elements/feature-bullet-list';
+import Image from '@/components/elements/image';
 import DiversityCarousel from '@/components/home/diversity-carousel';
 import { HOME_SECTIONS } from '@/lib/home-sections';
 import { SECTION_SCROLL_MARGIN_CLASS } from '@/lib/navbar-offset';
@@ -15,19 +16,30 @@ export default function HomeDiversitySection({
     <>
       <section className="bg-rbx-white bg-auto bg-repeat py-12 md:py-16">
         <div className="container">
-          <div className="mb-10">
-            <h2
-              className={
-                'mb-4 text-2xl font-bold text-rbx-green-primary ' +
-                'md:text-3xl'
-              }
-            >
-              {diversity.whenTitle}
-            </h2>
-            <FeatureBulletList
-              items={diversity.whenItems}
-              variant="danger"
-            />
+          <div className="mb-10 grid grid-cols-1 items-start gap-8 lg:grid-cols-2 lg:gap-12">
+            <div>
+              <h2
+                className={
+                  'mb-6 text-2xl font-bold text-rbx-green-primary ' +
+                  'md:text-3xl'
+                }
+              >
+                {diversity.whenTitle}
+              </h2>
+              <FeatureBulletList
+                items={diversity.whenItems}
+                variant="danger"
+              />
+            </div>
+            <div className="overflow-hidden rounded-2xl">
+              <Image
+                media={diversity.whenImage}
+                className="h-auto w-full object-cover"
+                width={diversity.whenImage.width}
+                height={diversity.whenImage.height}
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+            </div>
           </div>
 
           <div

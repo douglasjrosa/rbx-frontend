@@ -427,6 +427,12 @@ export const homePage: HomePage = {
   },
   diversity: {
     whenTitle: 'Mas afinal, quando usar Embalagens de Madeira?',
+    whenImage: mediaAsset(
+      'madeira-vs-papelao.webp',
+      'Comparação entre embalagem de madeira e caixa de papelão',
+      350,
+      200,
+    ),
     whenItems: [
       'Quando o seu produto é GRANDE, DELICADO ou PESADO;',
       'Quando a caixa de papelão NÃO é forte o bastante;',
