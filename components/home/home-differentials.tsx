@@ -1,13 +1,11 @@
 import Image from '@/components/elements/image';
 import FeatureBulletList from '@/components/elements/feature-bullet-list';
 import type { HomeDifferentials } from '@/lib/content/types';
+import { IMAGE_CARD_SHADOW_CLASS } from '@/lib/image-card-styles';
 
 interface HomeDifferentialsProps {
   differentials: HomeDifferentials;
 }
-
-const IMAGE_CARD_SHADOW_CLASS =
-  'shadow-[0_8px_24px_rgba(0,0,0,0.2)]';
 
 export default function HomeDifferentialsSection({
   differentials,

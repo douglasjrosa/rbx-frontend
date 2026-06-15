@@ -4,6 +4,7 @@ import DiversityCarousel from '@/components/home/diversity-carousel';
 import { HOME_SECTIONS } from '@/lib/home-sections';
 import { SECTION_SCROLL_MARGIN_CLASS } from '@/lib/navbar-offset';
 import type { HomeDiversity } from '@/lib/content/types';
+import { IMAGE_CARD_SHADOW_CLASS } from '@/lib/image-card-styles';
 
 interface HomeDiversityProps {
   diversity: HomeDiversity;
@@ -34,7 +35,7 @@ export default function HomeDiversitySection({
               />
             </div>
             <div
-              className="overflow-hidden rounded-2xl"
+              className={`overflow-hidden rounded-2xl ${IMAGE_CARD_SHADOW_CLASS}`}
               style={{ padding: WHEN_IMAGE_CARD_PADDING_PX }}
             >
               <Image
