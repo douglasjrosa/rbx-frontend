@@ -2,7 +2,7 @@
 
 import { MdClose } from 'react-icons/md';
 import CustomLink from './custom-link';
-import ButtonLink, { getButtonAppearance } from './button-link';
+import ButtonLink from './button-link';
 import type { SiteConfig } from '@/lib/content/types';
 
 interface MobileNavMenuProps {
@@ -40,10 +40,7 @@ export default function MobileNavMenu({
           <div className="mt-8" onClick={closeSelf}>
             <ButtonLink
               button={navbar.button}
-              appearance={getButtonAppearance(
-                navbar.button.type,
-                'light',
-              )}
+              appearance="rbx-primary"
             />
           </div>
         )}

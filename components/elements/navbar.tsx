@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { MdMenu } from 'react-icons/md';
 import MobileNavMenu from './mobile-nav-menu';
-import ButtonLink, { getButtonAppearance } from './button-link';
+import ButtonLink from './button-link';
 import Image from './image';
 import CustomLink from './custom-link';
 import { siteConfig } from '@/content/site';
@@ -170,9 +170,7 @@ export default function Navbar() {
                 <ButtonLink
                   button={navbar.button}
                   appearance={
-                    isHeroTransparent
-                      ? 'hero-primary'
-                      : getButtonAppearance(navbar.button.type, 'light')
+                    isHeroTransparent ? 'hero-primary' : 'rbx-primary'
                   }
                   compact
                 />
