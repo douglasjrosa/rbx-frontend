@@ -52,6 +52,8 @@ const IMAGE_FILES = [
   'wood-pannel.jpg',
   'fuyndo_verdeclaro_02.png',
   'green-wallpaper.webp',
+  'ribermax_logo_branca.png',
+  'IPPC.webp',
 ];
 
 function isValidImageFile(filePath) {
