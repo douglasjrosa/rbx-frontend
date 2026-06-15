@@ -8,39 +8,53 @@ import type { HomeDiversityCard } from '@/lib/content/types';
 
 const AUTOPLAY_INTERVAL_MS = 3500;
 const SLIDE_TRANSITION_MS = 300;
-const SLIDE_GAP_CLASS = 'px-3 md:px-4';
+const SLIDE_GAP_PX = 24;
+const DESKTOP_SLIDE_WIDTH_VW = 58;
+const MOBILE_SLIDE_WIDTH_VW = 78;
+const DESKTOP_MEDIA_QUERY = '(min-width: 768px)';
 
 interface DiversityCarouselProps {
   cards: HomeDiversityCard[];
+}
+
+function getSlideWidthVw(matchesDesktop: boolean): number {
+  return matchesDesktop ? DESKTOP_SLIDE_WIDTH_VW : MOBILE_SLIDE_WIDTH_VW;
+}
+
+function getTrackOffset(activeIndex: number, slideWidthVw: number): string {
+  const centerOffsetVw = (100 - slideWidthVw) / 2;
+  const slideStep = `(${slideWidthVw}vw + ${SLIDE_GAP_PX}px)`;
+
+  return `calc(${centerOffsetVw}vw - ${activeIndex} * ${slideStep})`;
 }
 
 function CarouselSlide({ card }: { card: HomeDiversityCard }) {
   return (
     <article
       className={
-        'grid min-h-[320px] grid-cols-1 overflow-hidden ' +
+        'grid min-h-[300px] grid-cols-1 overflow-hidden ' +
         'rounded-[21px] bg-white shadow-[0_8px_24px_rgba(0,0,0,0.2)] ' +
-        'md:min-h-[300px] md:grid-cols-2'
+        'md:min-h-[280px] md:grid-cols-2'
       }
     >
       <div
         className={
-          'flex flex-col justify-center gap-4 bg-white p-8 ' +
-          'md:rounded-l-[21px] md:p-10'
+          'flex flex-col justify-center gap-3 bg-white p-6 ' +
+          'md:rounded-l-[21px] md:gap-4 md:p-8'
         }
       >
         <h3
           className={
-            'text-2xl font-bold leading-tight text-rbx-green-primary ' +
-            'md:text-[2rem]'
+            'text-xl font-bold leading-tight text-rbx-green-primary ' +
+            'md:text-[1.75rem]'
           }
         >
           {card.title}
         </h3>
-        <p className="text-base leading-relaxed text-rbx-accent">
+        <p className="text-sm leading-relaxed text-rbx-accent md:text-base">
           {card.description}
         </p>
-        <div className="pt-2 md:text-right">
+        <div className="pt-1 md:pt-2 md:text-right">
           <CustomLink link={card.link}>
             <span
               className={
@@ -57,13 +71,13 @@ function CarouselSlide({ card }: { card: HomeDiversityCard }) {
         </div>
       </div>
 
-      <div className="relative min-h-[220px] md:min-h-full">
+      <div className="relative min-h-[200px] md:min-h-full">
         <Image
           media={card.image}
           className="h-full w-full object-cover md:rounded-r-[21px]"
           width={card.image.width}
           height={card.image.height}
-          sizes="(max-width: 768px) 100vw, 50vw"
+          sizes="(max-width: 768px) 78vw, 58vw"
         />
       </div>
     </article>
@@ -73,6 +87,7 @@ function CarouselSlide({ card }: { card: HomeDiversityCard }) {
 export default function DiversityCarousel({ cards }: DiversityCarouselProps) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
+  const [slideWidthVw, setSlideWidthVw] = useState(DESKTOP_SLIDE_WIDTH_VW);
 
   const goTo = useCallback(
     (index: number) => {
@@ -91,6 +106,21 @@ export default function DiversityCarousel({ cards }: DiversityCarouselProps) {
   }, [activeIndex, goTo]);
 
   useEffect(() => {
+    const mediaQuery = window.matchMedia(DESKTOP_MEDIA_QUERY);
+
+    const updateSlideWidth = () => {
+      setSlideWidthVw(getSlideWidthVw(mediaQuery.matches));
+    };
+
+    updateSlideWidth();
+    mediaQuery.addEventListener('change', updateSlideWidth);
+
+    return () => {
+      mediaQuery.removeEventListener('change', updateSlideWidth);
+    };
+  }, []);
+
+  useEffect(() => {
     if (isPaused || cards.length <= 1) {
       return undefined;
     }
@@ -103,6 +133,11 @@ export default function DiversityCarousel({ cards }: DiversityCarouselProps) {
     return null;
   }
 
+  const slideWidthClass =
+    slideWidthVw === DESKTOP_SLIDE_WIDTH_VW
+      ? 'w-[58vw]'
+      : 'w-[78vw]';
+
   return (
     <div
       role="region"
@@ -114,18 +149,19 @@ export default function DiversityCarousel({ cards }: DiversityCarouselProps) {
       onFocus={() => setIsPaused(true)}
       onBlur={() => setIsPaused(false)}
     >
-      <div className="overflow-hidden px-10 md:px-14">
+      <div className="overflow-hidden">
         <div
           className="flex"
           style={{
-            transform: `translateX(-${activeIndex * 100}%)`,
+            gap: SLIDE_GAP_PX,
+            transform: `translateX(${getTrackOffset(activeIndex, slideWidthVw)})`,
             transition: `transform ${SLIDE_TRANSITION_MS}ms ease-in-out`,
           }}
         >
           {cards.map((card, index) => (
             <div
               key={`diversity-slide-${index}`}
-              className={`w-full shrink-0 ${SLIDE_GAP_CLASS}`}
+              className={`${slideWidthClass} shrink-0`}
               role="group"
               aria-roledescription="slide"
               aria-label={`${index + 1} de ${cards.length}`}
