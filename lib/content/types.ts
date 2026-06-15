@@ -210,8 +210,6 @@ export interface SiteFooter {
   socialLinks: FooterSocialLink[];
   contactsTitle: string;
   contacts: FooterContact[];
-  addressTitle: string;
-  address: string;
   certificationTitle: string;
   certificationLabel: string;
   certificationUrl: string;

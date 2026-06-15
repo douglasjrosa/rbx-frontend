@@ -89,11 +89,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h2 className={FOOTER_HEADING_CLASS}>{footer.addressTitle}</h2>
-            <p className="text-base leading-relaxed whitespace-pre-line">
-              {footer.address}
-            </p>
-            <h2 className={`${FOOTER_HEADING_CLASS} mt-2`}>
+            <h2 className={FOOTER_HEADING_CLASS}>
               {footer.certificationTitle}
             </h2>
             <p className="text-base leading-relaxed">

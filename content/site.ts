@@ -119,9 +119,6 @@ export const siteConfig: SiteConfig = {
         email: 'rh@ribermax.com.br',
       },
     ],
-    addressTitle: 'Endereço',
-    address:
-      'R. Áustria, 585 – Vila Elisa,\nRibeirão Preto – SP, 14075-430',
     certificationTitle: 'Certificação',
     certificationLabel: 'NIMF-15 (Fumigação)',
     certificationUrl:
