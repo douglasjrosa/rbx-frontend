@@ -14,6 +14,7 @@ const MOBILE_SLIDE_WIDTH_VW = 78;
 const DESKTOP_MEDIA_QUERY = '(min-width: 768px)';
 const DRAG_THRESHOLD_PX = 48;
 const DRAG_CLICK_GUARD_PX = 6;
+const INACTIVE_SLIDE_SCALE = 0.7;
 
 interface DiversityCarouselProps {
   cards: HomeDiversityCard[];
@@ -248,7 +249,7 @@ export default function DiversityCarousel({ cards }: DiversityCarouselProps) {
         onPointerCancel={handlePointerUp}
       >
         <div
-          className="flex"
+          className="flex items-center"
           style={{
             gap: SLIDE_GAP_PX,
             transform: `translateX(${getTrackOffset(
@@ -261,21 +262,39 @@ export default function DiversityCarousel({ cards }: DiversityCarouselProps) {
               : `transform ${SLIDE_TRANSITION_MS}ms ease-in-out`,
           }}
         >
-          {cards.map((card, index) => (
-            <div
-              key={`diversity-slide-${index}`}
-              className={`${slideWidthClass} shrink-0`}
-              role="group"
-              aria-roledescription="slide"
-              aria-label={`${index + 1} de ${cards.length}`}
-              aria-hidden={index !== activeIndex}
-            >
-              <CarouselSlide
-                card={card}
-                onDraggedClick={handleDraggedClick}
-              />
-            </div>
-          ))}
+          {cards.map((card, index) => {
+            const isActive = index === activeIndex;
+
+            return (
+              <div
+                key={`diversity-slide-${index}`}
+                className={
+                  `${slideWidthClass} shrink-0 ` +
+                  (isActive ? 'z-10' : 'z-0')
+                }
+                role="group"
+                aria-roledescription="slide"
+                aria-label={`${index + 1} de ${cards.length}`}
+                aria-hidden={!isActive}
+              >
+                <div
+                  className="w-full"
+                  style={{
+                    transform: `scale(${isActive ? 1 : INACTIVE_SLIDE_SCALE})`,
+                    transformOrigin: 'center center',
+                    transition: isDragging
+                      ? 'none'
+                      : `transform ${SLIDE_TRANSITION_MS}ms ease-in-out`,
+                  }}
+                >
+                  <CarouselSlide
+                    card={card}
+                    onDraggedClick={handleDraggedClick}
+                  />
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
 
