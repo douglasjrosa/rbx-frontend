@@ -1,5 +1,6 @@
 import GoogleMapEmbed from '@/components/elements/google-map-embed';
 import Image from '@/components/elements/image';
+import { siteConfig } from '@/content/site';
 import { HOME_SECTIONS } from '@/lib/home-sections';
 import {
   getRibermaxDirectionsUrl,
@@ -7,7 +8,9 @@ import {
   RIBERMAX_LOCATION,
 } from '@/lib/contact-location';
 import { SECTION_SCROLL_MARGIN_CLASS } from '@/lib/navbar-offset';
+import { buildWhatsAppUrl } from '@/lib/whatsapp';
 import type { HomeContact } from '@/lib/content/types';
+import { FaWhatsapp } from 'react-icons/fa';
 
 interface HomeContactProps {
   contact: HomeContact;
@@ -19,6 +22,8 @@ const SPECIALIST_CARD_SHADOW_CLASS =
 export default function HomeContactSection({ contact }: HomeContactProps) {
   const mapEmbedUrl = getRibermaxMapEmbedUrl();
   const directionsUrl = getRibermaxDirectionsUrl();
+  const { whatsappPhone, whatsappMsg } = siteConfig;
+  const whatsappUrl = buildWhatsAppUrl(whatsappPhone, whatsappMsg);
 
   return (
     <section
@@ -66,6 +71,21 @@ export default function HomeContactSection({ contact }: HomeContactProps) {
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
+
+            <a
+              href={whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={
+                'mt-6 inline-flex w-full items-center justify-center gap-2 ' +
+                'rounded-md bg-rbx-green-primary px-6 py-3 text-lg ' +
+                'font-semibold text-white transition-colors ' +
+                'hover:bg-rbx-green-secondary'
+              }
+            >
+              <FaWhatsapp className="h-6 w-6 shrink-0" aria-hidden />
+              {contact.whatsappButtonLabel}
+            </a>
           </article>
 
           <div>

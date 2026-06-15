@@ -133,6 +133,7 @@ export interface HomeContact {
   specialistTitle: string;
   doubtsDescription: string;
   specialistImage: MediaAsset;
+  whatsappButtonLabel: string;
   visitTitle: string;
   visitDescription: string;
   address: string;

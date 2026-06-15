@@ -619,6 +619,7 @@ export const homePage: HomePage = {
       1920,
       1280,
     ),
+    whatsappButtonLabel: 'Conversar Agora',
     visitTitle: 'Faça-nos uma visita!',
     visitDescription:
       'Nossa fábrica está em Ribeirão Preto SP, no norte do estado de ' +

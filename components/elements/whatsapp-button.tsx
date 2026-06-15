@@ -1,19 +1,11 @@
 import Image from './image';
 import type { MediaAsset } from '@/lib/content/types';
+import { buildWhatsAppUrl } from '@/lib/whatsapp';
 
 interface WhatsAppButtonProps {
   media: MediaAsset;
   phone: string;
   message: string;
-}
-
-function buildWhatsAppUrl(phone: string, message: string): string {
-  const normalizedPhone = phone.replace(/\D/g, '');
-
-  return (
-    `https://api.whatsapp.com/send?phone=${normalizedPhone}` +
-    `&text=${encodeURIComponent(message)}`
-  );
 }
 
 export default function WhatsAppButton({
