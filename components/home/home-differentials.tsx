@@ -25,7 +25,12 @@ function BulletList({ items }: { items: string[] }) {
           >
             <MdCheck className="h-4 w-4" aria-hidden="true" />
           </span>
-          <span className="text-base leading-relaxed text-rbx-accent md:text-lg">
+          <span
+            className={
+              'text-base font-bold leading-relaxed text-rbx-accent ' +
+              'md:text-lg'
+            }
+          >
             {item}
           </span>
         </li>
