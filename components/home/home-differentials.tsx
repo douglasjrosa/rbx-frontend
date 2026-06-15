@@ -6,6 +6,9 @@ interface HomeDifferentialsProps {
   differentials: HomeDifferentials;
 }
 
+const IMAGE_CARD_SHADOW_CLASS =
+  'shadow-[0_8px_24px_rgba(0,0,0,0.2)]';
+
 export default function HomeDifferentialsSection({
   differentials,
 }: HomeDifferentialsProps) {
@@ -13,7 +16,7 @@ export default function HomeDifferentialsSection({
     <section className="bg-rbx-white bg-auto bg-repeat py-12 md:py-16">
       <div className="container">
         <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-2 lg:gap-12">
-          <div className="overflow-hidden rounded-2xl">
+          <div className={`overflow-hidden rounded-2xl ${IMAGE_CARD_SHADOW_CLASS}`}>
             <Image
               media={differentials.image}
               className="h-auto w-full object-cover"
