@@ -1,42 +1,44 @@
-# Next frontend
+# Ribermax Frontend
 
-This frontend relies on Next's [Static Generation](https://nextjs.org/docs/basic-features/pages) using [Strapi](https://strapi.io/) as the data source. Make sure Strapi is running in parallel when you run this app.
+Static institutional website built with Next.js 16 (App Router).
 
-## Routes
+## Content
 
-**pages/[[...slug]].js**
+- **Global config:** `content/site.ts` (navbar, footer, WhatsApp)
+- **Home:** `content/pages/home.ts` (single-page sections)
+- **SEO pages:** `content/seo/*.md` (long-tail content for Google ranking)
 
-This file generates all the app's route. First, it fetches all the pages entries in Strapi. Then, it creates one route per page found. These routes can look like this:
+## Scripts
 
--   yoursite.com
--   yoursite.com/page
--   yoursite.com/page/nested/route
+```bash
+npm run dev          # Development with Turbopack
+npm run build        # Production build
+npm run start        # Production server
+npm run download-images  # Fetch images from ribermax.com.br
+```
 
-Notice that the path of the page can be several layers deep, or it can be the root of the site. This is possible thanks to Next's [optional catch-all routes](https://nextjs.org/docs/routing/dynamic-routes#optional-catch-all-routes).
+## Environment
 
-To see how to build these nested routes, see [the Strapi project's Readme](../backend/README.md).
+No backend required. Optional:
 
-## Available Scripts
+```env
+NEXT_PUBLIC_SITE_URL=https://ribermax.com.br
+```
 
-In the project directory, you can run:
+## Architecture
 
-**`yarn dev`**
+```
+app/
+  page.tsx           # Single-page home with anchor sections
+  [slug]/page.tsx    # SEO landing pages only
+  layout.tsx
+content/
+  site.ts            # Global site config (navbar anchors)
+  pages/home.ts      # Home section content
+  seo/               # SEO markdown pages
+lib/
+  home-sections.ts   # Section IDs and anchor helpers
+  content/           # Content loaders and types
+```
 
-Runs the app in the development mode.  
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.  
-You will also see any errors in the console.
-
-**`yarn build`**
-
-Builds the app for production to the `.next` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-**`yarn start`**
-
-Starts the application in production mode.
-The application should be compiled with \`next build\` first.
-
-See the section in Next docs about [deployment](https://nextjs.org/docs/deployment) for more
-information.
+All content is static and versioned in this repository. SEO markdown files follow the format documented in the SEO project (`seo/site-rbx/CLAUDE.md`).
