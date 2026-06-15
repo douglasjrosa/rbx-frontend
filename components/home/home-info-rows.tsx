@@ -33,8 +33,8 @@ function InfoRow({ row }: { row: HomeInfoRow }) {
           button={row.button}
           appearance={
             row.buttonVariant === 'secondary'
-              ? 'rbx-secondary'
-              : 'rbx-primary'
+              ? 'rbx-secondary-on-green'
+              : 'rbx-primary-on-green'
           }
           large
         />

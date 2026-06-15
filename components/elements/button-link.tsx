@@ -51,6 +51,14 @@ function ButtonContent({
           'bg-rbx-green-secondary text-white border-rbx-green-secondary hover:bg-rbx-green-primary':
             appearance === 'rbx-secondary',
         },
+        {
+          'bg-rbx-green-primary text-white border-white hover:bg-rbx-green-secondary':
+            appearance === 'rbx-primary-on-green',
+        },
+        {
+          'bg-rbx-green-secondary text-white border-white hover:bg-rbx-green-primary':
+            appearance === 'rbx-secondary-on-green',
+        },
       )}
     >
       {button.text}
