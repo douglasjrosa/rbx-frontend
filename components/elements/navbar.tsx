@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { MdMenu } from 'react-icons/md';
@@ -13,6 +13,7 @@ import {
   getActiveHomeSectionHash,
   HOME_SECTIONS,
 } from '@/lib/home-sections';
+import { HOME_NAV_HASH_EVENT, HOME_NAV_HASH_UNLOCK_EVENT } from '@/lib/home-nav-events';
 import { getNavbarOffsetPx } from '@/lib/navbar-offset';
 
 function parseHomeHash(url: string): string | null {
@@ -31,6 +32,7 @@ export default function Navbar() {
   const [mobileMenuIsShown, setMobileMenuIsShown] = useState(false);
   const [heroScrolled, setHeroScrolled] = useState(false);
   const [activeHash, setActiveHash] = useState('');
+  const navHashLockRef = useRef<string | null>(null);
   const pathname = usePathname();
   const { navbar } = siteConfig;
   const isHome = pathname === '/';
@@ -77,7 +79,16 @@ export default function Navbar() {
     let frameId = 0;
 
     const updateActiveSection = () => {
+      if (navHashLockRef.current !== null) {
+        return;
+      }
+
       setActiveHash(getActiveHomeSectionHash());
+    };
+
+    const releaseNavHashLock = () => {
+      navHashLockRef.current = null;
+      updateActiveSection();
     };
 
     const onScroll = () => {
@@ -91,10 +102,18 @@ export default function Navbar() {
       });
     };
 
+    const onNavHash = (event: Event) => {
+      const hash = (event as CustomEvent<string>).detail;
+      navHashLockRef.current = hash;
+      setActiveHash(hash);
+    };
+
     updateActiveSection();
     window.addEventListener('scroll', onScroll, { passive: true });
     window.addEventListener('hashchange', updateActiveSection);
     window.addEventListener('resize', updateActiveSection);
+    window.addEventListener(HOME_NAV_HASH_EVENT, onNavHash);
+    window.addEventListener(HOME_NAV_HASH_UNLOCK_EVENT, releaseNavHashLock);
 
     return () => {
       if (frameId) {
@@ -104,6 +123,8 @@ export default function Navbar() {
       window.removeEventListener('scroll', onScroll);
       window.removeEventListener('hashchange', updateActiveSection);
       window.removeEventListener('resize', updateActiveSection);
+      window.removeEventListener(HOME_NAV_HASH_EVENT, onNavHash);
+      window.removeEventListener(HOME_NAV_HASH_UNLOCK_EVENT, releaseNavHashLock);
     };
   }, [isHome]);
 

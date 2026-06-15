@@ -608,10 +608,17 @@ export const homePage: HomePage = {
   },
   contact: {
     doubtsTitle: 'Ficou com Dúvidas?',
+    specialistTitle: 'Fale com um Especialista em Embalagens de Madeira.',
     doubtsDescription:
-      'Fale com um Especialista em Embalagens de Madeira. Seja lá qual ' +
-      'for o seu caso, conte com a gente, estamos prontos para te atender. ' +
-      'Nossa equipe está treinada para tirar todas as suas dúvidas técnicas.',
+      'Seja lá qual for o seu caso, conte com a gente, estamos prontos ' +
+      'para te atender. Nossa equipe está treinada para tirar todas as ' +
+      'suas dúvidas técnicas.',
+    specialistImage: mediaAsset(
+      'desenhista-tecnico-cotas.webp',
+      'Desenhista técnico trabalhando com paquímetro e desenho técnico',
+      1920,
+      1280,
+    ),
     visitTitle: 'Faça-nos uma visita!',
     visitDescription:
       'Nossa fábrica está em Ribeirão Preto SP, no norte do estado de ' +

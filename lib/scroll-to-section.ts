@@ -1,4 +1,5 @@
 import { getNavbarOffsetPx } from '@/lib/navbar-offset';
+import { dispatchHomeNavHash, dispatchHomeNavHashUnlock } from '@/lib/home-nav-events';
 
 function getSectionScrollTop(element: HTMLElement): number {
   const offset = getNavbarOffsetPx();
@@ -22,9 +23,23 @@ function snapSectionBelowNavbar(element: HTMLElement): void {
 
 export function scrollToSection(hash: string): void {
   const sectionId = hash.replace(/^#/, '');
+  const normalizedHash = sectionId ? `#${sectionId}` : '';
+
+  dispatchHomeNavHash(normalizedHash);
 
   if (!sectionId) {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+
+    const finalizeHomeScroll = () => {
+      dispatchHomeNavHashUnlock();
+    };
+
+    if ('onscrollend' in window) {
+      window.addEventListener('scrollend', finalizeHomeScroll, { once: true });
+    } else {
+      globalThis.setTimeout(finalizeHomeScroll, 400);
+    }
+
     return;
   }
 
@@ -40,6 +55,7 @@ export function scrollToSection(hash: string): void {
 
   const finalizeScroll = () => {
     snapSectionBelowNavbar(element);
+    dispatchHomeNavHashUnlock();
   };
 
   const supportsScrollEnd = 'onscrollend' in window;

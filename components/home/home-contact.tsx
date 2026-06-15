@@ -1,4 +1,5 @@
 import GoogleMapEmbed from '@/components/elements/google-map-embed';
+import Image from '@/components/elements/image';
 import { HOME_SECTIONS } from '@/lib/home-sections';
 import {
   getRibermaxDirectionsUrl,
@@ -40,6 +41,13 @@ export default function HomeContactSection({ contact }: HomeContactProps) {
               SPECIALIST_CARD_SHADOW_CLASS
             }
           >
+            <h3
+              className={
+                'mb-4 text-2xl font-bold text-rbx-accent md:text-3xl'
+              }
+            >
+              {contact.specialistTitle}
+            </h3>
             <p
               className={
                 'text-lg leading-relaxed text-rbx-accent md:text-xl ' +
@@ -48,6 +56,16 @@ export default function HomeContactSection({ contact }: HomeContactProps) {
             >
               {contact.doubtsDescription}
             </p>
+
+            <div className="mt-8 overflow-hidden rounded-2xl bg-white">
+              <Image
+                media={contact.specialistImage}
+                className="h-auto w-full object-cover"
+                width={contact.specialistImage.width}
+                height={contact.specialistImage.height}
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+            </div>
           </article>
 
           <div>
