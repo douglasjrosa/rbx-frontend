@@ -130,7 +130,9 @@ export interface HomeDiversity {
 
 export interface HomeContact {
   doubtsTitle: string;
+  specialistTitle: string;
   doubtsDescription: string;
+  specialistImage: MediaAsset;
   visitTitle: string;
   visitDescription: string;
   address: string;
