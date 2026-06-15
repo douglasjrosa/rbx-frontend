@@ -85,13 +85,19 @@ function CarouselSlide({ card, onDraggedClick }: CarouselSlideProps) {
         </div>
       </div>
 
-      <div className="relative min-h-[200px] md:min-h-full">
+      <div
+        className={
+          'relative min-h-[200px] md:min-h-full ' +
+          '[&_img]:pointer-events-none'
+        }
+      >
         <Image
           media={card.image}
           className="h-full w-full object-cover md:rounded-r-[21px]"
           width={card.image.width}
           height={card.image.height}
           sizes="(max-width: 768px) 78vw, 58vw"
+          draggable={false}
         />
       </div>
     </article>
@@ -247,6 +253,7 @@ export default function DiversityCarousel({ cards }: DiversityCarouselProps) {
         onPointerMove={handlePointerMove}
         onPointerUp={handlePointerUp}
         onPointerCancel={handlePointerUp}
+        onDragStart={(event) => event.preventDefault()}
       >
         <div
           className="flex items-center"

@@ -9,6 +9,7 @@ interface ImageProps {
   height?: number | string;
   priority?: boolean;
   sizes?: string;
+  draggable?: boolean;
 }
 
 export default function Image({
@@ -19,6 +20,7 @@ export default function Image({
   height,
   priority = false,
   sizes = '(max-width: 768px) 100vw, 50vw',
+  draggable,
 }: ImageProps) {
   if (!media) {
     return null;
@@ -37,6 +39,7 @@ export default function Image({
       className={className}
       priority={priority}
       sizes={sizes}
+      draggable={draggable}
     />
   );
 }
