@@ -154,20 +154,7 @@ export const siteConfig: SiteConfig = {
     45,
     45,
   ),
-  whatsappContacts: [
-    {
-      nome: 'Jesuila - Comercial - Ribeirão Preto',
-      fone: '+5516997655543',
-    },
-    {
-      nome: 'Cláudia - Comercial - São Paulo',
-      fone: '+5511982843965',
-    },
-    {
-      nome: 'Renato - Administrativo - Ribeirão Preto',
-      fone: '+5516982550729',
-    },
-  ],
+  whatsappPhone: '+5516993362621',
   whatsappImage: mediaAsset(
     'logotipo_whatsapp_512x512.png',
     'WhatsApp Ribermax',
@@ -175,5 +162,5 @@ export const siteConfig: SiteConfig = {
     512,
   ),
   whatsappMsg:
-    'Olá, visitei o site da Ribermax e gostaria de mais informações...',
+    'Olá DANIELA, venho pelo site da Ribermax e gostaria de informações...',
 };

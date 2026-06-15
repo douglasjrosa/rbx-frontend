@@ -22,7 +22,7 @@ export default function SiteLayout({ children }: SiteLayoutProps) {
   const {
     cookieConsent,
     whatsappImage,
-    whatsappContacts,
+    whatsappPhone,
     whatsappMsg,
   } = siteConfig;
 
@@ -38,11 +38,11 @@ export default function SiteLayout({ children }: SiteLayoutProps) {
         </div>
       </div>
       <Footer />
-      {mounted && whatsappImage && whatsappContacts.length > 0 && (
+      {mounted && whatsappImage && whatsappPhone && (
         <WhatsAppButton
           media={whatsappImage}
-          contatos={whatsappContacts}
-          msg={whatsappMsg}
+          phone={whatsappPhone}
+          message={whatsappMsg}
         />
       )}
       {mounted && cookieConsent && (
