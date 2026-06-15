@@ -9,6 +9,8 @@ interface HomeDiversityProps {
   diversity: HomeDiversity;
 }
 
+const WHEN_IMAGE_CARD_PADDING_PX = 100;
+
 export default function HomeDiversitySection({
   diversity,
 }: HomeDiversityProps) {
@@ -31,7 +33,10 @@ export default function HomeDiversitySection({
                 variant="danger"
               />
             </div>
-            <div className="overflow-hidden rounded-2xl">
+            <div
+              className="overflow-hidden rounded-2xl"
+              style={{ padding: WHEN_IMAGE_CARD_PADDING_PX }}
+            >
               <Image
                 media={diversity.whenImage}
                 className="h-auto w-full object-cover"
