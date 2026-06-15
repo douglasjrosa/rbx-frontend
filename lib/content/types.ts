@@ -191,6 +191,33 @@ export interface CookieConsentConfig {
   policyUrl: string;
 }
 
+export interface FooterContact {
+  label: string;
+  email: string;
+}
+
+export type FooterSocialIcon = 'facebook' | 'linkedin' | 'instagram';
+
+export interface FooterSocialLink {
+  name: string;
+  url: string;
+  icon: FooterSocialIcon;
+}
+
+export interface SiteFooter {
+  tagline: string;
+  logo: MediaAsset;
+  socialLinks: FooterSocialLink[];
+  contactsTitle: string;
+  contacts: FooterContact[];
+  addressTitle: string;
+  address: string;
+  certificationTitle: string;
+  certificationLabel: string;
+  certificationUrl: string;
+  certificationImage: MediaAsset;
+}
+
 export interface SiteConfig {
   metaTitleSuffix: string;
   metadata: PageMetadata;
@@ -201,11 +228,7 @@ export interface SiteConfig {
     logo: MediaAsset;
     logoLight: MediaAsset;
   };
-  footer: {
-    smallText: string;
-    columns: { title: string; links: NavLink[] }[];
-    logo: MediaAsset;
-  };
+  footer: SiteFooter;
   favicon: MediaAsset;
   whatsappContacts: { nome: string; fone: string }[];
   whatsappImage: MediaAsset;

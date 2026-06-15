@@ -76,76 +76,61 @@ export const siteConfig: SiteConfig = {
     ),
   },
   footer: {
-    smallText: '© Copyright Ribermax™ (Lei 9610 de 19/02/1998)',
-    columns: [
+    tagline:
+      'Seja lá qual for a sua necessidade, conte com a gente, estamos ' +
+      'prontos para te atender.',
+    logo: mediaAsset(
+      'ribermax_logo_branca.png',
+      'Logomarca Ribermax Embalagens',
+      192,
+      132,
+    ),
+    socialLinks: [
       {
-        title: 'Páginas',
-        links: [
-          { newTab: false, url: '/', text: 'Home' },
-          {
-            newTab: false,
-            url: homeSectionHref(HOME_SECTIONS.produtos),
-            text: 'Produtos',
-          },
-          {
-            newTab: false,
-            url: homeSectionHref(HOME_SECTIONS.aribermax),
-            text: 'A Ribermax',
-          },
-          {
-            newTab: false,
-            url: homeSectionHref(HOME_SECTIONS.informacoes),
-            text: 'Informações',
-          },
-          {
-            newTab: false,
-            url: homeSectionHref(HOME_SECTIONS.contato),
-            text: 'Contato',
-          },
-        ],
+        name: 'Facebook',
+        url:
+          'https://www.facebook.com/p/Página-Ribermax-Embalagens-de-Madeira-100063817705345/',
+        icon: 'facebook',
       },
       {
-        title: 'Ribeirão Preto SP',
-        links: [
-          {
-            newTab: false,
-            url: 'tel:+5516997655543',
-            text: '(16) 99765-5543 Jesuilla (Comercial)',
-          },
-          {
-            newTab: false,
-            url: 'tel:+5516982550729',
-            text: '(16) 98255-0729 Renato (Administrativo)',
-          },
-        ],
+        name: 'LinkedIn',
+        url:
+          'https://www.linkedin.com/company/ribermax-ind-de-embalagens-de-madeira/',
+        icon: 'linkedin',
       },
       {
-        title: 'São Paulo SP',
-        links: [
-          {
-            newTab: false,
-            url: 'tel:+5511982843965',
-            text: '(11) 98284-3965 Cláudia (Comercial)',
-          },
-        ],
-      },
-      {
-        title: 'Certificação',
-        links: [
-          {
-            newTab: true,
-            url:
-              'https://www.ippc.int/largefiles/NIMF_15_2009_PTFINAL_0.pdf',
-            text: 'NIMF-15 (Fumigação)',
-          },
-        ],
+        name: 'Instagram',
+        url: 'https://www.instagram.com/ribermax.com.br/',
+        icon: 'instagram',
       },
     ],
-    logo: mediaAsset(
-      'certificacao_min.webp',
-      'Marcação Fumigação NIMF-15',
-      155,
-      79,
+    contactsTitle: 'Contatos',
+    contacts: [
+      {
+        label: 'Atendimento Comercial',
+        email: 'vendas2.ribermax@gmail.com',
+      },
+      {
+        label: 'Daniela – Compras',
+        email: 'financeiro.ribermax@gmail.com',
+      },
+      {
+        label: 'Jesuilla – RH (Currículos)',
+        email: 'rh.ribermax@gmail.com',
+      },
+    ],
+    addressTitle: 'Endereço',
+    address:
+      'R. Áustria, 585 – Vila Elisa,\nRibeirão Preto – SP, 14075-430',
+    certificationTitle: 'Certificação',
+    certificationLabel: 'NIMF-15 (Fumigação)',
+    certificationUrl:
+      'https://www.ippc.int/largefiles/NIMF_15_2009_PTFINAL_0.pdf',
+    certificationImage: mediaAsset(
+      'IPPC.webp',
+      'Marca IPPC de tratamento térmico HT',
+      333,
+      152,
     ),
   },
   favicon: mediaAsset(

@@ -1,57 +1,127 @@
 import Image from './image';
-import CustomLink from './custom-link';
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 import { siteConfig } from '@/content/site';
+import type { FooterSocialIcon } from '@/lib/content/types';
+
+const SOCIAL_ICON_COMPONENTS = {
+  facebook: FaFacebookF,
+  linkedin: FaLinkedinIn,
+  instagram: FaInstagram,
+} as const satisfies Record<
+  FooterSocialIcon,
+  typeof FaFacebookF | typeof FaLinkedinIn | typeof FaInstagram
+>;
+
+const FOOTER_HEADING_CLASS =
+  'text-lg font-medium text-rbx-green-secondary';
 
 export default function Footer() {
   const { footer } = siteConfig;
 
   return (
-    <footer className="bg-emerald-600 relative">
-      <div
-        className={
-          'grid md:grid-cols-3 bg-black/70 lg:grid-cols-4 ' +
-          'xl:grid-cols-5 gap-4 p-12'
-        }
-      >
-        {footer.columns.map((footerColumn, index) => (
-          <div key={`footer-${index}`} className="col mt-10 lg:mt-0">
+    <footer className="bg-[#1f1f1f] text-white">
+      <div className="container py-12 md:py-14">
+        <div
+          className={
+            'grid grid-cols-1 gap-10 md:grid-cols-3 md:justify-around ' +
+            'md:gap-8 lg:gap-12'
+          }
+        >
+          <div className="flex flex-col items-center gap-2.5 md:items-start">
+            <Image
+              media={footer.logo}
+              className="h-auto w-[45%] md:w-[62%]"
+              width={footer.logo.width}
+              height={footer.logo.height}
+              sizes="(max-width: 768px) 45vw, 192px"
+            />
             <p
               className={
-                'uppercase tracking-wide font-semibold text-white'
+                'max-w-sm text-center text-[15px] leading-relaxed ' +
+                'text-white md:text-left'
               }
             >
-              {footerColumn.title}
+              {footer.tagline}
             </p>
-            <ul className="mt-2 px-5">
-              {footerColumn.links.map((link, linkIndex) => (
-                <li
-                  key={`footer-link-${linkIndex}`}
-                  className={
-                    'py-3 lg:py-2 text-2xl lg:text-xl mx-1 ' +
-                    'text-green-200 hover:text-green-400'
-                  }
-                >
-                  <CustomLink link={link}>{link.text}</CustomLink>
-                </li>
-              ))}
+            <ul className="flex items-center gap-3.5 pt-1">
+              {footer.socialLinks.map((social) => {
+                const Icon = SOCIAL_ICON_COMPONENTS[social.icon];
+
+                return (
+                  <li key={social.url}>
+                    <a
+                      href={social.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={social.name}
+                      className={
+                        'flex h-10 w-10 items-center justify-center ' +
+                        'rounded-full bg-rbx-green-secondary text-rbx-accent ' +
+                        'transition-opacity hover:opacity-90'
+                      }
+                    >
+                      <Icon className="h-5 w-5" aria-hidden />
+                    </a>
+                  </li>
+                );
+              })}
             </ul>
           </div>
-        ))}
-        <div>
-          <div className="rounded p-6 h-auto w-auto text-center bg-white">
-            {footer.logo && (
+
+          <div className="space-y-1">
+            <h2 className={FOOTER_HEADING_CLASS}>{footer.contactsTitle}</h2>
+            {footer.contacts.map((contact) => (
+              <div
+                key={contact.email}
+                className="text-base leading-relaxed"
+              >
+                <p>{contact.label}</p>
+                <p>
+                  <a
+                    href={`mailto:${contact.email}`}
+                    className="hover:underline"
+                  >
+                    {contact.email}
+                  </a>
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <div>
+            <h2 className={FOOTER_HEADING_CLASS}>{footer.addressTitle}</h2>
+            <p className="text-base leading-relaxed whitespace-pre-line">
+              {footer.address}
+            </p>
+            <h2 className={`${FOOTER_HEADING_CLASS} mt-2`}>
+              {footer.certificationTitle}
+            </h2>
+            <p className="text-base leading-relaxed">
+              <a
+                href={footer.certificationUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                {footer.certificationLabel}
+              </a>
+            </p>
+            <a
+              href={footer.certificationUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-1 inline-block w-[70%] max-w-xs"
+            >
               <Image
-                media={footer.logo}
-                className="object-contain mx-auto"
-                width={200}
-                height={105}
+                media={footer.certificationImage}
+                className="h-auto w-full"
+                width={footer.certificationImage.width}
+                height={footer.certificationImage.height}
+                sizes="(max-width: 768px) 70vw, 233px"
               />
-            )}
+            </a>
           </div>
         </div>
-      </div>
-      <div className="text-sm bg-black/90 py-6 text-green-400">
-        <div className="container">{footer.smallText}</div>
       </div>
     </footer>
   );
