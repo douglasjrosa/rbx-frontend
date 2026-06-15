@@ -2,7 +2,9 @@ import Image from '@/components/elements/image';
 import { mediaAsset } from '@/lib/images';
 import type { SeoPageImageSlot } from '@/lib/seo/types';
 
-const DEFAULT_SEO_IMAGE_MAX_WIDTH_PX = 500;
+const DEFAULT_SEO_IMAGE_MAX_WIDTH_PX = 300;
+
+export const SEO_CONTENT_IMAGE_MAX_WIDTH_PX = DEFAULT_SEO_IMAGE_MAX_WIDTH_PX;
 
 interface SeoContentImageProps {
   slot: SeoPageImageSlot;

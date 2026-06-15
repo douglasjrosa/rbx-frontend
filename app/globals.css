@@ -59,6 +59,22 @@ html {
 
 .seo-article {
   text-align: left;
+  --seo-image-width: 300px;
+}
+
+@media (min-width: 768px) {
+  .seo-article-row[data-image-side='right'] {
+    grid-template-columns: minmax(0, 1fr) var(--seo-image-width);
+  }
+
+  .seo-article-row[data-image-side='left'] {
+    grid-template-columns: var(--seo-image-width) minmax(0, 1fr);
+  }
+}
+
+.seo-article__image-col {
+  width: var(--seo-image-width);
+  max-width: 100%;
 }
 
 .seo-article__figure img {
