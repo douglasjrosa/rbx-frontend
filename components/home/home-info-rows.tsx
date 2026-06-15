@@ -88,7 +88,7 @@ export default function HomeInfoRowsSection({ infoRows }: HomeInfoRowsProps) {
         aria-hidden
       />
       <div
-        className="absolute inset-0 bg-rbx-green-secondary/72"
+        className="absolute inset-0 bg-rbx-green-secondary/85"
         aria-hidden
       />
       <div className="container relative z-10 space-y-16 md:space-y-20">
