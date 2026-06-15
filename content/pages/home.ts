@@ -439,7 +439,8 @@ export const homePage: HomePage = {
     title: 'ARTIGOS TÉCNICOS SOBRE O ASSUNTO',
     paragraphs: [
       'Saiba mais sobre o mercado de Embalagens de Madeira.',
-      'Conheça um pouco melhor sobre nossos produtos.',
+      'Leia nossos conteúdos sobre Exportação, Embalagens e o futuro ' +
+        'deste segmento...',
     ],
     cards: [
       {
