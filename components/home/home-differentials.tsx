@@ -1,3 +1,4 @@
+import { MdCheck } from 'react-icons/md';
 import Image from '@/components/elements/image';
 import type { HomeDifferentials } from '@/lib/content/types';
 
@@ -7,10 +8,26 @@ interface HomeDifferentialsProps {
 
 function BulletList({ items }: { items: string[] }) {
   return (
-    <ul className="list-disc space-y-2 pl-5 text-rbx-accent">
+    <ul className="space-y-3">
       {items.map((item, index) => (
-        <li key={`item-${index}`} className="leading-relaxed">
-          {item}
+        <li
+          key={`item-${index}`}
+          className={
+            'flex items-start gap-3 rounded-xl border border-gray-100 ' +
+            'bg-gray-50 px-4 py-3 transition-colors hover:bg-emerald-50/60'
+          }
+        >
+          <span
+            className={
+              'mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center ' +
+              'rounded-full bg-rbx-green/15 text-rbx-green-dark'
+            }
+          >
+            <MdCheck className="h-4 w-4" aria-hidden="true" />
+          </span>
+          <span className="text-base leading-relaxed text-rbx-accent md:text-lg">
+            {item}
+          </span>
         </li>
       ))}
     </ul>
@@ -36,7 +53,7 @@ export default function HomeDifferentialsSection({
           <div>
             <h2
               className={
-                'mb-4 text-2xl font-bold text-rbx-green-primary ' +
+                'mb-6 text-2xl font-bold text-rbx-green-primary ' +
                 'md:text-3xl'
               }
             >

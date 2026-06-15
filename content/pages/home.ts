@@ -413,11 +413,10 @@ export const homePage: HomePage = {
     ),
     differentialsTitle: 'Nossos Diferenciais',
     differentialsItems: [
-      'Sem pedido mínimo. Produzimos uma única caixa se o cliente precisar;',
-      'Rapidez na fabricação. Entregamos em apenas 24h dependendo do pedido;',
+      'Entrega em 7 dias a partir da data do pedido;',
       'Medidas 100% personalizadas, o cliente é quem define comprimento, ' +
         'largura e altura interna da caixa;',
-      'Vários modelos de embalagem para diferentes necessidades;',
+      'Modelos Exclusivos de embalagem para diferentes necessidades;',
       'Certificado de tratamento HT para exportação;',
       'Política de descontos para clientes parceiros.',
     ],
