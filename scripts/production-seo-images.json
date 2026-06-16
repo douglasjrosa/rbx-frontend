@@ -1,0 +1,787 @@
+{
+  "caixa-engradado-madeira": {
+    "productionUrls": [
+      "https://ribermax.com.br/wp-content/uploads/2024/10/engradado.png",
+      "https://ribermax.com.br/wp-content/uploads/2024/10/engradado-300x170.png"
+    ],
+    "productionFiles": [
+      "engradado.png"
+    ],
+    "matches": [
+      {
+        "productionFile": "engradado.png",
+        "productionUrl": "https://ribermax.com.br/wp-content/uploads/2024/10/engradado.png",
+        "localFile": "diversity/engradado-exportacao.png"
+      }
+    ]
+  },
+  "caixa-exportacao": {
+    "productionUrls": [
+      "https://ribermax.com.br/wp-content/uploads/2024/10/embalagemmadeiracomprar.png",
+      "https://ribermax.com.br/wp-content/uploads/2024/10/embalagemmadeiracomprar-300x170.png"
+    ],
+    "productionFiles": [
+      "embalagemmadeiracomprar.png"
+    ],
+    "matches": [
+      {
+        "productionFile": "embalagemmadeiracomprar.png",
+        "productionUrl": "https://ribermax.com.br/wp-content/uploads/2024/10/embalagemmadeiracomprar.png",
+        "localFile": null
+      }
+    ]
+  },
+  "caixa-madeira-compensado": {
+    "productionUrls": [
+      "https://ribermax.com.br/wp-content/uploads/2024/10/caixamadeiracompensada.png",
+      "https://ribermax.com.br/wp-content/uploads/2024/10/caixamadeiracompensada-300x170.png"
+    ],
+    "productionFiles": [
+      "caixamadeiracompensada.png"
+    ],
+    "matches": [
+      {
+        "productionFile": "caixamadeiracompensada.png",
+        "productionUrl": "https://ribermax.com.br/wp-content/uploads/2024/10/caixamadeiracompensada.png",
+        "localFile": null
+      }
+    ]
+  },
+  "caixa-madeira-embalagem": {
+    "productionUrls": [
+      "https://ribermax.com.br/wp-content/uploads/2024/10/fornecedores-embalagens-madeira_.png",
+      "https://ribermax.com.br/wp-content/uploads/2024/10/fornecedores-embalagens-madeira_-300x170.png"
+    ],
+    "productionFiles": [
+      "fornecedores-embalagens-madeira_.png"
+    ],
+    "matches": [
+      {
+        "productionFile": "fornecedores-embalagens-madeira_.png",
+        "productionUrl": "https://ribermax.com.br/wp-content/uploads/2024/10/fornecedores-embalagens-madeira_.png",
+        "localFile": null
+      }
+    ]
+  },
+  "caixa-madeira-exportacao": {
+    "productionUrls": [
+      "https://ribermax.com.br/wp-content/uploads/2024/10/fornecedor-embalagens-madeira_.png",
+      "https://ribermax.com.br/wp-content/uploads/2024/10/fornecedor-embalagens-madeira_-300x170.png"
+    ],
+    "productionFiles": [
+      "fornecedor-embalagens-madeira_.png"
+    ],
+    "matches": [
+      {
+        "productionFile": "fornecedor-embalagens-madeira_.png",
+        "productionUrl": "https://ribermax.com.br/wp-content/uploads/2024/10/fornecedor-embalagens-madeira_.png",
+        "localFile": null
+      }
+    ]
+  },
+  "caixa-madeira-fumigada": {
+    "productionUrls": [
+      "https://ribermax.com.br/wp-content/uploads/2024/09/Madeira-Fumigada-imagem-e1727357432567.png",
+      "https://ribermax.com.br/wp-content/uploads/2024/09/Madeira-Fumigada-imagem-e1727357432567-300x210.png"
+    ],
+    "productionFiles": [
+      "Madeira-Fumigada-imagem-e1727357432567.png"
+    ],
+    "matches": [
+      {
+        "productionFile": "Madeira-Fumigada-imagem-e1727357432567.png",
+        "productionUrl": "https://ribermax.com.br/wp-content/uploads/2024/09/Madeira-Fumigada-imagem-e1727357432567.png",
+        "localFile": "caixa-madeira-fumigada-1.webp"
+      }
+    ]
+  },
+  "caixa-madeira-fumigada-exportacao": {
+    "productionUrls": [
+      "https://ribermax.com.br/wp-content/uploads/2024/10/caixafumigadaexportacao.png",
+      "https://ribermax.com.br/wp-content/uploads/2024/10/caixafumigadaexportacao-300x170.png"
+    ],
+    "productionFiles": [
+      "caixafumigadaexportacao.png"
+    ],
+    "matches": [
+      {
+        "productionFile": "caixafumigadaexportacao.png",
+        "productionUrl": "https://ribermax.com.br/wp-content/uploads/2024/10/caixafumigadaexportacao.png",
+        "localFile": null
+      }
+    ]
+  },
+  "caixa-madeira-industrial": {
+    "productionUrls": [
+      "https://ribermax.com.br/wp-content/uploads/2024/10/embalagem_maquina_exportacao.png",
+      "https://ribermax.com.br/wp-content/uploads/2024/10/embalagem_maquina_exportacao-300x170.png"
+    ],
+    "productionFiles": [
+      "embalagem_maquina_exportacao.png"
+    ],
+    "matches": [
+      {
+        "productionFile": "embalagem_maquina_exportacao.png",
+        "productionUrl": "https://ribermax.com.br/wp-content/uploads/2024/10/embalagem_maquina_exportacao.png",
+        "localFile": null
+      }
+    ]
+  },
+  "caixa-madeira-maquina-costura": {
+    "productionUrls": [
+      "https://ribermax.com.br/wp-content/uploads/2024/10/embalagem_transporte_madeira.png",
+      "https://ribermax.com.br/wp-content/uploads/2024/10/embalagem_transporte_madeira-300x170.png"
+    ],
+    "productionFiles": [
+      "embalagem_transporte_madeira.png"
+    ],
+    "matches": [
+      {
+        "productionFile": "embalagem_transporte_madeira.png",
+        "productionUrl": "https://ribermax.com.br/wp-content/uploads/2024/10/embalagem_transporte_madeira.png",
+        "localFile": null
+      }
+    ]
+  },
+  "caixa-madeira-medida": {
+    "productionUrls": [
+      "https://ribermax.com.br/wp-content/uploads/2024/10/caixademadeira.png",
+      "https://ribermax.com.br/wp-content/uploads/2024/10/caixademadeira-300x170.png"
+    ],
+    "productionFiles": [
+      "caixademadeira.png"
+    ],
+    "matches": [
+      {
+        "productionFile": "caixademadeira.png",
+        "productionUrl": "https://ribermax.com.br/wp-content/uploads/2024/10/caixademadeira.png",
+        "localFile": null
+      }
+    ]
+  },
+  "caixa-madeira-reforcada": {
+    "productionUrls": [
+      "https://ribermax.com.br/wp-content/uploads/2024/10/embalagemmadeiratransporte.png",
+      "https://ribermax.com.br/wp-content/uploads/2024/10/embalagemmadeiratransporte-300x170.png"
+    ],
+    "productionFiles": [
+      "embalagemmadeiratransporte.png"
+    ],
+    "matches": [
+      {
+        "productionFile": "embalagemmadeiratransporte.png",
+        "productionUrl": "https://ribermax.com.br/wp-content/uploads/2024/10/embalagemmadeiratransporte.png",
+        "localFile": null
+      }
+    ]
+  },
+  "caixa-madeira-reforcada-transporte": {
+    "productionUrls": [
+      "https://ribermax.com.br/wp-content/uploads/2024/10/embalagemmadeiracomprar.png",
+      "https://ribermax.com.br/wp-content/uploads/2024/10/embalagemmadeiracomprar-300x170.png"
+    ],
+    "productionFiles": [
+      "embalagemmadeiracomprar.png"
+    ],
+    "matches": [
+      {
+        "productionFile": "embalagemmadeiracomprar.png",
+        "productionUrl": "https://ribermax.com.br/wp-content/uploads/2024/10/embalagemmadeiracomprar.png",
+        "localFile": null
+      }
+    ]
+  },
+  "caixa-madeira-tipo-exportacao": {
+    "productionUrls": [
+      "https://ribermax.com.br/wp-content/uploads/2024/10/caixaparamaquinas.png",
+      "https://ribermax.com.br/wp-content/uploads/2024/10/caixaparamaquinas-300x170.png"
+    ],
+    "productionFiles": [
+      "caixaparamaquinas.png"
+    ],
+    "matches": [
+      {
+        "productionFile": "caixaparamaquinas.png",
+        "productionUrl": "https://ribermax.com.br/wp-content/uploads/2024/10/caixaparamaquinas.png",
+        "localFile": null
+      }
+    ]
+  },
+  "caixa-madeira-transporte": {
+    "productionUrls": [
+      "https://ribermax.com.br/wp-content/uploads/2024/10/embalagens-madeira-rp.png",
+      "https://ribermax.com.br/wp-content/uploads/2024/10/embalagens-madeira-rp-300x170.png"
+    ],
+    "productionFiles": [
+      "embalagens-madeira-rp.png"
+    ],
+    "matches": [
+      {
+        "productionFile": "embalagens-madeira-rp.png",
+        "productionUrl": "https://ribermax.com.br/wp-content/uploads/2024/10/embalagens-madeira-rp.png",
+        "localFile": "diversity/fabrica-embalagens-madeira.png"
+      }
+    ]
+  },
+  "caixa-madeira-transporte-preco": {
+    "productionUrls": [
+      "https://ribermax.com.br/wp-content/uploads/2024/10/embalagemmadeiratransporte.png",
+      "https://ribermax.com.br/wp-content/uploads/2024/10/embalagemmadeiratransporte-300x170.png"
+    ],
+    "productionFiles": [
+      "embalagemmadeiratransporte.png"
+    ],
+    "matches": [
+      {
+        "productionFile": "embalagemmadeiratransporte.png",
+        "productionUrl": "https://ribermax.com.br/wp-content/uploads/2024/10/embalagemmadeiratransporte.png",
+        "localFile": null
+      }
+    ]
+  },
+  "caixas-madeira-equipamentos": {
+    "productionUrls": [
+      "https://ribermax.com.br/wp-content/uploads/2024/10/madeiraexportacao.png",
+      "https://ribermax.com.br/wp-content/uploads/2024/10/madeiraexportacao-300x170.png"
+    ],
+    "productionFiles": [
+      "madeiraexportacao.png"
+    ],
+    "matches": [
+      {
+        "productionFile": "madeiraexportacao.png",
+        "productionUrl": "https://ribermax.com.br/wp-content/uploads/2024/10/madeiraexportacao.png",
+        "localFile": null
+      }
+    ]
+  },
+  "caixas-madeira-industria": {
+    "productionUrls": [
+      "https://ribermax.com.br/wp-content/uploads/2024/10/caixamadeiraimportacao.png",
+      "https://ribermax.com.br/wp-content/uploads/2024/10/caixamadeiraimportacao-300x170.png"
+    ],
+    "productionFiles": [
+      "caixamadeiraimportacao.png"
+    ],
+    "matches": [
+      {
+        "productionFile": "caixamadeiraimportacao.png",
+        "productionUrl": "https://ribermax.com.br/wp-content/uploads/2024/10/caixamadeiraimportacao.png",
+        "localFile": null
+      }
+    ]
+  },
+  "caixas-madeira-maquinas": {
+    "productionUrls": [
+      "https://ribermax.com.br/wp-content/uploads/2024/10/caixaparamaquinas.png",
+      "https://ribermax.com.br/wp-content/uploads/2024/10/caixaparamaquinas-300x170.png"
+    ],
+    "productionFiles": [
+      "caixaparamaquinas.png"
+    ],
+    "matches": [
+      {
+        "productionFile": "caixaparamaquinas.png",
+        "productionUrl": "https://ribermax.com.br/wp-content/uploads/2024/10/caixaparamaquinas.png",
+        "localFile": null
+      }
+    ]
+  },
+  "embalagem-exportacao-maquinas": {
+    "productionUrls": [
+      "https://ribermax.com.br/wp-content/uploads/2024/10/embalagem_maquina_exportacao.png",
+      "https://ribermax.com.br/wp-content/uploads/2024/10/embalagem_maquina_exportacao-300x170.png"
+    ],
+    "productionFiles": [
+      "embalagem_maquina_exportacao.png"
+    ],
+    "matches": [
+      {
+        "productionFile": "embalagem_maquina_exportacao.png",
+        "productionUrl": "https://ribermax.com.br/wp-content/uploads/2024/10/embalagem_maquina_exportacao.png",
+        "localFile": null
+      }
+    ]
+  },
+  "embalagem-fumigada": {
+    "productionUrls": [
+      "https://ribermax.com.br/wp-content/uploads/2024/10/caixafumigada.png",
+      "https://ribermax.com.br/wp-content/uploads/2024/10/caixafumigada-300x170.png"
+    ],
+    "productionFiles": [
+      "caixafumigada.png"
+    ],
+    "matches": [
+      {
+        "productionFile": "caixafumigada.png",
+        "productionUrl": "https://ribermax.com.br/wp-content/uploads/2024/10/caixafumigada.png",
+        "localFile": null
+      }
+    ]
+  },
+  "embalagem-madeira-equipamentos": {
+    "productionUrls": [
+      "https://ribermax.com.br/wp-content/uploads/2024/10/engradado_madeira_transporte.png",
+      "https://ribermax.com.br/wp-content/uploads/2024/10/engradado_madeira_transporte-300x170.png"
+    ],
+    "productionFiles": [
+      "engradado_madeira_transporte.png"
+    ],
+    "matches": [
+      {
+        "productionFile": "engradado_madeira_transporte.png",
+        "productionUrl": "https://ribermax.com.br/wp-content/uploads/2024/10/engradado_madeira_transporte.png",
+        "localFile": null
+      }
+    ]
+  },
+  "embalagem-madeira-exportacao": {
+    "productionUrls": [
+      "https://ribermax.com.br/wp-content/uploads/2024/10/madeiraexportacao.png",
+      "https://ribermax.com.br/wp-content/uploads/2024/10/madeiraexportacao-300x170.png"
+    ],
+    "productionFiles": [
+      "madeiraexportacao.png"
+    ],
+    "matches": [
+      {
+        "productionFile": "madeiraexportacao.png",
+        "productionUrl": "https://ribermax.com.br/wp-content/uploads/2024/10/madeiraexportacao.png",
+        "localFile": null
+      }
+    ]
+  },
+  "embalagem-madeira-fumigada": {
+    "productionUrls": [
+      "https://ribermax.com.br/wp-content/uploads/2024/10/caixafumigada.png",
+      "https://ribermax.com.br/wp-content/uploads/2024/10/caixafumigada-300x170.png"
+    ],
+    "productionFiles": [
+      "caixafumigada.png"
+    ],
+    "matches": [
+      {
+        "productionFile": "caixafumigada.png",
+        "productionUrl": "https://ribermax.com.br/wp-content/uploads/2024/10/caixafumigada.png",
+        "localFile": null
+      }
+    ]
+  },
+  "embalagem-madeira-maquinas": {
+    "productionUrls": [
+      "https://ribermax.com.br/wp-content/uploads/2024/10/fabricacaocaixasdemadeira.png",
+      "https://ribermax.com.br/wp-content/uploads/2024/10/fabricacaocaixasdemadeira-300x170.png"
+    ],
+    "productionFiles": [
+      "fabricacaocaixasdemadeira.png"
+    ],
+    "matches": [
+      {
+        "productionFile": "fabricacaocaixasdemadeira.png",
+        "productionUrl": "https://ribermax.com.br/wp-content/uploads/2024/10/fabricacaocaixasdemadeira.png",
+        "localFile": "caixas.webp"
+      }
+    ]
+  },
+  "embalagem-madeira-transporte": {
+    "productionUrls": [
+      "https://ribermax.com.br/wp-content/uploads/2024/10/embalagemmadeiratransporte.png",
+      "https://ribermax.com.br/wp-content/uploads/2024/10/embalagemmadeiratransporte-300x170.png"
+    ],
+    "productionFiles": [
+      "embalagemmadeiratransporte.png"
+    ],
+    "matches": [
+      {
+        "productionFile": "embalagemmadeiratransporte.png",
+        "productionUrl": "https://ribermax.com.br/wp-content/uploads/2024/10/embalagemmadeiratransporte.png",
+        "localFile": null
+      }
+    ]
+  },
+  "embalagem-padrao-exportacao": {
+    "productionUrls": [
+      "https://ribermax.com.br/wp-content/uploads/2024/10/caixamadeiraimportacao.png",
+      "https://ribermax.com.br/wp-content/uploads/2024/10/caixamadeiraimportacao-300x170.png"
+    ],
+    "productionFiles": [
+      "caixamadeiraimportacao.png"
+    ],
+    "matches": [
+      {
+        "productionFile": "caixamadeiraimportacao.png",
+        "productionUrl": "https://ribermax.com.br/wp-content/uploads/2024/10/caixamadeiraimportacao.png",
+        "localFile": null
+      }
+    ]
+  },
+  "embalagem-tipo-exportacao": {
+    "productionUrls": [
+      "https://ribermax.com.br/wp-content/uploads/2024/10/engradado.png",
+      "https://ribermax.com.br/wp-content/uploads/2024/10/engradado-300x170.png"
+    ],
+    "productionFiles": [
+      "engradado.png"
+    ],
+    "matches": [
+      {
+        "productionFile": "engradado.png",
+        "productionUrl": "https://ribermax.com.br/wp-content/uploads/2024/10/engradado.png",
+        "localFile": "diversity/engradado-exportacao.png"
+      }
+    ]
+  },
+  "embalagens-especiais-madeira": {
+    "productionUrls": [
+      "https://ribermax.com.br/wp-content/uploads/2024/10/fabricacaocaixasdemadeira.png",
+      "https://ribermax.com.br/wp-content/uploads/2024/10/fabricacaocaixasdemadeira-300x170.png"
+    ],
+    "productionFiles": [
+      "fabricacaocaixasdemadeira.png"
+    ],
+    "matches": [
+      {
+        "productionFile": "fabricacaocaixasdemadeira.png",
+        "productionUrl": "https://ribermax.com.br/wp-content/uploads/2024/10/fabricacaocaixasdemadeira.png",
+        "localFile": "caixas.webp"
+      }
+    ]
+  },
+  "embalagens-exportacao": {
+    "productionUrls": [
+      "https://ribermax.com.br/wp-content/uploads/2024/10/fumigadaht.png",
+      "https://ribermax.com.br/wp-content/uploads/2024/10/fumigadaht-300x170.png"
+    ],
+    "productionFiles": [
+      "fumigadaht.png"
+    ],
+    "matches": [
+      {
+        "productionFile": "fumigadaht.png",
+        "productionUrl": "https://ribermax.com.br/wp-content/uploads/2024/10/fumigadaht.png",
+        "localFile": null
+      }
+    ]
+  },
+  "embalagens-industriais-madeira": {
+    "productionUrls": [
+      "https://ribermax.com.br/wp-content/uploads/2024/10/fornecedor-embalagens-madeira_.png",
+      "https://ribermax.com.br/wp-content/uploads/2024/10/fornecedor-embalagens-madeira_-300x170.png"
+    ],
+    "productionFiles": [
+      "fornecedor-embalagens-madeira_.png"
+    ],
+    "matches": [
+      {
+        "productionFile": "fornecedor-embalagens-madeira_.png",
+        "productionUrl": "https://ribermax.com.br/wp-content/uploads/2024/10/fornecedor-embalagens-madeira_.png",
+        "localFile": null
+      }
+    ]
+  },
+  "embalagens-madeira": {
+    "productionUrls": [
+      "https://ribermax.com.br/wp-content/uploads/2024/10/engradadomadeiracomprar.png",
+      "https://ribermax.com.br/wp-content/uploads/2024/10/engradadomadeiracomprar-300x170.png"
+    ],
+    "productionFiles": [
+      "engradadomadeiracomprar.png"
+    ],
+    "matches": [
+      {
+        "productionFile": "engradadomadeiracomprar.png",
+        "productionUrl": "https://ribermax.com.br/wp-content/uploads/2024/10/engradadomadeiracomprar.png",
+        "localFile": null
+      }
+    ]
+  },
+  "embalagens-madeira-medida": {
+    "productionUrls": [
+      "https://ribermax.com.br/wp-content/uploads/2024/10/embalagemmadeiracomprar.png",
+      "https://ribermax.com.br/wp-content/uploads/2024/10/embalagemmadeiracomprar-300x170.png"
+    ],
+    "productionFiles": [
+      "embalagemmadeiracomprar.png"
+    ],
+    "matches": [
+      {
+        "productionFile": "embalagemmadeiracomprar.png",
+        "productionUrl": "https://ribermax.com.br/wp-content/uploads/2024/10/embalagemmadeiracomprar.png",
+        "localFile": null
+      }
+    ]
+  },
+  "embalagens-madeira-ribeirao-preto": {
+    "productionUrls": [
+      "https://ribermax.com.br/wp-content/uploads/2024/09/ribermax_fabrica.png",
+      "https://ribermax.com.br/wp-content/uploads/2024/09/ribermax_fabrica-300x188.png",
+      "https://ribermax.com.br/wp-content/uploads/2024/09/ribermax_fabrica-768x480.png"
+    ],
+    "productionFiles": [
+      "ribermax_fabrica.png"
+    ],
+    "matches": [
+      {
+        "productionFile": "ribermax_fabrica.png",
+        "productionUrl": "https://ribermax.com.br/wp-content/uploads/2024/09/ribermax_fabrica.png",
+        "localFile": "ribermax_fabrica.png"
+      }
+    ]
+  },
+  "empresa-caixas-madeira": {
+    "productionUrls": [
+      "https://ribermax.com.br/wp-content/uploads/2024/10/madeiraexportacao.png",
+      "https://ribermax.com.br/wp-content/uploads/2024/10/madeiraexportacao-300x170.png"
+    ],
+    "productionFiles": [
+      "madeiraexportacao.png"
+    ],
+    "matches": [
+      {
+        "productionFile": "madeiraexportacao.png",
+        "productionUrl": "https://ribermax.com.br/wp-content/uploads/2024/10/madeiraexportacao.png",
+        "localFile": null
+      }
+    ]
+  },
+  "empresa-embalagens-madeira": {
+    "productionUrls": [
+      "https://ribermax.com.br/wp-content/uploads/2024/10/fornecedor-embalagens-madeira_.png",
+      "https://ribermax.com.br/wp-content/uploads/2024/10/fornecedor-embalagens-madeira_-300x170.png"
+    ],
+    "productionFiles": [
+      "fornecedor-embalagens-madeira_.png"
+    ],
+    "matches": [
+      {
+        "productionFile": "fornecedor-embalagens-madeira_.png",
+        "productionUrl": "https://ribermax.com.br/wp-content/uploads/2024/10/fornecedor-embalagens-madeira_.png",
+        "localFile": null
+      }
+    ]
+  },
+  "engradado-exportacao": {
+    "productionUrls": [
+      "https://ribermax.com.br/wp-content/uploads/2024/10/engradado.png",
+      "https://ribermax.com.br/wp-content/uploads/2024/10/engradado-300x170.png"
+    ],
+    "productionFiles": [
+      "engradado.png"
+    ],
+    "matches": [
+      {
+        "productionFile": "engradado.png",
+        "productionUrl": "https://ribermax.com.br/wp-content/uploads/2024/10/engradado.png",
+        "localFile": "diversity/engradado-exportacao.png"
+      }
+    ]
+  },
+  "engradado-madeira": {
+    "productionUrls": [
+      "https://ribermax.com.br/wp-content/uploads/2024/10/engradado.png",
+      "https://ribermax.com.br/wp-content/uploads/2024/10/engradado-300x170.png"
+    ],
+    "productionFiles": [
+      "engradado.png"
+    ],
+    "matches": [
+      {
+        "productionFile": "engradado.png",
+        "productionUrl": "https://ribermax.com.br/wp-content/uploads/2024/10/engradado.png",
+        "localFile": "diversity/engradado-exportacao.png"
+      }
+    ]
+  },
+  "engradado-madeira-comprar": {
+    "productionUrls": [
+      "https://ribermax.com.br/wp-content/uploads/2024/10/engradadomadeiracomprar.png",
+      "https://ribermax.com.br/wp-content/uploads/2024/10/engradadomadeiracomprar-300x170.png"
+    ],
+    "productionFiles": [
+      "engradadomadeiracomprar.png"
+    ],
+    "matches": [
+      {
+        "productionFile": "engradadomadeiracomprar.png",
+        "productionUrl": "https://ribermax.com.br/wp-content/uploads/2024/10/engradadomadeiracomprar.png",
+        "localFile": null
+      }
+    ]
+  },
+  "engradado-madeira-equipamentos": {
+    "productionUrls": [
+      "https://ribermax.com.br/wp-content/uploads/2024/10/engradado_madeira_transporte.png",
+      "https://ribermax.com.br/wp-content/uploads/2024/10/engradado_madeira_transporte-300x170.png"
+    ],
+    "productionFiles": [
+      "engradado_madeira_transporte.png"
+    ],
+    "matches": [
+      {
+        "productionFile": "engradado_madeira_transporte.png",
+        "productionUrl": "https://ribermax.com.br/wp-content/uploads/2024/10/engradado_madeira_transporte.png",
+        "localFile": null
+      }
+    ]
+  },
+  "engradado-madeira-exportacao": {
+    "productionUrls": [
+      "https://ribermax.com.br/wp-content/uploads/2024/10/engradado_madeira__.png",
+      "https://ribermax.com.br/wp-content/uploads/2024/10/engradado_madeira__-300x170.png"
+    ],
+    "productionFiles": [
+      "engradado_madeira__.png"
+    ],
+    "matches": [
+      {
+        "productionFile": "engradado_madeira__.png",
+        "productionUrl": "https://ribermax.com.br/wp-content/uploads/2024/10/engradado_madeira__.png",
+        "localFile": null
+      }
+    ]
+  },
+  "engradado-madeira-maquinas": {
+    "productionUrls": [
+      "https://ribermax.com.br/wp-content/uploads/2024/10/engradado.png",
+      "https://ribermax.com.br/wp-content/uploads/2024/10/engradado-300x170.png"
+    ],
+    "productionFiles": [
+      "engradado.png"
+    ],
+    "matches": [
+      {
+        "productionFile": "engradado.png",
+        "productionUrl": "https://ribermax.com.br/wp-content/uploads/2024/10/engradado.png",
+        "localFile": "diversity/engradado-exportacao.png"
+      }
+    ]
+  },
+  "engradado-madeira-transporte": {
+    "productionUrls": [
+      "https://ribermax.com.br/wp-content/uploads/2024/10/embalagem_transporte_madeira.png",
+      "https://ribermax.com.br/wp-content/uploads/2024/10/embalagem_transporte_madeira-300x170.png"
+    ],
+    "productionFiles": [
+      "embalagem_transporte_madeira.png"
+    ],
+    "matches": [
+      {
+        "productionFile": "embalagem_transporte_madeira.png",
+        "productionUrl": "https://ribermax.com.br/wp-content/uploads/2024/10/embalagem_transporte_madeira.png",
+        "localFile": null
+      }
+    ]
+  },
+  "fabrica-caixas-madeira": {
+    "productionUrls": [
+      "https://ribermax.com.br/wp-content/uploads/2024/10/fabrica_caixa_madeira_.png",
+      "https://ribermax.com.br/wp-content/uploads/2024/10/fabrica_caixa_madeira_-300x170.png"
+    ],
+    "productionFiles": [
+      "fabrica_caixa_madeira_.png"
+    ],
+    "matches": [
+      {
+        "productionFile": "fabrica_caixa_madeira_.png",
+        "productionUrl": "https://ribermax.com.br/wp-content/uploads/2024/10/fabrica_caixa_madeira_.png",
+        "localFile": null
+      }
+    ]
+  },
+  "fabrica-embalagens-madeira": {
+    "productionUrls": [
+      "https://ribermax.com.br/wp-content/uploads/2024/10/engradado_madeira__.png",
+      "https://ribermax.com.br/wp-content/uploads/2024/10/engradado_madeira__-300x170.png"
+    ],
+    "productionFiles": [
+      "engradado_madeira__.png"
+    ],
+    "matches": [
+      {
+        "productionFile": "engradado_madeira__.png",
+        "productionUrl": "https://ribermax.com.br/wp-content/uploads/2024/10/engradado_madeira__.png",
+        "localFile": null
+      }
+    ]
+  },
+  "fabricacao-caixas-madeira": {
+    "productionUrls": [
+      "https://ribermax.com.br/wp-content/uploads/2024/10/fabricacaocaixasdemadeira.png",
+      "https://ribermax.com.br/wp-content/uploads/2024/10/fabricacaocaixasdemadeira-300x170.png"
+    ],
+    "productionFiles": [
+      "fabricacaocaixasdemadeira.png"
+    ],
+    "matches": [
+      {
+        "productionFile": "fabricacaocaixasdemadeira.png",
+        "productionUrl": "https://ribermax.com.br/wp-content/uploads/2024/10/fabricacaocaixasdemadeira.png",
+        "localFile": "caixas.webp"
+      }
+    ]
+  },
+  "fabricacao-embalagens-madeira": {
+    "productionUrls": [
+      "https://ribermax.com.br/wp-content/uploads/2024/10/fabricacaoembalagensmadeira.png",
+      "https://ribermax.com.br/wp-content/uploads/2024/10/fabricacaoembalagensmadeira-300x170.png"
+    ],
+    "productionFiles": [
+      "fabricacaoembalagensmadeira.png"
+    ],
+    "matches": [
+      {
+        "productionFile": "fabricacaoembalagensmadeira.png",
+        "productionUrl": "https://ribermax.com.br/wp-content/uploads/2024/10/fabricacaoembalagensmadeira.png",
+        "localFile": null
+      }
+    ]
+  },
+  "fabricante-embalagem-madeira": {
+    "productionUrls": [
+      "https://ribermax.com.br/wp-content/uploads/2024/10/fabricacaocaixasdemadeira.png",
+      "https://ribermax.com.br/wp-content/uploads/2024/10/fabricacaocaixasdemadeira-300x170.png"
+    ],
+    "productionFiles": [
+      "fabricacaocaixasdemadeira.png"
+    ],
+    "matches": [
+      {
+        "productionFile": "fabricacaocaixasdemadeira.png",
+        "productionUrl": "https://ribermax.com.br/wp-content/uploads/2024/10/fabricacaocaixasdemadeira.png",
+        "localFile": "caixas.webp"
+      }
+    ]
+  },
+  "fornecedor-caixa-madeira": {
+    "productionUrls": [
+      "https://ribermax.com.br/wp-content/uploads/2024/10/fornecedor-embalagens-madeira_.png",
+      "https://ribermax.com.br/wp-content/uploads/2024/10/fornecedor-embalagens-madeira_-300x170.png"
+    ],
+    "productionFiles": [
+      "fornecedor-embalagens-madeira_.png"
+    ],
+    "matches": [
+      {
+        "productionFile": "fornecedor-embalagens-madeira_.png",
+        "productionUrl": "https://ribermax.com.br/wp-content/uploads/2024/10/fornecedor-embalagens-madeira_.png",
+        "localFile": null
+      }
+    ]
+  },
+  "fornecedores-embalagens-madeira": {
+    "productionUrls": [
+      "https://ribermax.com.br/wp-content/uploads/2024/10/fornecedores-embalagens-madeira_.png",
+      "https://ribermax.com.br/wp-content/uploads/2024/10/fornecedores-embalagens-madeira_-300x170.png"
+    ],
+    "productionFiles": [
+      "fornecedores-embalagens-madeira_.png"
+    ],
+    "matches": [
+      {
+        "productionFile": "fornecedores-embalagens-madeira_.png",
+        "productionUrl": "https://ribermax.com.br/wp-content/uploads/2024/10/fornecedores-embalagens-madeira_.png",
+        "localFile": null
+      }
+    ]
+  }
+}

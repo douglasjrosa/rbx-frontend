@@ -1,6 +1,5 @@
 import {
   TRACKING_REDIRECT_COMPANY_ID,
-  TRACKING_REDIRECT_ORIGIN,
   TRACKING_REDIRECT_TOKEN,
 } from '@/lib/analytics/config';
 
@@ -13,7 +12,7 @@ export function buildTrackingRedirectUrl(ctaId: number): string {
     cta: String(ctaId),
   });
 
-  return `${TRACKING_REDIRECT_ORIGIN}${TRACKING_REDIRECT_PATH}?${params.toString()}`;
+  return `${TRACKING_REDIRECT_PATH}?${params.toString()}`;
 }
 
 export function isValidTrackingRedirectToken(token: string | null): boolean {

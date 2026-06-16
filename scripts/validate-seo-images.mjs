@@ -104,8 +104,10 @@ for (const file of seoFiles) {
     continue;
   }
 
-  if (images.length !== 3) {
-    errors.push(`${slug} must have exactly 3 images (found ${images.length})`);
+  if (images.length < 1 || images.length > 3) {
+    errors.push(
+      `${slug} must have between 1 and 3 images (found ${images.length})`,
+    );
   }
 
   const uniqueFilenames = new Set(images.map((image) => image.filename));

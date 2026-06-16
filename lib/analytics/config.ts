@@ -10,9 +10,6 @@ export const TRACKING_REDIRECT_TOKEN = '78ayfaof8778w47fFDsifg8g_SSDasf-s';
 
 export const TRACKING_REDIRECT_COMPANY_ID = '1';
 
-/** Must match WordPress href host so GTM link-click triggers keep firing. */
-export const TRACKING_REDIRECT_ORIGIN = 'https://ribermax.com';
-
 export const TRACKING_LINKER_DOMAINS = ['ribermax.com.br'];
 
 export const GOOGLE_SITE_KIT_DEVELOPER_ID = 'dZTNiMT';

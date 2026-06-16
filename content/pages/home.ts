@@ -3,7 +3,7 @@ import type {
   HomeProductModel,
   HomeProductModelSpec,
 } from '@/lib/content/types';
-import { TRACKING_CTA, getCarouselTrackingCtaId } from '@/lib/analytics/tracking-cta';
+import { TRACKING_CTA } from '@/lib/analytics/tracking-cta';
 import { homeSectionHref, HOME_SECTIONS } from '@/lib/home-sections';
 import { mediaAsset } from '@/lib/images';
 
@@ -466,7 +466,6 @@ export const homePage: HomePage = {
           newTab: false,
           url: '/caixa-madeira-fumigada-exportacao',
           text: 'Caixa de Madeira Fumigada para Exportação',
-          trackingCtaId: getCarouselTrackingCtaId(0),
         },
         image: diversityImage(
           'caixa-madeira-fumigada-exportacao',
@@ -482,7 +481,6 @@ export const homePage: HomePage = {
           newTab: false,
           url: '/caixa-madeira-compensado',
           text: 'Caixa de Madeira Compensado',
-          trackingCtaId: getCarouselTrackingCtaId(1),
         },
         image: diversityImage(
           'caixa-madeira-compensado',
@@ -499,7 +497,6 @@ export const homePage: HomePage = {
           newTab: false,
           url: '/embalagens-especiais-madeira',
           text: 'Caixas Especiais de Madeira',
-          trackingCtaId: getCarouselTrackingCtaId(2),
         },
         image: diversityImage(
           'embalagens-especiais-madeira',
@@ -515,7 +512,6 @@ export const homePage: HomePage = {
           newTab: false,
           url: '/fabrica-embalagens-madeira',
           text: 'Fábrica de Embalagens de Madeira',
-          trackingCtaId: getCarouselTrackingCtaId(3),
         },
         image: diversityImage(
           'fabrica-embalagens-madeira',
@@ -532,7 +528,6 @@ export const homePage: HomePage = {
           newTab: false,
           url: '/engradado-madeira-transporte',
           text: 'Engradado de Madeira para Transporte',
-          trackingCtaId: getCarouselTrackingCtaId(4),
         },
         image: diversityImage(
           'engradado-madeira-transporte',
@@ -549,7 +544,6 @@ export const homePage: HomePage = {
           newTab: false,
           url: '/engradado-exportacao',
           text: 'Engradado para Exportação',
-          trackingCtaId: getCarouselTrackingCtaId(5),
         },
         image: diversityImage(
           'engradado-exportacao',
@@ -565,7 +559,6 @@ export const homePage: HomePage = {
           newTab: false,
           url: '/caixa-madeira-fumigada',
           text: 'Caixa de Madeira Fumigada',
-          trackingCtaId: getCarouselTrackingCtaId(6),
         },
         image: diversityImage(
           'caixa-madeira-fumigada',
@@ -581,7 +574,6 @@ export const homePage: HomePage = {
           newTab: false,
           url: '/engradado-madeira-equipamentos',
           text: 'Engradado de Madeira para Equipamentos',
-          trackingCtaId: getCarouselTrackingCtaId(7),
         },
         image: diversityImage(
           'engradado-madeira-equipamentos',
@@ -598,7 +590,6 @@ export const homePage: HomePage = {
           newTab: false,
           url: '/fabricante-embalagem-madeira',
           text: 'Fabricante de Embalagem de Madeira',
-          trackingCtaId: getCarouselTrackingCtaId(8),
         },
         image: diversityImage(
           'fabricante-embalagem-madeira',
@@ -615,7 +606,6 @@ export const homePage: HomePage = {
           newTab: false,
           url: '/caixas-madeira-equipamentos',
           text: 'Caixa de Madeira para Equipamentos',
-          trackingCtaId: getCarouselTrackingCtaId(9),
         },
         image: diversityImage(
           'caixas-madeira-equipamentos',
