@@ -198,6 +198,7 @@ export interface CookieConsentConfig {
 export interface FooterContact {
   label: string;
   email: string;
+  trackWhatsappConversion?: boolean;
 }
 
 export type FooterSocialIcon = 'facebook' | 'linkedin' | 'instagram';
