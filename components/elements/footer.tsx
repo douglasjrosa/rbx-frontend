@@ -81,7 +81,11 @@ export default function Footer() {
                   <p>
                     <a
                       href={`mailto:${contact.email}`}
-                      className="hover:underline"
+                      className={
+                        contact.trackWhatsappConversion
+                          ? 'buttonizer hover:underline'
+                          : 'hover:underline'
+                      }
                     >
                       {contact.email}
                     </a>

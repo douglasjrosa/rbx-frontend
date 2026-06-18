@@ -38,13 +38,35 @@ export default function CustomLink({
   const pathname = usePathname();
 
   if (link.trackingCtaId) {
+    const trackingHref = buildTrackingRedirectUrl(
+      link.trackingCtaId,
+      link.url,
+    );
+    const homeHash = parseHomeHash(link.url);
+
+    const handleTrackingClick = (
+      event: React.MouseEvent<HTMLAnchorElement>,
+    ) => {
+      if (
+        homeHash !== null &&
+        pathname === '/' &&
+        !link.newTab
+      ) {
+        event.preventDefault();
+        scrollToSection(homeHash);
+        window.history.pushState(null, '', homeHash);
+      }
+
+      onNavigate?.();
+    };
+
     return (
       <a
-        href={buildTrackingRedirectUrl(link.trackingCtaId)}
+        href={trackingHref}
         className={className}
         target={link.newTab ? '_blank' : undefined}
         rel={link.newTab ? 'noopener noreferrer' : undefined}
-        onClick={onNavigate}
+        onClick={handleTrackingClick}
       >
         {children}
       </a>
