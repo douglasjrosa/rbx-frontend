@@ -73,7 +73,7 @@ function CarouselSlide({ card, onDraggedClick }: CarouselSlideProps) {
         <p className="text-sm leading-relaxed text-rbx-accent md:text-base">
           {card.description}
         </p>
-        <div className="pt-1 md:pt-2 md:text-right">
+        <div className="flex justify-center pt-1 md:pt-2">
           <CustomLink link={card.link}>
             <span
               className={
