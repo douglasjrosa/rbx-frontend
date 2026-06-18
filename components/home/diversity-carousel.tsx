@@ -73,11 +73,11 @@ function CarouselSlide({ card, onDraggedClick }: CarouselSlideProps) {
         <p className="text-sm leading-relaxed text-rbx-accent md:text-base">
           {card.description}
         </p>
-        <div className="flex justify-center pt-1 md:pt-2">
-          <CustomLink link={card.link}>
+        <div className="w-full pt-1 md:pt-2">
+          <CustomLink link={card.link} className="block w-full">
             <span
               className={
-                'inline-flex items-center gap-3 rounded-[20px] ' +
+                'flex w-full items-center justify-center gap-3 rounded-[20px] ' +
                 'bg-rbx-green-secondary px-4 py-2.5 text-sm font-semibold ' +
                 'text-white transition-colors hover:bg-[#FFD983] ' +
                 'hover:text-rbx-accent md:px-5 md:py-3 md:text-base'
