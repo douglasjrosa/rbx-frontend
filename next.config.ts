@@ -1,9 +1,57 @@
 import type { NextConfig } from 'next';
 
+const CONTENT_SECURITY_POLICY = [
+  "default-src 'self'",
+  [
+    "script-src 'self' 'unsafe-inline'",
+    'https://www.googletagmanager.com',
+    'https://www.google-analytics.com',
+    'https://googleads.g.doubleclick.net',
+    'https://www.google.com',
+  ].join(' '),
+  [
+    "connect-src 'self'",
+    'https://www.google-analytics.com',
+    'https://analytics.google.com',
+    'https://www.googletagmanager.com',
+    'https://region1.google-analytics.com',
+    'https://stats.g.doubleclick.net',
+    'https://www.google.com',
+  ].join(' '),
+  "img-src 'self' data: blob: https:",
+  "style-src 'self' 'unsafe-inline'",
+  "font-src 'self' data:",
+  "frame-src https://www.googletagmanager.com",
+  "object-src 'none'",
+  "base-uri 'self'",
+  "form-action 'self'",
+].join('; ');
+
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   images: {
     formats: ['image/avif', 'image/webp'],
+  },
+  async headers() {
+    return [
+      {
+        source: '/(.*)',
+        headers: [
+          {
+            key: 'X-Frame-Options',
+            value: 'SAMEORIGIN',
+          },
+          {
+            key: 'Cross-Origin-Opener-Policy',
+            value: 'same-origin',
+          },
+          {
+            key: 'Content-Security-Policy',
+            value: CONTENT_SECURITY_POLICY,
+          },
+        ],
+      },
+    ];
   },
 };
 

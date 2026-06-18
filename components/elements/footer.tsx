@@ -12,8 +12,7 @@ const SOCIAL_ICON_COMPONENTS = {
   typeof FaFacebookF | typeof FaLinkedinIn | typeof FaInstagram
 >;
 
-const FOOTER_HEADING_CLASS =
-  'text-lg font-medium text-rbx-green-secondary';
+const FOOTER_HEADING_CLASS = 'text-lg font-medium text-[#b5d08a]';
 
 export default function Footer() {
   const { footer } = siteConfig;

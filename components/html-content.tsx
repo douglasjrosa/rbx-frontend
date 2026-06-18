@@ -23,7 +23,7 @@ const ALLOWED_TAGS = [
 ];
 
 const ALLOWED_ATTRIBUTES: sanitizeHtml.IOptions['allowedAttributes'] = {
-  a: ['href', 'target', 'rel', 'style'],
+  a: ['href', 'target', 'rel'],
   img: ['src', 'alt', 'width', 'height'],
   div: ['style'],
   h1: ['style'],
@@ -65,14 +65,19 @@ export default function HtmlContent({
           class: 'rounded-md mx-auto my-6 max-w-full h-auto',
         },
       }),
-      a: (_tagName, attribs) => ({
-        tagName: 'a',
-        attribs: {
-          ...attribs,
-          class: 'text-sky-600 underline hover:text-sky-800',
-          rel: attribs.target === '_blank' ? 'noopener noreferrer' : '',
-        },
-      }),
+      a: (_tagName, attribs) => {
+        const { style: _inlineStyle, ...linkAttribs } = attribs;
+
+        return {
+          tagName: 'a',
+          attribs: {
+            ...linkAttribs,
+            class: 'text-sky-800 underline hover:text-sky-900',
+            rel:
+              attribs.target === '_blank' ? 'noopener noreferrer' : '',
+          },
+        };
+      },
     },
   });
 
