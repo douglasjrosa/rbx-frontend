@@ -60,15 +60,15 @@ export default function TrackingScripts() {
 
   return (
     <>
-      <Script id="google-tag-manager" strategy="afterInteractive">
+      <Script id="google-tag-manager" strategy="lazyOnload">
         {GTM_INLINE_SCRIPT}
       </Script>
       <Script
         id="google_gtagjs-js"
         src={`https://www.googletagmanager.com/gtag/js?id=${GA4_SITE_KIT_MEASUREMENT_ID}`}
-        strategy="afterInteractive"
+        strategy="lazyOnload"
       />
-      <Script id="google_gtagjs-js-after" strategy="afterInteractive">
+      <Script id="google_gtagjs-js-after" strategy="lazyOnload">
         {SITE_KIT_INLINE_SCRIPT}
       </Script>
     </>
