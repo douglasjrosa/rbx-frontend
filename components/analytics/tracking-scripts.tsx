@@ -5,6 +5,7 @@ import {
   GTM_CONTAINER_ID,
   TRACKING_LINKER_DOMAINS,
 } from '@/lib/analytics/config';
+import { isTrackingEnabled } from '@/lib/analytics/is-tracking-enabled';
 
 const GTM_INLINE_SCRIPT = `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -35,6 +36,10 @@ window._googlesitekit.gtagEvent = (name, data) => {
 };`;
 
 export function GoogleTagManagerNoScript() {
+  if (!isTrackingEnabled()) {
+    return null;
+  }
+
   return (
     <noscript>
       <iframe
@@ -49,6 +54,10 @@ export function GoogleTagManagerNoScript() {
 }
 
 export default function TrackingScripts() {
+  if (!isTrackingEnabled()) {
+    return null;
+  }
+
   return (
     <>
       <Script id="google-tag-manager" strategy="afterInteractive">
