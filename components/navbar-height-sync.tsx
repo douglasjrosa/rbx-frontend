@@ -1,19 +1,45 @@
 'use client';
 
 import { useEffect } from 'react';
-import { syncNavbarHeightCssVar } from '@/lib/navbar-offset';
+import {
+  SITE_NAVBAR_SELECTOR,
+  syncNavbarHeightCssVar,
+} from '@/lib/navbar-offset';
+
+function readNavbarHeightPx(entry: ResizeObserverEntry): number {
+  const blockSize = entry.borderBoxSize[0]?.blockSize;
+
+  if (blockSize !== undefined) {
+    return Math.round(blockSize);
+  }
+
+  return Math.round(entry.contentRect.height);
+}
 
 export default function NavbarHeightSync() {
   useEffect(() => {
-    const updateNavbarHeight = () => {
-      syncNavbarHeightCssVar();
-    };
+    const navbar = document.querySelector<HTMLElement>(SITE_NAVBAR_SELECTOR);
 
-    updateNavbarHeight();
-    window.addEventListener('resize', updateNavbarHeight);
+    if (!navbar) {
+      return;
+    }
+
+    syncNavbarHeightCssVar();
+
+    const observer = new ResizeObserver((entries) => {
+      const entry = entries[0];
+
+      if (!entry) {
+        return;
+      }
+
+      syncNavbarHeightCssVar(readNavbarHeightPx(entry));
+    });
+
+    observer.observe(navbar);
 
     return () => {
-      window.removeEventListener('resize', updateNavbarHeight);
+      observer.disconnect();
     };
   }, []);
 

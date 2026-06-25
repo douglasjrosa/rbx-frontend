@@ -3,7 +3,6 @@ import type {
   HomeProductModel,
   HomeProductModelSpec,
 } from '@/lib/content/types';
-import { TRACKING_CTA } from '@/lib/analytics/tracking-cta';
 import { homeSectionHref, HOME_SECTIONS } from '@/lib/home-sections';
 import { mediaAsset } from '@/lib/images';
 
@@ -212,13 +211,11 @@ export const homePage: HomePage = {
       newTab: false,
       url: homeSectionHref(HOME_SECTIONS.produtos),
       text: 'Conheça nossos produtos',
-      trackingCtaId: TRACKING_CTA.HERO_PRIMARY,
     },
     secondaryButton: {
       newTab: false,
       url: homeSectionHref(HOME_SECTIONS.informacoes),
       text: 'Mais informações',
-      trackingCtaId: TRACKING_CTA.HERO_SECONDARY,
     },
   },
   banner: {
@@ -300,7 +297,6 @@ export const homePage: HomePage = {
       newTab: false,
       url: homeSectionHref(HOME_SECTIONS.informacoes),
       text: 'Mais informações',
-      trackingCtaId: TRACKING_CTA.CTA_SECTION,
     },
   },
   models: {
@@ -315,7 +311,6 @@ export const homePage: HomePage = {
       newTab: false,
       url: homeSectionHref(HOME_SECTIONS.contato),
       text: 'Escolher meu Modelo de Embalagem',
-      trackingCtaId: TRACKING_CTA.MODELS_BUTTON,
     },
   },
   customPackaging: {
@@ -338,7 +333,6 @@ export const homePage: HomePage = {
       newTab: false,
       url: homeSectionHref(HOME_SECTIONS.contato),
       text: 'Criar minha Embalagem Personalizada',
-      trackingCtaId: TRACKING_CTA.CUSTOM_PACKAGING,
     },
     image: mediaAsset(
       'caixa-madeira-fumigada-1.webp',
@@ -363,7 +357,6 @@ export const homePage: HomePage = {
           newTab: false,
           url: homeSectionHref(HOME_SECTIONS.contato),
           text: 'Entre em Contato',
-          trackingCtaId: TRACKING_CTA.CONTACT_ROW,
         },
         image: mediaAsset(
           'caminhao_novo.png',
@@ -387,7 +380,6 @@ export const homePage: HomePage = {
           newTab: false,
           url: '/caixa-madeira-fumigada',
           text: 'Embalagens Fumigadas',
-          trackingCtaId: TRACKING_CTA.FUMIGATED_PAGE,
         },
         image: mediaAsset(
           'madeira-fumigada-exportacao.png',

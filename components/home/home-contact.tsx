@@ -77,7 +77,7 @@ export default function HomeContactSection({ contact }: HomeContactProps) {
               target="_blank"
               rel="noopener noreferrer"
               className={
-                'buttonizer mt-6 inline-flex w-full items-center ' +
+                'mt-6 inline-flex w-full items-center ' +
                 'justify-center gap-2 rounded-md bg-rbx-green-primary ' +
                 'px-6 py-3 text-lg font-semibold text-white ' +
                 'transition-colors hover:bg-rbx-green-secondary'
@@ -119,7 +119,7 @@ export default function HomeContactSection({ contact }: HomeContactProps) {
               target="_blank"
               rel="noopener noreferrer"
               className={
-                'buttonizer mt-2 inline-block text-base font-semibold ' +
+                'mt-2 inline-block text-base font-semibold ' +
                 'text-rbx-green-dark underline hover:text-rbx-green'
               }
             >
