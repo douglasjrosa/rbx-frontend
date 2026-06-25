@@ -90,7 +90,7 @@ html {
 }
 
 .prose-rbx a {
-  @apply text-sky-600 underline hover:text-sky-800;
+  @apply text-sky-800 underline hover:text-sky-900;
 }
 
 .prose-rbx blockquote {

@@ -19,14 +19,16 @@ export function getNavbarOffsetPx(): number {
   return Math.round(navbar.getBoundingClientRect().height);
 }
 
-export function syncNavbarHeightCssVar(): void {
+export function syncNavbarHeightCssVar(heightPx?: number): void {
   if (typeof document === 'undefined') {
     return;
   }
 
+  const height = heightPx ?? getNavbarOffsetPx();
+
   document.documentElement.style.setProperty(
     '--navbar-height',
-    `${getNavbarOffsetPx()}px`,
+    `${height}px`,
   );
 }
 

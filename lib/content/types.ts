@@ -10,7 +10,6 @@ export interface NavLink {
   newTab: boolean;
   url: string;
   text: string;
-  trackingCtaId?: number;
 }
 
 export interface PageMetadata {
@@ -198,7 +197,6 @@ export interface CookieConsentConfig {
 export interface FooterContact {
   label: string;
   email: string;
-  trackWhatsappConversion?: boolean;
 }
 
 export type FooterSocialIcon = 'facebook' | 'linkedin' | 'instagram';

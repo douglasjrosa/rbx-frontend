@@ -107,7 +107,6 @@ export const siteConfig: SiteConfig = {
       {
         label: 'Daniela Medeiros - Comercial',
         email: 'contato@ribermax.com.br',
-        trackWhatsappConversion: true,
       },
       {
         label: 'Daniela Alves – Compras e Financeiro',
