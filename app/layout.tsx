@@ -3,6 +3,7 @@ import SiteLayout from '@/components/layout';
 import TrackingScripts, {
   GoogleTagManagerNoScript,
 } from '@/components/analytics/tracking-scripts';
+import HeadHints from '@/components/performance/head-hints';
 import { siteConfig } from '@/content/site';
 import './globals.css';
 
@@ -45,6 +46,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
+      <head>
+        <HeadHints />
+      </head>
       <body>
         <GoogleTagManagerNoScript />
         <TrackingScripts />

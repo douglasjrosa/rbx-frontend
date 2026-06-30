@@ -1,5 +1,7 @@
 export const COOKIE_CONSENT_STORAGE_KEY = 'rbx-cookie-consent';
 
+export const COOKIE_CONSENT_CHANGED_EVENT = 'rbx-cookie-consent-changed';
+
 export type CookieConsentStatus = 'accepted' | 'denied';
 
 export function getStoredCookieConsent(): CookieConsentStatus | null {
@@ -18,4 +20,8 @@ export function getStoredCookieConsent(): CookieConsentStatus | null {
 
 export function storeCookieConsent(status: CookieConsentStatus): void {
   localStorage.setItem(COOKIE_CONSENT_STORAGE_KEY, status);
+
+  if (typeof window !== 'undefined') {
+    window.dispatchEvent(new Event(COOKIE_CONSENT_CHANGED_EVENT));
+  }
 }

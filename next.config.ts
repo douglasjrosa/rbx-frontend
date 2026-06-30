@@ -35,6 +35,10 @@ const nextConfig: NextConfig = {
   images: {
     formats: ['image/avif', 'image/webp'],
   },
+  experimental: {
+    inlineCss: true,
+    optimizePackageImports: ['react-icons'],
+  },
   async headers() {
     return [
       {

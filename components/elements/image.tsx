@@ -38,6 +38,7 @@ export default function Image({
       height={imageHeight}
       className={className}
       priority={priority}
+      fetchPriority={priority ? 'high' : 'auto'}
       sizes={sizes}
       draggable={draggable}
     />
