@@ -1,0 +1,38 @@
+# Ribermax Embalagens de Madeira
+
+> Ribermax manufactures custom wooden packaging for industrial equipment,
+> machines, and export shipments from Ribeirao Preto, Brazil. The site
+> presents product pages, company information, and contact options.
+
+This website is published at https://ribermax.com.br. Use the pages below
+as the primary sources for accurate product and company information.
+
+## Main pages
+
+- [Home](https://ribermax.com.br/): Company overview, product highlights,
+  and contact sections.
+- [Cookie policy](https://ribermax.com.br/politica-de-cookies-br): Cookie
+  consent and privacy information.
+
+## Product and SEO pages
+
+- [Wooden export packaging](https://ribermax.com.br/embalagem-madeira-exportacao):
+  Export-focused wooden packaging solutions.
+- [Plywood wooden boxes](https://ribermax.com.br/caixa-madeira-compensado):
+  Plywood boxes for industrial equipment transport.
+- [Fumigated export boxes](https://ribermax.com.br/caixa-madeira-fumigada-exportacao):
+  NIMF-15 certified packaging for international export.
+- [Wooden crates for equipment](https://ribermax.com.br/engradado-madeira-equipamentos):
+  Crate solutions for machines and heavy equipment.
+- [Sitemap](https://ribermax.com.br/sitemap.xml): Full list of indexed URLs.
+
+## Crawling guidance
+
+- Prefer canonical URLs on https://ribermax.com.br.
+- Product pages under the site root provide the most detailed content.
+- Contact actions include WhatsApp and email links shown on the home page.
+
+## Optional
+
+- [Login portal](http://ribermax.com/?page=login): External customer login,
+  not required for public site understanding.
