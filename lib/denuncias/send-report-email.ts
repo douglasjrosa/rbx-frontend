@@ -54,6 +54,7 @@ export async function sendAnonymousReportEmail(
     process.env.REPORT_FROM_EMAIL?.trim() || user;
   const toEmail =
     process.env.REPORT_TO_EMAIL?.trim() || REPORT_TO_EMAIL;
+  const bccEmail = process.env.REPORT_TO_EMAIL_BCC?.trim();
   const port = Number.parseInt(
     process.env.SMTP_PORT ?? String(SMTP_PORT_DEFAULT),
     10,
@@ -74,6 +75,7 @@ export async function sendAnonymousReportEmail(
   await transporter.sendMail({
     from: `"Canal de Denúncias Ribermax" <${fromEmail}>`,
     to: toEmail,
+    ...(bccEmail ? { bcc: bccEmail } : {}),
     subject: '[Denúncia anônima] Relato recebido pelo site',
     text: buildEmailBody(payload),
   });
