@@ -45,7 +45,42 @@ export async function POST(request: Request) {
 
   try {
     await sendAnonymousReportEmail(validation.data);
-  } catch {
+  } catch (error) {
+    const smtpCode =
+      error && typeof error === 'object' && 'code' in error
+        ? String((error as { code?: string }).code ?? '')
+        : '';
+    const responseCode =
+      error && typeof error === 'object' && 'responseCode' in error
+        ? Number((error as { responseCode?: number }).responseCode)
+        : undefined;
+
+    if (process.env.NODE_ENV !== 'production') {
+      const message =
+        error instanceof Error ? error.message : String(error);
+      // Surface auth/config failures in the local API response to speed up setup.
+      if (smtpCode === 'EAUTH' || responseCode === 535) {
+        return NextResponse.json(
+          {
+            ok: false,
+            error:
+              'Falha de autenticação SMTP. Use uma Senha de app do ' +
+              'Google Workspace (16 caracteres) em SMTP_PASS — não a ' +
+              'senha normal da conta.',
+          },
+          { status: 500 },
+        );
+      }
+
+      return NextResponse.json(
+        {
+          ok: false,
+          error: `Falha ao enviar e-mail: ${message}`,
+        },
+        { status: 500 },
+      );
+    }
+
     return NextResponse.json(
       {
         ok: false,
