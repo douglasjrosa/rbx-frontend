@@ -37,7 +37,12 @@ export const metadata: Metadata = {
 export default function DenunciasPage() {
   return (
     <PageContainer variant="wood">
-      <div className="container mx-auto max-w-3xl space-y-6 pb-8 md:space-y-8">
+      <div
+        className={
+          'container mx-auto max-w-3xl space-y-6 pt-10 pb-8 ' +
+          'md:space-y-8 md:pt-14'
+        }
+      >
         <section className="card-rbx text-left">
           <h1 className="title text-rbx-green-dark">{PAGE_TITLE}</h1>
           <div className="mt-4 space-y-4">
