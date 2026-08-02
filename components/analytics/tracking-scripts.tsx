@@ -1,45 +1,49 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import Script from 'next/script';
 import { GTM_CONTAINER_ID } from '@/lib/analytics/config';
+import { CONSENT_GRANTED } from '@/lib/analytics/consent-mode';
 import { isTrackingEnabled } from '@/lib/analytics/is-tracking-enabled';
 import {
   COOKIE_CONSENT_CHANGED_EVENT,
   getStoredCookieConsent,
 } from '@/lib/cookie-consent';
 
-const GTM_INLINE_SCRIPT = `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','${GTM_CONTAINER_ID}');`;
-
 function hasAnalyticsConsent(): boolean {
   return getStoredCookieConsent() === 'accepted';
 }
 
+function updateConsentGranted(): void {
+  if (typeof window.gtag === 'function') {
+    window.gtag('consent', 'update', { ...CONSENT_GRANTED });
+  }
+}
+
+function loadGtmIfNeeded(): void {
+  window.__rbxLoadGtm?.();
+}
+
 export function GoogleTagManagerNoScript() {
-  const [consentAccepted, setConsentAccepted] = useState(false);
+  const [shouldRender, setShouldRender] = useState(false);
 
   useEffect(() => {
     if (!isTrackingEnabled()) {
       return;
     }
 
-    const syncConsent = () => {
-      setConsentAccepted(hasAnalyticsConsent());
+    const sync = () => {
+      setShouldRender(hasAnalyticsConsent());
     };
 
-    syncConsent();
-    window.addEventListener(COOKIE_CONSENT_CHANGED_EVENT, syncConsent);
+    sync();
+    window.addEventListener(COOKIE_CONSENT_CHANGED_EVENT, sync);
 
     return () => {
-      window.removeEventListener(COOKIE_CONSENT_CHANGED_EVENT, syncConsent);
+      window.removeEventListener(COOKIE_CONSENT_CHANGED_EVENT, sync);
     };
   }, []);
 
-  if (!isTrackingEnabled() || !consentAccepted) {
+  if (!isTrackingEnabled() || !shouldRender) {
     return null;
   }
 
@@ -57,32 +61,34 @@ export function GoogleTagManagerNoScript() {
 }
 
 export default function TrackingScripts() {
-  const [consentAccepted, setConsentAccepted] = useState(false);
-
   useEffect(() => {
     if (!isTrackingEnabled()) {
       return;
     }
 
-    const syncConsent = () => {
-      setConsentAccepted(hasAnalyticsConsent());
+    const syncConsentAndLoader = () => {
+      if (!hasAnalyticsConsent()) {
+        return;
+      }
+
+      updateConsentGranted();
+      loadGtmIfNeeded();
+      updateConsentGranted();
     };
 
-    syncConsent();
-    window.addEventListener(COOKIE_CONSENT_CHANGED_EVENT, syncConsent);
+    syncConsentAndLoader();
+    window.addEventListener(
+      COOKIE_CONSENT_CHANGED_EVENT,
+      syncConsentAndLoader,
+    );
 
     return () => {
-      window.removeEventListener(COOKIE_CONSENT_CHANGED_EVENT, syncConsent);
+      window.removeEventListener(
+        COOKIE_CONSENT_CHANGED_EVENT,
+        syncConsentAndLoader,
+      );
     };
   }, []);
 
-  if (!isTrackingEnabled() || !consentAccepted) {
-    return null;
-  }
-
-  return (
-    <Script id="google-tag-manager" strategy="lazyOnload">
-      {GTM_INLINE_SCRIPT}
-    </Script>
-  );
+  return null;
 }

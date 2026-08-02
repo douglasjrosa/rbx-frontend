@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import SiteLayout from '@/components/layout';
+import GtmBootstrap from '@/components/analytics/gtm-bootstrap';
 import TrackingScripts, {
   GoogleTagManagerNoScript,
 } from '@/components/analytics/tracking-scripts';
@@ -48,6 +49,7 @@ export default function RootLayout({
     <html lang="pt-BR">
       <head>
         <HeadHints />
+        <GtmBootstrap />
       </head>
       <body>
         <GoogleTagManagerNoScript />

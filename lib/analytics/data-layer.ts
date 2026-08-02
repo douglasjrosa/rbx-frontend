@@ -17,6 +17,9 @@ export type DataLayerPayload = {
 declare global {
   interface Window {
     dataLayer?: DataLayerPayload[];
+    __rbxLoadGtm?: () => void;
+    __rbxGtmLoaded?: boolean;
+    gtag?: (...args: unknown[]) => void;
   }
 }
 
