@@ -64,9 +64,8 @@ export async function POST(request: Request) {
           {
             ok: false,
             error:
-              'Falha de autenticação SMTP. Use uma Senha de app do ' +
-              'Google Workspace (16 caracteres) em SMTP_PASS — não a ' +
-              'senha normal da conta.',
+              'Falha de autenticação SMTP. Confira SMTP_USER e SMTP_PASS ' +
+              'no .env.local (conta Google Workspace / Gmail).',
           },
           { status: 500 },
         );
