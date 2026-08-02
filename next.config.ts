@@ -23,6 +23,8 @@ const CONTENT_SECURITY_POLICY = [
   [
     'frame-src',
     'https://www.googletagmanager.com',
+    'https://www.google.com',
+    'https://maps.google.com',
     'https://vercel.live',
   ].join(' '),
   "object-src 'none'",
