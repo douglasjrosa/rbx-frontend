@@ -10,11 +10,16 @@ const PAGE_DESCRIPTION =
   'hora e local do ocorrido, teremos mais facilidade em lidar com o ' +
   'problema.';
 
-const INTRO_TEXT =
-  'Aqui você pode nos dizer o que houve sem se identificar. Se souber ' +
-  'informar data, hora e local do ocorrido, teremos mais facilidade em ' +
-  'lidar com o problema. Queremos ajudar para que a Ribermax seja um ' +
-  'local cada vez mais seguro e harmonioso para todos.';
+const INTRO_PARAGRAPHS = [
+  'Aqui você pode nos dizer o que houve sem se identificar.',
+  'Se souber informar data, hora e local do ocorrido, teremos mais ' +
+    'facilidade em lidar com o problema.',
+  'Queremos ajudar para que a Ribermax seja um local cada vez mais ' +
+    'seguro e harmonioso para todos.',
+] as const;
+
+const INTRO_PARAGRAPH_CLASS =
+  'text-lg leading-relaxed text-rbx-accent md:text-xl';
 
 export const metadata: Metadata = {
   title: PAGE_TITLE,
@@ -35,9 +40,13 @@ export default function DenunciasPage() {
       <div className="container mx-auto max-w-3xl space-y-6 pb-8 md:space-y-8">
         <section className="card-rbx text-left">
           <h1 className="title text-rbx-green-dark">{PAGE_TITLE}</h1>
-          <p className="mt-4 text-lg leading-relaxed text-rbx-accent md:text-xl">
-            {INTRO_TEXT}
-          </p>
+          <div className="mt-4 space-y-4">
+            {INTRO_PARAGRAPHS.map((paragraph) => (
+              <p key={paragraph} className={INTRO_PARAGRAPH_CLASS}>
+                {paragraph}
+              </p>
+            ))}
+          </div>
         </section>
 
         <section className="card-rbx text-left">
