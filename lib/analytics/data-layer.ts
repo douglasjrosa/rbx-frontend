@@ -4,6 +4,7 @@ export const GTM_EVENTS = {
   MAPS_DIRECTIONS_CLICK: 'maps_directions_click',
   COOKIE_CONSENT: 'cookie_consent',
   VIRTUAL_PAGE_VIEW: 'virtual_page_view',
+  REPORT_SUBMITTED: 'report_submitted',
 } as const;
 
 export type GtmEventName = (typeof GTM_EVENTS)[keyof typeof GTM_EVENTS];
