@@ -10,6 +10,7 @@ const CONTENT_SECURITY_POLICY = [
     ...(isDevelopment ? ["'unsafe-eval'"] : []),
     'https://www.googletagmanager.com',
     'https://www.google-analytics.com',
+    'https://static.cloudflareinsights.com',
     'https://vercel.live',
   ].join(' '),
   [
@@ -18,6 +19,8 @@ const CONTENT_SECURITY_POLICY = [
     'https://analytics.google.com',
     'https://www.googletagmanager.com',
     'https://region1.google-analytics.com',
+    'https://static.cloudflareinsights.com',
+    'https://cloudflareinsights.com',
     'https://vercel.live',
     'wss://vercel.live',
   ].join(' '),

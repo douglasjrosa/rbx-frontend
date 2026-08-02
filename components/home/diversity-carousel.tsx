@@ -346,7 +346,7 @@ export default function DiversityCarousel({ cards }: DiversityCarouselProps) {
           </button>
 
           <div
-            className="mt-6 flex justify-center gap-2"
+            className="mt-6 flex justify-center gap-3"
             role="tablist"
             aria-label="Paginação do carrossel"
           >
@@ -359,12 +359,19 @@ export default function DiversityCarousel({ cards }: DiversityCarouselProps) {
                 aria-label={`Ir para slide ${index + 1}`}
                 onClick={() => goTo(index)}
                 className={
-                  'h-2.5 w-2.5 rounded-full transition-colors ' +
-                  (index === activeIndex
-                    ? 'bg-rbx-accent'
-                    : 'bg-white/50 hover:bg-white/70')
+                  'flex h-6 w-6 items-center justify-center rounded-full'
                 }
-              />
+              >
+                <span
+                  aria-hidden
+                  className={
+                    'h-2.5 w-2.5 rounded-full transition-colors ' +
+                    (index === activeIndex
+                      ? 'bg-rbx-accent'
+                      : 'bg-white/50')
+                  }
+                />
+              </button>
             ))}
           </div>
         </>

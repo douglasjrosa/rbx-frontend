@@ -65,7 +65,10 @@ export default function CookieConsentBanner({
           <button
             type="button"
             onClick={() => setIsVisible(false)}
-            className="shrink-0 text-[#222222] hover:opacity-70"
+            className={
+              'flex h-6 w-6 shrink-0 items-center justify-center ' +
+              'text-[#222222] hover:opacity-70'
+            }
             aria-label="Fechar diálogo"
           >
             <MdClose className="h-5 w-5" aria-hidden="true" />
