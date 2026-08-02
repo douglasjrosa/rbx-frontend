@@ -41,8 +41,6 @@ function buildEmailBody(payload: ValidReportPayload): string {
     '--- Contexto ---',
     whenLine,
     locationLine,
-    '',
-    'Este e-mail foi gerado automaticamente. O autor não se identificou.',
   ].join('\n');
 }
 

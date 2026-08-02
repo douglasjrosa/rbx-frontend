@@ -1,9 +1,13 @@
 import type { NextConfig } from 'next';
 
+const isDevelopment = process.env.NODE_ENV !== 'production';
+
 const CONTENT_SECURITY_POLICY = [
   "default-src 'self'",
   [
     "script-src 'self' 'unsafe-inline'",
+    // React DevTools / Next.js turbopack need eval() in development only.
+    ...(isDevelopment ? ["'unsafe-eval'"] : []),
     'https://www.googletagmanager.com',
     'https://www.google-analytics.com',
     'https://vercel.live',
