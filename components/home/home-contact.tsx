@@ -1,6 +1,8 @@
+import TrackedAnchor from '@/components/analytics/tracked-anchor';
 import GoogleMapEmbed from '@/components/elements/google-map-embed';
 import Image from '@/components/elements/image';
 import { siteConfig } from '@/content/site';
+import { GTM_EVENTS } from '@/lib/analytics/data-layer';
 import { HOME_SECTIONS } from '@/lib/home-sections';
 import {
   getRibermaxDirectionsUrl,
@@ -72,10 +74,12 @@ export default function HomeContactSection({ contact }: HomeContactProps) {
               />
             </div>
 
-            <a
+            <TrackedAnchor
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
+              eventName={GTM_EVENTS.WHATSAPP_CLICK}
+              eventLocation="contact_section"
               className={
                 'mt-6 inline-flex w-full items-center ' +
                 'justify-center gap-2 rounded-md bg-rbx-green-primary ' +
@@ -85,7 +89,7 @@ export default function HomeContactSection({ contact }: HomeContactProps) {
             >
               <FaWhatsapp className="h-6 w-6 shrink-0" aria-hidden />
               {contact.whatsappButtonLabel}
-            </a>
+            </TrackedAnchor>
           </article>
 
           <div>
@@ -114,17 +118,19 @@ export default function HomeContactSection({ contact }: HomeContactProps) {
             <p className="mt-4 text-lg leading-relaxed text-rbx-accent">
               <strong>Endereço:</strong> {contact.address}
             </p>
-            <a
+            <TrackedAnchor
               href={directionsUrl}
               target="_blank"
               rel="noopener noreferrer"
+              eventName={GTM_EVENTS.MAPS_DIRECTIONS_CLICK}
+              eventLocation="contact_section"
               className={
                 'mt-2 inline-block text-base font-semibold ' +
                 'text-rbx-green-dark underline hover:text-rbx-green'
               }
             >
               Como chegar no Google Maps
-            </a>
+            </TrackedAnchor>
           </div>
         </div>
       </div>

@@ -1,6 +1,7 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { Suspense, useState, useEffect } from 'react';
+import AnalyticsPageView from '@/components/analytics/analytics-page-view';
 import Navbar from './elements/navbar';
 import NavbarHeightSync from './navbar-height-sync';
 import Footer from './elements/footer';
@@ -28,6 +29,9 @@ export default function SiteLayout({ children }: SiteLayoutProps) {
 
   return (
     <div className="flex flex-col min-h-screen">
+      <Suspense fallback={null}>
+        <AnalyticsPageView />
+      </Suspense>
       <div className="flex-1">
         <div className="fixed w-full z-50" data-site-navbar>
           <Navbar />

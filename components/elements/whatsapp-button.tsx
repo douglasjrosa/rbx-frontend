@@ -1,4 +1,8 @@
+'use client';
+
 import Image from './image';
+import TrackedAnchor from '@/components/analytics/tracked-anchor';
+import { GTM_EVENTS } from '@/lib/analytics/data-layer';
 import type { MediaAsset } from '@/lib/content/types';
 import { buildWhatsAppUrl } from '@/lib/whatsapp';
 
@@ -15,12 +19,14 @@ export default function WhatsAppButton({
 }: WhatsAppButtonProps) {
   return (
     <div className="z-30">
-      <a
+      <TrackedAnchor
         href={buildWhatsAppUrl(phone, message)}
         className="fixed bottom-24 right-5 block w-[90px]"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Botão Whatsapp"
+        eventName={GTM_EVENTS.WHATSAPP_CLICK}
+        eventLocation="floating_button"
       >
         <Image
           media={media}
@@ -28,7 +34,7 @@ export default function WhatsAppButton({
           height={90}
           alternativeText="Ícone do Whatsapp"
         />
-      </a>
+      </TrackedAnchor>
     </div>
   );
 }

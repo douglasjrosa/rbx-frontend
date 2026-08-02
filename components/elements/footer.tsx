@@ -1,7 +1,11 @@
 import Image from './image';
+import TrackedAnchor from '@/components/analytics/tracked-anchor';
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 import { siteConfig } from '@/content/site';
+import { GTM_EVENTS } from '@/lib/analytics/data-layer';
 import type { FooterSocialIcon } from '@/lib/content/types';
+
+const COMMERCIAL_EMAIL = 'contato@ribermax.com.br';
 
 const SOCIAL_ICON_COMPONENTS = {
   facebook: FaFacebookF,
@@ -78,12 +82,23 @@ export default function Footer() {
                 >
                   <p>{contact.label}</p>
                   <p>
-                    <a
-                      href={`mailto:${contact.email}`}
-                      className="hover:underline"
-                    >
-                      {contact.email}
-                    </a>
+                    {contact.email === COMMERCIAL_EMAIL ? (
+                      <TrackedAnchor
+                        href={`mailto:${contact.email}`}
+                        className="hover:underline"
+                        eventName={GTM_EVENTS.EMAIL_CLICK}
+                        eventLocation="footer"
+                      >
+                        {contact.email}
+                      </TrackedAnchor>
+                    ) : (
+                      <a
+                        href={`mailto:${contact.email}`}
+                        className="hover:underline"
+                      >
+                        {contact.email}
+                      </a>
+                    )}
                   </p>
                 </div>
               ))}
