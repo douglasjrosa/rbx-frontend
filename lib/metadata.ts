@@ -7,6 +7,9 @@ export function buildHomeMetadata(page: HomePage): Metadata {
   return {
     title: page.metadata.metaTitle,
     description: page.metadata.metaDescription,
+    alternates: {
+      canonical: '/',
+    },
     openGraph: {
       title: `${page.metadata.metaTitle} | ${siteConfig.metaTitleSuffix}`,
       description: page.metadata.metaDescription,
@@ -28,6 +31,9 @@ export function buildSeoMetadata(page: SeoPage): Metadata {
   return {
     title,
     description: page.metaDescription,
+    alternates: {
+      canonical: `/${page.slug}/`,
+    },
     openGraph: {
       title: `${title} | ${siteConfig.metaTitleSuffix}`,
       description: page.metaDescription,
@@ -44,6 +50,9 @@ export function buildLegalMetadata(page: LegalPage): Metadata {
   return {
     title: page.title,
     description: page.metaDescription,
+    alternates: {
+      canonical: `/${page.slug}/`,
+    },
     openGraph: {
       title: `${page.title} | ${siteConfig.metaTitleSuffix}`,
       description: page.metaDescription,

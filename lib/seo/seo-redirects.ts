@@ -64,20 +64,36 @@ export function buildSeoCanonicalRedirectRules(): Array<{
   destination: string;
   permanent: boolean;
 }> {
-  return SEO_CANONICAL_REDIRECTS.flatMap(({ sourceSlug, destinationSlug }) => {
-    const destination = `/${destinationSlug}/`;
+  const clusterRedirects = SEO_CANONICAL_REDIRECTS.flatMap(
+    ({ sourceSlug, destinationSlug }) => {
+      const destination = `/${destinationSlug}/`;
 
-    return [
-      {
-        source: `/${sourceSlug}`,
-        destination,
-        permanent: true,
-      },
-      {
-        source: `/${sourceSlug}/`,
-        destination,
-        permanent: true,
-      },
-    ];
-  });
+      return [
+        {
+          source: `/${sourceSlug}`,
+          destination,
+          permanent: true,
+        },
+        {
+          source: `/${sourceSlug}/`,
+          destination,
+          permanent: true,
+        },
+      ];
+    },
+  );
+
+  return [
+    ...clusterRedirects,
+    {
+      source: '/index.amp',
+      destination: '/',
+      permanent: true,
+    },
+    {
+      source: '/index.amp/',
+      destination: '/',
+      permanent: true,
+    },
+  ];
 }
