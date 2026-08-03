@@ -12,55 +12,51 @@ Page content:
 
 <h1>Caixa de Madeira Fumigada para Exportação</h1>
 
-<div>Na RIBERMAX EMBALAGENS, encontramos soluções definitivas para seu problema de exportação com <strong>Caixa de Madeira Fumigada para Exportação</strong>. Crescem diariamente as exportações no Brasil e, consequentemente, aumenta a procura por embalagens adequadas. Apesar das instabilidades políticas e econômicas, as indústrias brasileiras seguem empreendendo e vencendo obstáculos com determinação.</div>
+<div>Se você precisa enviar máquinas, equipamentos ou peças para fora do Brasil, a embalagem de madeira precisa proteger o produto <strong>e</strong> atender às regras fitossanitárias do destino. Na Ribermax, fabricamos <strong>caixa de madeira fumigada para exportação</strong> sob medida, com madeira de reflorestamento e documentação de tratamento térmico (HT) quando a operação exige.</div>
 
-<div>Além disso, focar esforços na abertura de mercados externos representa o caminho certo para garantir estabilidade financeira. Assim, as empresas traçam seu próprio destino rumo ao sucesso internacional. O caminho pode ser desafiador, mas com o suporte técnico adequado e embalagens certificadas, sua empresa estará preparada para conquistar novos mercados.</div>
+<div>O termo “fumigada” ainda é o que a maioria das equipes de compras e logística pesquisa. Na prática, o padrão vigente para embalagens de madeira na exportação é o tratamento previsto na <strong>NIMF-15</strong> — hoje, na maior parte dos casos, feito por <strong>tratamento térmico (HT)</strong>, e não por fumigação com brometo de metila.</div>
 
-<h2>O que diz a legislação NIMF-15 sobre Caixa de Madeira Fumigada para Exportação?</h2>
+<h2>O que a NIMF-15 exige na prática</h2>
 
-<div>A Organização Mundial do Comércio (OMC) atua como órgão internacional de responsabilidade global. Portanto, sua missão inclui regular normas que todos os países membros devem seguir, principalmente em relação ao meio ambiente. Por isso, todas as empresas exportadoras situadas em países coligados precisam cumprir rigorosamente essas regras durante todo o processo de exportação.</div>
+<div>A NIMF-15 (Norma Internacional de Medidas Fitossanitárias nº 15) define requisitos para embalagens de madeira usadas no comércio internacional, com o objetivo de reduzir o risco de transporte de pragas entre países. Para o exportador, isso significa: madeira tratada conforme a norma, marcação visível na embalagem e certificado de tratamento para a documentação da carga.</div>
 
-<div>Entre essas regulamentações, destaca-se especialmente a NIMF Nº15 (Norma Internacional de Medidas Fitossanitárias), criada para proteger o equilíbrio ambiental global após experiências negativas com transporte de pragas entre países.</div>
+<div>Quando a regra não é cumprida, o risco típico não é só “retrabalho”: pode haver retenção na alfândega, necessidade de tratamento emergencial no porto, atraso na entrega e, em casos graves, sanções sobre a carga. Por isso a embalagem precisa ser pensada junto com o processo de exportação — não como um detalhe de última hora.</div>
 
 #############################################
 
-<h2>Entendendo a "Fumigação" e sua importância</h2>
+<h2>“Fumigada” ou tratamento térmico (HT)?</h2>
 
-<div>Primeiramente, vamos esclarecer: o que realmente significa fumigação? <strong>Fumigação</strong> refere-se a um tratamento fitossanitário cujo objetivo principal é eliminar fungos e pragas de materiais orgânicos. Este tratamento tem a finalidade específica de adequar uma <strong>Caixa de Madeira Fumigada para Exportação</strong> às normas internacionais.</div>
+<div>No dia a dia do mercado brasileiro, “caixa fumigada” virou sinônimo de embalagem apta à exportação. Tecnicamente, “fumigação” remete a tratamento químico (MB). O método mais usado e aceito hoje é o <strong>HT (heat treatment)</strong>: a madeira é tratada termicamente até atingir o perfil exigido pela norma.</div>
 
-<blockquote>
-<div>O não cumprimento da NIMF-15 pode resultar em:</div>
+<div>Na Ribermax você encontra o vocabulário que o mercado usa (“fumigada para exportação”) com a solução correta: <strong>embalagem sob medida + tratamento HT + carimbo nas laterais</strong>, para facilitar a fiscalização. Também emitimos o certificado de tratamento HT para compor a documentação do embarque.</div>
+
+<h2>Quando essa caixa é a escolha certa</h2>
+
+<div>Indique caixa de madeira para exportação quando o produto for grande, pesado, delicado ou de alto valor — e sobretudo quando o destino exigir conformidade fitossanitária. Também faz sentido quando a transportadora ou o cliente final cobram embalagem estruturada, paletizada e identificável.</div>
+
 <ul>
-<li>Retenção de mercadorias na alfândega</li>
-<li>Custos adicionais com tratamento emergencial no porto</li>
-<li>Atrasos significativos no cronograma de entrega</li>
-<li>Risco de incineração da carga em caso de detecção de pragas</li>
+<li>Dimensões internas definidas por você (comprimento, largura e altura)</li>
+<li>Modelos adequados a diferentes necessidades de proteção</li>
+<li>Madeira de reflorestamento</li>
+<li>Carimbo em duas laterais, conforme exigência das normas</li>
+<li>Certificado HT para a documentação de exportação</li>
 </ul>
-</blockquote>
 
-<div>A razão para tamanha rigidez é clara: o intercâmbio de micro-organismos pode afetar negativamente a agricultura e ecologia global. Ou seja, se não houver predadores naturais para organismos trazidos na madeira das embalagens no país de destino, existe a possibilidade de propagação de pragas que causarão desequilíbrio ecológico incalculável.</div>
+<h2>Perguntas frequentes</h2>
 
-<h2>Termo "Fumigada": Nomenclatura em evolução</h2>
+<div><strong>Preciso de caixa fumigada ou de tratamento HT?</strong><br />Para a maioria das exportações, o que importa é atender à NIMF-15. Hoje isso costuma significar tratamento térmico HT, mesmo que a busca no Google use “fumigada”.</div>
 
-<div>Importante ressaltar que o termo "Caixa de Madeira Fumigada para Exportação" na verdade não é mais tecnicamente correto. A palavra "fumigada" sugere aplicação de tratamento com Brometo de Metila (MB), método que as normas atuais praticamente não permitem mais, exceto em casos muito específicos.</div>
+<div><strong>Vocês fazem sob medida?</strong><br />Sim. O cliente define as medidas internas. Produzimos a embalagem para o equipamento ou peça — sem forçar um tamanho padrão que não serve.</div>
 
-<div>Atualmente, especialistas consideram o Tratamento Térmico (HT - heat treatment) como o método mais adequado e ecologicamente responsável. Portanto, embora o termo "fumigada" ainda seja amplamente utilizado no mercado, o processo atual envolve principalmente tratamento térmico das madeiras.</div>
+<div><strong>Tem pedido mínimo?</strong><br />Não exigimos pedido mínimo. Atendemos desde demandas pontuais até operações recorrentes.</div>
+
+<div><strong>Qual o prazo?</strong><br />Trabalhamos com entrega em cerca de 7 dias a partir da data do pedido, conforme o projeto e a demanda do período.</div>
 
 #############################################
 Call To Action:
 
-<h3>Caixa de Madeira Fumigada para Exportação - Solicite seu orçamento</h3>
+<h3>Solicite orçamento de caixa para exportação</h3>
 
-<div>Se você busca resistência, baixo custo e sustentabilidade, a <strong>Caixa de Madeira Fumigada para Exportação</strong> da RIBERMAX é a escolha ideal. Além de oferecer alta durabilidade, nossas embalagens representam a solução mais ecologicamente correta e economicamente viável do mercado.</div>
+<div>Envie as medidas do produto (ou o que precisa proteger), o destino e se a carga exige certificado HT. Nossa equipe indica o modelo adequado e calcula o orçamento.</div>
 
-<div>Aplicamos carimbos em duas laterais das caixas, conforme exigência das normas, garantindo fácil visualização pelo fiscal alfandegário. Utilizamos exclusivamente madeira de reflorestamento, tornando nossas embalagens totalmente apropriadas para exportação.</div>
-
-<div>Nossa equipe técnica especializada está à disposição para:</div>
-<ul>
-<li>Analisar suas necessidades específicas de exportação</li>
-<li>Recomendar o dimensionamento mais adequado</li>
-<li>Garantir proteção total do seu produto durante o transporte</li>
-<li>Fornecer certificados de tratamento HT para sua documentação</li>
-</ul>
-
-<div>Conheça também nossos <a style="color: rgb(100, 200, 255); text-decoration: underline" href="/engradado-madeira-equipamentos">engradados de madeira para equipamentos</a> para complementar sua solução logística. Faça seu orçamento agora mesmo em nosso sistema online e descubra o valor na hora. Atendemos toda a região Sudeste do Brasil com agilidade e eficiência!</div> 
+<div>Fábrica em Ribeirão Preto (SP), com foco exclusivo em embalagens de madeira para equipamentos e peças. Conheça também nossa <a href="/fabrica-caixas-madeira/" style="color: rgb(100, 200, 255); text-decoration: underline">fábrica de caixas de madeira</a> e as opções de <a href="/engradado-madeira/" style="color: rgb(100, 200, 255); text-decoration: underline">engradado de madeira</a> quando a estrutura aberta for suficiente.</div>

@@ -9,65 +9,50 @@ Page content:
 
 <h1>Embalagens de Madeira em Ribeirão Preto</h1>
 
-<div>
-As <strong>Embalagens de Madeira em Ribeirão Preto</strong> ganharam relevância estratégica graças ao forte perfil industrial da região. De fato, a cidade paulista se destaca não apenas por sua vocação para o entretenimento noturno, mas também por abrigar um próspero ecossistema de pequenas e médias indústrias, especialmente no segmento médico-odontológico e em diversos outros setores produtivos.
-</div>
+<div>A Ribermax é uma fábrica de <strong>embalagens de madeira em Ribeirão Preto</strong> (SP), com produção própria de caixas e engradados sob medida para indústria. Atuamos desde 1996 com um único foco: proteger equipamentos e peças no transporte e no armazenamento — no mercado interno e na exportação.</div>
 
-<div>
-É importante ressaltar que muitas dessas empresas nasceram a partir da iniciativa de ex-funcionários de grandes indústrias que anteriormente operavam na região. Primeiramente, esses empreendedores aproveitaram seu conhecimento técnico acumulado para criar negócios próprios. Adicionalmente, desenvolveram métodos inovadores para produzir com qualidade comparável às grandes empresas, porém mantendo a agilidade e os custos competitivos característicos de estruturas menores. Em consequência, formou-se um vibrante polo industrial que demanda soluções específicas para proteção e transporte de seus produtos.
-</div>
+<div>Estamos na Vila Elisa (Rua Áustria, 585). A localização no norte do interior paulista favorece o atendimento a indústrias da região e o envio de embalagens para outras praças, com proximidade de eixos rodoviários que ligam o interior a São Paulo e ao restante do Sudeste.</div>
 
-<h2>Posição Estratégica da Cidade</h2>
+<h2>Por que comprar embalagem de madeira perto da fábrica</h2>
 
-<div>
-A localização geográfica privilegiada de Ribeirão Preto confere vantagens logísticas significativas para as indústrias da região. Inicialmente, devemos considerar que a cidade se encontra em um entroncamento de importantes vias que conectam diferentes regiões do Brasil. Em seguida, destacamos sua proximidade com a capital paulista e com a rodovia Anhanguera, que serve como um dos principais corredores logísticos do país.
-</div>
+<div>Para quem produz em Ribeirão Preto e região, fornecedor local reduz ida e volta de medição, alinhamento técnico e retirada ou entrega da embalagem. Isso importa quando o equipamento tem prazo de embarque curto ou quando a engenharia ainda ajusta dimensões no final do projeto.</div>
 
-<div>
-Com efeito, esta posição estratégica transforma Ribeirão Preto em um ponto de passagem natural para o fluxo de mercadorias entre o Sul e o Norte do Brasil. Além disso, essa característica metropolitana favorece a diversificação do mercado de embalagens na região, criando demanda por soluções específicas para diferentes tipos de produtos e distâncias de transporte. Sobretudo, essa conjuntura geográfica potencializa a necessidade de embalagens técnicas que garantam a integridade dos produtos durante trajetos de variadas extensões e condições.
-</div>
-
-<blockquote>
-Dados da Associação Comercial e Industrial de Ribeirão Preto indicam que as empresas da região que investem em embalagens técnicas adequadas registram redução média de 78% nas ocorrências de avarias durante o transporte, resultando em economia significativa e maior satisfação de clientes. Adicionalmente, o uso de embalagens desenvolvidas especificamente para as necessidades de cada produto contribui para a consolidação da reputação de excelência das indústrias locais nos mercados nacional e internacional.
-</blockquote>
+<ul>
+<li>Visita técnica e conferência de medidas com mais agilidade</li>
+<li>Menos custo e tempo de frete da embalagem vazia até a sua planta</li>
+<li>Ajustes de projeto sem depender só de troca de e-mail</li>
+<li>Fala direta com quem fabrica — não com um revendedor genérico</li>
+</ul>
 
 #############################################
 
-<h2>Vantagens das Embalagens de Madeira em Ribeirão Preto</h2>
+<h2>O que fabricamos em Ribeirão Preto</h2>
 
-<div>
-Acima de tudo, as indústrias localizadas em Ribeirão Preto e região encontram benefícios específicos ao trabalhar com fornecedores próximos de embalagens técnicas:
+<div>Produzimos caixas e engradados de madeira com medidas internas definidas pelo cliente. A madeira é de reflorestamento. Para exportação, trabalhamos com tratamento térmico (HT) e certificado, no padrão que o mercado ainda chama de “fumigada”.</div>
 
-<ul>
-<li>Agilidade no atendimento a demandas urgentes de proteção para produtos</li>
-<li>Redução nos custos logísticos para entrega das embalagens</li>
-<li>Possibilidade de visitas técnicas para desenvolvimento de soluções personalizadas</li>
-<li>Facilidade de comunicação e acompanhamento presencial dos projetos</li>
-<li>Suporte rápido em caso de necessidades imprevistas de produção</li>
-<li>Conhecimento das particularidades e exigências das indústrias regionais</li>
-</ul>
-</div>
+<div>Atendemos indústrias que precisam embalar máquinas, equipamentos e peças de médio e grande porte — inclusive demandas típicas do polo industrial da região. Se o papelão não segura o peso, o volume ou o valor do item, a embalagem de madeira passa a ser a solução estrutural.</div>
 
-<div>
-Em contraste com fornecedores distantes, a proximidade geográfica permite interações mais eficientes e produtivas. Por exemplo, quando uma indústria médica precisa desenvolver uma embalagem para um novo equipamento, o contato direto com o fabricante de embalagens facilita ajustes precisos e validações presenciais que seriam complexas à distância. Portanto, mais que uma questão de conveniência, a escolha de um fornecedor local representa uma vantagem competitiva para empresas que valorizam agilidade e precisão em suas operações.
-</div>
+<h2>Para quem faz sentido</h2>
 
-<h2>Tradição e Inovação a Serviço da Indústria</h2>
+<div>Escolha embalagem de madeira sob medida quando o produto for grande, pesado, delicado ou de alto valor; quando a transportadora exigir embalagem reforçada; ou quando o destino for longe / exportação e o risco de avaria for inaceitável.</div>
 
-<div>
-Na Ribermax Embalagens, atuamos desde 1996 como líderes no mercado de embalagens de madeira em Ribeirão Preto, acompanhando de perto a evolução do perfil industrial da cidade. Por exemplo, desenvolvemos soluções específicas para os equipamentos médico-odontológicos produzidos na região, criando estruturas que conciliam a proteção necessária com otimização de peso e dimensões. Em contrapartida, também atendemos indústrias de outros segmentos com necessidades completamente diferentes, demonstrando nossa versatilidade.
-</div>
+<div>Diferenciais que usamos no dia a dia: prazo de cerca de 7 dias a partir do pedido, modelos conforme a necessidade de proteção, certificado HT para exportação e política de descontos para clientes parceiros. Não exigimos pedido mínimo.</div>
 
-<div>
-Com mais de 25 anos de experiência no mercado, nossa empresa se orgulha de ter contribuído para o sucesso logístico de inúmeros empreendedores locais, aprendendo e crescendo junto com eles. Consequentemente, expandimos nosso atendimento para outras regiões, levando a mesma qualidade e eficiência que construiu nossa reputação em Ribeirão Preto. Além disso, investimos em tecnologia para proporcionar experiências mais ágeis e práticas aos nossos clientes, como nosso aplicativo online para cálculo instantâneo de orçamentos. Em resumo, combinamos o conhecimento tradicional sobre madeira e embalagens com inovações que facilitam a vida dos gestores industriais modernos.
-</div>
+<h2>Perguntas frequentes</h2>
+
+<div><strong>A Ribermax fica em Ribeirão Preto?</strong><br />Sim. Fábrica na Rua Áustria, 585 – Vila Elisa – 14075-430 – Ribeirão Preto/SP.</div>
+
+<div><strong>Vocês só atendem a região?</strong><br />Não. A base é Ribeirão Preto, mas enviamos embalagens para outras regiões conforme o projeto.</div>
+
+<div><strong>Consigo orçar rápido?</strong><br />Sim. Dá para simular no fluxo online do site ou falar com a equipe comercial pelo WhatsApp / e-mail com medidas e fotos do produto.</div>
+
+<div><strong>Fazem caixa para exportação?</strong><br />Sim. Veja o conteúdo dedicado de <a href="/caixa-madeira-fumigada-exportacao/" style="color: rgb(100, 200, 255); text-decoration: underline">caixa de madeira fumigada para exportação</a> (tratamento HT / NIMF-15).</div>
 
 #############################################
 Call To Action:
 
-<h3>Solicite Suas Embalagens de Madeira em Ribeirão Preto</h3>
+<h3>Orçamento de embalagens de madeira em Ribeirão Preto</h3>
 
-<div>
-A Ribermax Embalagens está pronta para desenvolver a solução ideal para as necessidades específicas de sua empresa em Ribeirão Preto e região. Com certeza, nosso conhecimento técnico e décadas de experiência nos permitem criar embalagens que garantem a integridade total de seus produtos durante todo o processo logístico.
+<div>Conte medidas internas desejadas (ou dimensões do produto), peso aproximado e se o destino é mercado interno ou exportação. Retornamos com o modelo indicado e o valor.</div>
 
-Em resumo, oferecemos um processo simples e tecnológico para atender suas demandas. Primeiramente, você pode calcular o preço das suas embalagens diretamente em nosso aplicativo online, simulando orçamentos de forma prática e instantânea. Adicionalmente, nossa equipe especializada está disponível para visitas técnicas e desenvolvimento conjunto de soluções personalizadas. Afinal, quando se trata de proteger produtos de valor e garantir a satisfação de seus clientes, contar com um parceiro local experiente faz toda a diferença. Conheça também nossas <a href="https://ribermax.com.br/embalagens-madeira/" style="color: rgb(100, 200, 255); text-decoration: underline">embalagens de madeira</a> para diversas aplicações industriais!</div> 
+<div>Conheça também a página da <a href="/empresa-caixas-madeira/" style="color: rgb(100, 200, 255); text-decoration: underline">empresa de caixas de madeira</a> e da <a href="/fabrica-caixas-madeira/" style="color: rgb(100, 200, 255); text-decoration: underline">fábrica de caixas de madeira</a> para entender processo e diferenciais.</div>
