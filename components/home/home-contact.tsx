@@ -1,3 +1,5 @@
+'use client';
+
 import TrackedAnchor from '@/components/analytics/tracked-anchor';
 import GoogleMapEmbed from '@/components/elements/google-map-embed';
 import Image from '@/components/elements/image';

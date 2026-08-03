@@ -1,9 +1,14 @@
+'use client';
+
 import Image from '@/components/elements/image';
+import LazyBackground from '@/components/elements/lazy-background';
 import type { HomeHighlights, HomeStatCard } from '@/lib/content/types';
 
 interface HomeHighlightsProps {
   highlights: HomeHighlights;
 }
+
+const WOOD_MIN_IMAGE = '/images/wood-min.webp';
 
 function StatCard({ stat }: { stat: HomeStatCard }) {
   const isWood = stat.variant === 'wood';
@@ -35,13 +40,10 @@ function StatCard({ stat }: { stat: HomeStatCard }) {
       <div
         className={`${cardClass} relative overflow-hidden shadow-md`}
       >
-        <div
+        <LazyBackground
+          src={WOOD_MIN_IMAGE}
           className="absolute inset-0 bg-cover bg-no-repeat"
-          style={{
-            backgroundColor: '#658737',
-            backgroundImage: "url('/images/wood-min.webp')",
-          }}
-          aria-hidden
+          style={{ backgroundColor: '#658737' }}
         />
         <div
           className="absolute inset-0 bg-rbx-brown-deep/59"

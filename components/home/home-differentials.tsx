@@ -1,3 +1,5 @@
+'use client';
+
 import Image from '@/components/elements/image';
 import FeatureBulletList from '@/components/elements/feature-bullet-list';
 import type { HomeDifferentials } from '@/lib/content/types';

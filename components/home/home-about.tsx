@@ -1,3 +1,5 @@
+'use client';
+
 import Image from '@/components/elements/image';
 import LazyBackground from '@/components/elements/lazy-background';
 import { HOME_SECTIONS } from '@/lib/home-sections';

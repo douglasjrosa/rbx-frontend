@@ -1,3 +1,5 @@
+'use client';
+
 import ButtonLink from '@/components/elements/button-link';
 import type { HomeCta } from '@/lib/content/types';
 

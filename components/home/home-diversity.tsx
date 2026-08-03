@@ -1,3 +1,5 @@
+'use client';
+
 import dynamic from 'next/dynamic';
 import FeatureBulletList from '@/components/elements/feature-bullet-list';
 import Image from '@/components/elements/image';

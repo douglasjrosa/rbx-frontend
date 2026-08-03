@@ -1,3 +1,5 @@
+'use client';
+
 import ButtonLink from '@/components/elements/button-link';
 import Image from '@/components/elements/image';
 import type { HomeCustomPackaging } from '@/lib/content/types';
