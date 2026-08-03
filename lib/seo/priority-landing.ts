@@ -38,13 +38,40 @@ export type PriorityLandingConfig = {
   stickyCtaLabel: string;
 };
 
-export const SEO_PROOF_ITEMS = [
-  'Desde 1996',
-  'Fábrica em Ribeirão Preto',
-  'Madeira de reflorestamento',
-  'Tratamento HT / NIMF-15',
-  'Prazo ~7 dias',
-] as const;
+export type SeoProofItem = {
+  id: string;
+  label: string;
+  hint: string;
+};
+
+export const SEO_PROOF_ITEMS: SeoProofItem[] = [
+  {
+    id: 'since-1996',
+    label: 'Desde 1996',
+    hint: 'Foco em embalagem industrial',
+  },
+  {
+    id: 'factory-rp',
+    label: 'Fábrica em Ribeirão Preto',
+    hint: 'Produção própria no interior SP',
+  },
+  {
+    id: 'reforestation',
+    label: 'Madeira de reflorestamento',
+    hint: 'Matéria-prima responsável',
+  },
+  {
+    id: 'ht-nimf',
+    label: 'Tratamento HT / NIMF-15',
+    hint: 'Pronto para exportação',
+  },
+  {
+    id: 'lead-time',
+    label: 'Prazo ~7 dias',
+    hint: 'Referência após o pedido',
+  },
+];
+
 
 export const SEO_SOLUTION_CARDS: SeoSolutionCard[] = [
   {
