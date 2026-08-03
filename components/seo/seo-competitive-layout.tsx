@@ -64,68 +64,79 @@ export default function SeoCompetitiveLayout({
     <>
       <SeoFaqPageJsonLd faqs={config.faqs} />
       <article
-        className={
-          'container mx-auto max-w-7xl space-y-8 pb-24 pt-10 ' +
-          'md:space-y-10 md:pb-14 md:pt-14'
-        }
+        className="pb-24 pt-10 md:pb-14 md:pt-14"
         style={{ ['--seo-image-width' as string]: imageWidth }}
       >
-        <SeoConversionHero title={title} config={config} />
-        <SeoProofStrip />
+        <div className="container mx-auto max-w-7xl space-y-8 md:space-y-10">
+          <SeoConversionHero title={title} config={config} />
+          <SeoProofStrip />
 
-        <div className="space-y-10 rounded-2xl bg-white px-6 py-8 shadow-lg md:px-12 md:py-12">
-          {rows.map((row, index) => {
-            const imageOnLeft = index % 2 === 1;
+          <div className="space-y-10 rounded-2xl bg-white px-6 py-8 shadow-lg md:px-12 md:py-12">
+            {rows.map((row, index) => {
+              const imageOnLeft = index % 2 === 1;
 
-            return (
-              <div
-                key={`seo-competitive-row-${index}`}
-                className={
-                  'seo-article-row grid grid-cols-1 items-start gap-6 ' +
-                  'md:grid md:gap-10 ' +
-                  (imageOnLeft ? 'md:[&>*:first-child]:order-2' : '')
-                }
-                data-image-side={imageOnLeft ? 'left' : 'right'}
-              >
-                <div className="prose-rbx min-w-0 text-left">
-                  <HtmlContent html={row.textHtml} />
-                </div>
+              return (
                 <div
+                  key={`seo-competitive-row-${index}`}
                   className={
-                    'seo-article__image-col flex w-full shrink-0 ' +
-                    'justify-center md:justify-start'
+                    'seo-article-row grid grid-cols-1 items-start gap-6 ' +
+                    'md:grid md:gap-10 ' +
+                    (imageOnLeft ? 'md:[&>*:first-child]:order-2' : '')
                   }
+                  data-image-side={imageOnLeft ? 'left' : 'right'}
                 >
-                  <SeoContentImage
-                    slot={row.image}
-                    priority={row.priority}
-                  />
+                  <div className="prose-rbx min-w-0 text-left">
+                    <HtmlContent html={row.textHtml} />
+                  </div>
+                  <div
+                    className={
+                      'seo-article__image-col flex w-full shrink-0 ' +
+                      'justify-center md:justify-start'
+                    }
+                  >
+                    <SeoContentImage
+                      slot={row.image}
+                      priority={row.priority}
+                    />
+                  </div>
                 </div>
-              </div>
-            );
-          })}
+              );
+            })}
 
-          {remainderHtml && (
-            <div className="prose-rbx text-left">
-              <HtmlContent html={remainderHtml} />
+            {remainderHtml && (
+              <div className="prose-rbx text-left">
+                <HtmlContent html={remainderHtml} />
+              </div>
+            )}
+          </div>
+        </div>
+
+        <div
+          className={
+            'mt-8 w-full bg-rbx-white bg-auto bg-repeat py-10 ' +
+            'md:mt-10 md:py-14'
+          }
+        >
+          <div className="container mx-auto max-w-7xl space-y-8 md:space-y-10">
+            <SeoSolutionCards />
+            <SeoFaqAccordion faqs={config.faqs} />
+          </div>
+        </div>
+
+        <div className="container mx-auto mt-8 max-w-7xl space-y-8 md:mt-10 md:space-y-10">
+          <SeoCalculatorLaunchTeaser />
+
+          {ctaHtml && (
+            <div
+              className={
+                'rounded-2xl border-t-4 border-rbx-brown bg-white ' +
+                'px-6 py-8 shadow-lg md:px-12 md:py-10'
+              }
+            >
+              <HtmlContent html={ctaHtml} className="text-left" />
             </div>
           )}
         </div>
-
-        <SeoSolutionCards />
-        <SeoFaqAccordion faqs={config.faqs} />
-        <SeoCalculatorLaunchTeaser />
-
-        {ctaHtml && (
-          <div
-            className={
-              'rounded-2xl border-t-4 border-rbx-brown bg-white ' +
-              'px-6 py-8 shadow-lg md:px-12 md:py-10'
-            }
-          >
-            <HtmlContent html={ctaHtml} className="text-left" />
-          </div>
-        )}
       </article>
       <SeoStickyMobileCta label={config.stickyCtaLabel} />
     </>
