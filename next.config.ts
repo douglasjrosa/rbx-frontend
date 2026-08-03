@@ -47,6 +47,7 @@ const CONTENT_SECURITY_POLICY = [
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
+  trailingSlash: true,
   images: {
     formats: ['image/avif', 'image/webp'],
   },
@@ -68,6 +69,12 @@ const nextConfig: NextConfig = {
       'next/dist/build/polyfills/polyfill-module.js': emptyPolyfillPath,
     };
     return config;
+  },
+  async redirects() {
+    const { buildSeoCanonicalRedirectRules } = await import(
+      './lib/seo/seo-redirects'
+    );
+    return buildSeoCanonicalRedirectRules();
   },
   async headers() {
     return [

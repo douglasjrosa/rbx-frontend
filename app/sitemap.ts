@@ -15,7 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   const seoEntries: MetadataRoute.Sitemap = getAllSeoSlugs().map((slug) => ({
-    url: `${BASE_URL}/${slug}`,
+    url: `${BASE_URL}/${slug}/`,
     lastModified: new Date(),
     changeFrequency: 'weekly',
     priority: 0.9,
@@ -23,7 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const legalEntries: MetadataRoute.Sitemap = getAllLegalPageSlugs().map(
     (slug) => ({
-      url: `${BASE_URL}/${slug}`,
+      url: `${BASE_URL}/${slug}/`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.5,

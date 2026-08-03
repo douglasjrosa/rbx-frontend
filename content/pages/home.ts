@@ -378,7 +378,7 @@ export const homePage: HomePage = {
         ],
         button: {
           newTab: false,
-          url: '/caixa-madeira-fumigada',
+          url: '/caixa-madeira-fumigada-exportacao/',
           text: 'Embalagens Fumigadas',
         },
         image: mediaAsset(
@@ -456,7 +456,7 @@ export const homePage: HomePage = {
           'a procura por Caixa de Madeira Fumigada para Exportação.',
         link: {
           newTab: false,
-          url: '/caixa-madeira-fumigada-exportacao',
+          url: '/caixa-madeira-fumigada-exportacao/',
           text: 'Caixa de Madeira Fumigada para Exportação',
         },
         image: diversityImage(
@@ -471,7 +471,7 @@ export const homePage: HomePage = {
           'de embalagem para o seu equipamento, máquina ou outro produto.',
         link: {
           newTab: false,
-          url: '/caixa-madeira-compensado',
+          url: '/caixa-madeira-compensado/',
           text: 'Caixa de Madeira Compensado',
         },
         image: diversityImage(
@@ -487,7 +487,7 @@ export const homePage: HomePage = {
           'resistente, inicia-se um árduo trabalho de busca.',
         link: {
           newTab: false,
-          url: '/embalagens-especiais-madeira',
+          url: '/embalagens-especiais-madeira/',
           text: 'Caixas Especiais de Madeira',
         },
         image: diversityImage(
@@ -502,7 +502,7 @@ export const homePage: HomePage = {
           'no norte do interior paulista.',
         link: {
           newTab: false,
-          url: '/fabrica-embalagens-madeira',
+          url: '/fabrica-caixas-madeira/',
           text: 'Fábrica de Embalagens de Madeira',
         },
         image: diversityImage(
@@ -518,7 +518,7 @@ export const homePage: HomePage = {
           'foi um segmento sobrevivente da nossa economia.',
         link: {
           newTab: false,
-          url: '/engradado-madeira-transporte',
+          url: '/engradado-madeira-transporte/',
           text: 'Engradado de Madeira para Transporte',
         },
         image: diversityImage(
@@ -534,7 +534,7 @@ export const homePage: HomePage = {
           'as indústrias de máquinas e equipamentos.',
         link: {
           newTab: false,
-          url: '/engradado-exportacao',
+          url: '/engradado-exportacao/',
           text: 'Engradado para Exportação',
         },
         image: diversityImage(
@@ -549,7 +549,7 @@ export const homePage: HomePage = {
           'para resolver o seu problema de embalagem para exportação.',
         link: {
           newTab: false,
-          url: '/caixa-madeira-fumigada',
+          url: '/caixa-madeira-fumigada-exportacao/',
           text: 'Caixa de Madeira Fumigada',
         },
         image: diversityImage(
@@ -564,7 +564,7 @@ export const homePage: HomePage = {
           'Sendo essa a sua dúvida, a resposta está aqui.',
         link: {
           newTab: false,
-          url: '/engradado-madeira-equipamentos',
+          url: '/engradado-madeira-equipamentos/',
           text: 'Engradado de Madeira para Equipamentos',
         },
         image: diversityImage(
@@ -580,7 +580,7 @@ export const homePage: HomePage = {
           'produtos avariados durante o transporte até o cliente?',
         link: {
           newTab: false,
-          url: '/fabricante-embalagem-madeira',
+          url: '/fabrica-caixas-madeira/',
           text: 'Fabricante de Embalagem de Madeira',
         },
         image: diversityImage(
@@ -596,7 +596,7 @@ export const homePage: HomePage = {
           'robustas e fortes para proteger seus produtos.',
         link: {
           newTab: false,
-          url: '/caixas-madeira-equipamentos',
+          url: '/caixas-madeira-equipamentos/',
           text: 'Caixa de Madeira para Equipamentos',
         },
         image: diversityImage(

@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import type { SeoPage } from './types';
 import { normalizeInternalLinks } from '@/lib/images';
+import { SEO_REDIRECT_SOURCE_SLUGS } from '@/lib/seo/seo-redirects';
 
 const SEO_DIR = path.join(process.cwd(), 'content', 'seo');
 const SEPARATOR = '#############################################';
@@ -86,10 +87,15 @@ export function getAllSeoSlugs(): string[] {
     .readdirSync(SEO_DIR)
     .filter((file) => file.endsWith('.md'))
     .map((file) => file.replace(/\.md$/, ''))
+    .filter((slug) => !SEO_REDIRECT_SOURCE_SLUGS.has(slug))
     .sort();
 }
 
 export function getSeoPage(slug: string): SeoPage | null {
+  if (SEO_REDIRECT_SOURCE_SLUGS.has(slug)) {
+    return null;
+  }
+
   const filePath = path.join(SEO_DIR, `${slug}.md`);
 
   if (!fs.existsSync(filePath)) {
