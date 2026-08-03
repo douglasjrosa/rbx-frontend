@@ -1,7 +1,8 @@
 Frase-chave: Caixa de madeira sob medida
 Slug: caixa-madeira-medida
 Company: Ribermax Embalagens
-Metadescription: Caixa de Madeira Sob Medida: Projetos Personalizados para Proteção Total de Equipamentos. Garanta Segurança no Transporte.
+Metatitle: Caixa de madeira sob medida industrial
+Metadescription: Caixas projetadas no seu tamanho, para transporte seguro. Pedido mínimo R$ 3.500. Orçamento pelo WhatsApp na Ribermax.
 
 #############################################
 Page content:

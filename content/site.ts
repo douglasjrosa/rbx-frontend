@@ -30,7 +30,7 @@ export const siteConfig: SiteConfig = {
     acceptLabel: 'Aceitar',
     denyLabel: 'Negar',
     policyLabel: 'Política de Cookies',
-    policyUrl: '/politica-de-cookies-br',
+    policyUrl: '/politica-de-cookies-br/',
   },
   navbar: {
     links: [

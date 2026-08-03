@@ -63,12 +63,20 @@ export const SEO_PAGE_IMAGES: SeoPageImagesMap = {
   ],
   'caixa-madeira-fumigada-exportacao': [
     {
-      filename: 'caixafumigadaexportacao.png',
-      alt: 'caixafumigadaexportacao - Caixa de Madeira Fumigada para Exportação',
-      width: 529,
-      height: 300,
-      caption: 'Imagem de caixafumigadaexportacao aplicada a caixa de madeira fumigada para exportação.',
+      filename: 'calculadora/stamp-export.webp',
+      alt: 'Carimbo IPPC HT em embalagem de madeira para exportação',
+      width: 900,
+      height: 675,
+      caption: 'Marcação IPPC / HT usada em embalagens aptas à exportação.',
       insertAfterBlock: 0,
+    },
+    {
+      filename: 'calculadora/caixa_estruturada.webp',
+      alt: 'Caixa de madeira estruturada sob medida',
+      width: 900,
+      height: 675,
+      caption: 'Caixa sob medida para equipamentos e peças em embarque internacional.',
+      insertAfterBlock: 2,
     },
   ],
   'caixa-madeira-industrial': [
@@ -153,12 +161,20 @@ export const SEO_PAGE_IMAGES: SeoPageImagesMap = {
   ],
   'caixas-madeira-equipamentos': [
     {
-      filename: 'madeiraexportacao.png',
-      alt: 'madeiraexportacao - Caixas de madeira para equipamentos',
-      width: 529,
-      height: 300,
-      caption: 'Imagem de madeiraexportacao aplicada a caixas de madeira para equipamentos.',
+      filename: 'calculadora/box.webp',
+      alt: 'Caixa de madeira fechada para equipamento industrial',
+      width: 900,
+      height: 675,
+      caption: 'Caixa fechada sob medida para proteção completa no transporte.',
       insertAfterBlock: 0,
+    },
+    {
+      filename: 'calculadora/crate.webp',
+      alt: 'Engradado de madeira para equipamento',
+      width: 900,
+      height: 675,
+      caption: 'Engradado quando a estrutura aberta oferece o melhor custo-benefício.',
+      insertAfterBlock: 2,
     },
   ],
   'caixas-madeira-industria': [
@@ -324,21 +340,37 @@ export const SEO_PAGE_IMAGES: SeoPageImagesMap = {
   'embalagens-madeira-ribeirao-preto': [
     {
       filename: 'ribermax_fabrica.png',
-      alt: 'ribermax fabrica - Embalagens de Madeira em Ribeirão Preto',
+      alt: 'Fábrica Ribermax de embalagens de madeira em Ribeirão Preto',
       width: 800,
       height: 500,
-      caption: 'Imagem de ribermax fabrica aplicada a embalagens de madeira em ribeirão preto.',
+      caption: 'Produção própria na Vila Elisa, Ribeirão Preto (SP).',
       insertAfterBlock: 0,
+    },
+    {
+      filename: 'calculadora/caixa_reforcada.webp',
+      alt: 'Caixa de madeira reforçada fabricada em Ribeirão Preto',
+      width: 900,
+      height: 675,
+      caption: 'Caixas e engradados sob medida para a indústria da região.',
+      insertAfterBlock: 2,
     },
   ],
   'empresa-caixas-madeira': [
     {
-      filename: 'madeiraexportacao.png',
-      alt: 'madeiraexportacao - Empresa de Caixas de Madeira',
-      width: 529,
-      height: 300,
-      caption: 'Imagem de madeiraexportacao aplicada a empresa de caixas de madeira.',
+      filename: 'calculadora/caixa_economica.webp',
+      alt: 'Caixa de madeira sob medida da Ribermax',
+      width: 900,
+      height: 675,
+      caption: 'Fabricante desde 1996 com foco em equipamentos e peças.',
       insertAfterBlock: 0,
+    },
+    {
+      filename: 'calculadora/engradado_economico.webp',
+      alt: 'Engradado de madeira sob medida',
+      width: 900,
+      height: 675,
+      caption: 'Caixa ou engradado conforme o nível de proteção necessário.',
+      insertAfterBlock: 2,
     },
   ],
   'empresa-embalagens-madeira': [
@@ -424,11 +456,19 @@ export const SEO_PAGE_IMAGES: SeoPageImagesMap = {
   'fabrica-caixas-madeira': [
     {
       filename: 'fabrica_caixa_madeira_.png',
-      alt: 'fabrica caixa madeira  - Fábrica de Caixas de Madeira',
+      alt: 'Fábrica de caixas de madeira Ribermax',
       width: 529,
       height: 300,
-      caption: 'Imagem de fabrica caixa madeira  aplicada a fábrica de caixas de madeira.',
+      caption: 'Produção própria de caixas e engradados em Ribeirão Preto.',
       insertAfterBlock: 0,
+    },
+    {
+      filename: 'calculadora/caixa_reforcada.webp',
+      alt: 'Linha de caixas do econômico ao reforçado',
+      width: 900,
+      height: 675,
+      caption: 'Modelos alinhados ao peso, tamanho e manuseio do produto.',
+      insertAfterBlock: 2,
     },
   ],
   'fabrica-embalagens-madeira': [

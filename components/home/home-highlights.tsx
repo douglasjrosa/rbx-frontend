@@ -17,18 +17,22 @@ function StatCard({ stat }: { stat: HomeStatCard }) {
     'flex min-h-[10rem] flex-col items-center justify-center ' +
     'rounded-2xl px-6 py-8 text-center md:min-h-[11rem]';
 
+  const valueClass = isWood ? 'text-white' : 'text-gray-900';
+  const descriptionClass = isWood ? 'text-white' : 'text-gray-800';
+
   const content = (
     <>
       <p
         className={
-          'mb-3 text-3xl font-bold leading-none md:text-4xl ' +
-          (isWood ? 'text-gray-900' : '')
+          `mb-3 text-3xl font-bold leading-none md:text-4xl ${valueClass}`
         }
       >
         {stat.value}
       </p>
       <p
-        className="max-w-xs text-sm leading-snug md:text-base text-gray-700"
+        className={
+          `max-w-xs text-sm leading-snug md:text-base ${descriptionClass}`
+        }
       >
         {stat.description}
       </p>
@@ -107,7 +111,7 @@ export default function HomeHighlightsSection({
                   <h3 className="mb-2 text-lg font-bold text-gray-900 md:text-xl">
                     {feature.title}
                   </h3>
-                  <p className="text-sm leading-relaxed text-gray-700 md:text-base">
+                  <p className="text-sm leading-relaxed text-gray-800 md:text-base">
                     {feature.description}
                   </p>
                 </div>

@@ -7,6 +7,9 @@ export function buildHomeMetadata(page: HomePage): Metadata {
   return {
     title: page.metadata.metaTitle,
     description: page.metadata.metaDescription,
+    alternates: {
+      canonical: '/',
+    },
     openGraph: {
       title: `${page.metadata.metaTitle} | ${siteConfig.metaTitleSuffix}`,
       description: page.metadata.metaDescription,
@@ -23,16 +26,21 @@ export function buildHomeMetadata(page: HomePage): Metadata {
 }
 
 export function buildSeoMetadata(page: SeoPage): Metadata {
+  const title = page.metaTitle?.trim() || page.keyword;
+
   return {
-    title: page.keyword,
+    title,
     description: page.metaDescription,
+    alternates: {
+      canonical: `/${page.slug}/`,
+    },
     openGraph: {
-      title: `${page.keyword} | ${siteConfig.metaTitleSuffix}`,
+      title: `${title} | ${siteConfig.metaTitleSuffix}`,
       description: page.metaDescription,
     },
     twitter: {
       card: 'summary_large_image',
-      title: page.keyword,
+      title,
       description: page.metaDescription,
     },
   };
@@ -42,6 +50,9 @@ export function buildLegalMetadata(page: LegalPage): Metadata {
   return {
     title: page.title,
     description: page.metaDescription,
+    alternates: {
+      canonical: `/${page.slug}/`,
+    },
     openGraph: {
       title: `${page.title} | ${siteConfig.metaTitleSuffix}`,
       description: page.metaDescription,

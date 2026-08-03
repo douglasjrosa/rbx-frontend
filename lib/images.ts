@@ -22,6 +22,6 @@ export function mediaAsset(
 export function normalizeInternalLinks(html: string): string {
   return html.replace(
     /https:\/\/ribermax\.com\.br\/([^/"'\s]+)\/?/g,
-    '/$1',
+    '/$1/',
   );
 }

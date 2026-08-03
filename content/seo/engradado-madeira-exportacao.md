@@ -71,6 +71,6 @@ Call To Action:
 <h3>Calcule o Valor do Seu Engradado de Madeira para Exportação</h3>
 
 <div>
-A Ribermax Embalagens disponibiliza um sistema exclusivo que permite orçar seu engradado de forma rápida e prática. Com certeza, nossa tecnologia torna o processo de compra significativamente mais eficiente para exportadores.
+A Ribermax Embalagens orça seu engradado pelo WhatsApp com agilidade. Em 01/11/2026 a calculadora online entra no ar.
 
-Em resumo, você pode esclarecer suas dúvidas e calcular preços diretamente pelo nosso site, sem burocracia ou demoras. Primeiramente, acesse nosso sistema online exclusivo. Adicionalmente, compare diferentes opções para encontrar a solução ideal para suas necessidades específicas. Afinal, quando se trata de exportação, cada detalhe importa, e contar com um parceiro experiente pode fazer toda a diferença para o sucesso da sua operação internacional. Conheça também nossos <a href="https://ribermax.com.br/engradado-madeira-equipamentos/" style="color: rgb(100, 200, 255); text-decoration: underline">engradados específicos para equipamentos</a> com soluções técnicas para cada tipo de produto!</div> 
+Em resumo, esclareça dúvidas e peça orçamento pelo WhatsApp. Em 01/11/2026 a calculadora online entra no ar. Compare conosco as opções para a solução ideal. Afinal, quando se trata de exportação, cada detalhe importa, e contar com um parceiro experiente pode fazer toda a diferença para o sucesso da sua operação internacional. Conheça também nossos <a href="https://ribermax.com.br/engradado-madeira-equipamentos/" style="color: rgb(100, 200, 255); text-decoration: underline">engradados específicos para equipamentos</a> com soluções técnicas para cada tipo de produto!</div> 

@@ -19,6 +19,7 @@ export default function HomeHeroSection({ hero }: HomeHeroProps) {
         fill
         priority
         sizes="100vw"
+        quality={85}
         className="object-cover object-center"
         aria-hidden
       />

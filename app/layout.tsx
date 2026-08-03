@@ -5,6 +5,7 @@ import TrackingScripts, {
   GoogleTagManagerNoScript,
 } from '@/components/analytics/tracking-scripts';
 import HeadHints from '@/components/performance/head-hints';
+import LocalBusinessJsonLd from '@/components/seo/local-business-json-ld';
 import { siteConfig } from '@/content/site';
 import './globals.css';
 
@@ -50,6 +51,7 @@ export default function RootLayout({
       <head>
         <HeadHints />
         <GtmBootstrap />
+        <LocalBusinessJsonLd />
       </head>
       <body>
         <GoogleTagManagerNoScript />

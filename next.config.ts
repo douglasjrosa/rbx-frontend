@@ -1,6 +1,7 @@
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import type { NextConfig } from 'next';
+import { buildSeoCanonicalRedirectRules } from './lib/seo/seo-redirects';
 
 const isDevelopment = process.env.NODE_ENV !== 'production';
 const configDirectory = path.dirname(fileURLToPath(import.meta.url));
@@ -47,6 +48,7 @@ const CONTENT_SECURITY_POLICY = [
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
+  trailingSlash: true,
   images: {
     formats: ['image/avif', 'image/webp'],
   },
@@ -68,6 +70,9 @@ const nextConfig: NextConfig = {
       'next/dist/build/polyfills/polyfill-module.js': emptyPolyfillPath,
     };
     return config;
+  },
+  async redirects() {
+    return buildSeoCanonicalRedirectRules();
   },
   async headers() {
     return [

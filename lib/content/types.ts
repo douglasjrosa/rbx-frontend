@@ -171,6 +171,8 @@ export interface HomePage {
 export interface SeoPage {
   slug: string;
   keyword: string;
+  /** SERP/document title; falls back to keyword when omitted. */
+  metaTitle?: string;
   metaDescription: string;
   company: string;
   mainContent: string;

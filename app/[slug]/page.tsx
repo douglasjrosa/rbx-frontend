@@ -1,8 +1,13 @@
 import { notFound } from 'next/navigation';
 import PageContainer from '@/components/page-container';
 import SeoArticleLayout from '@/components/seo/seo-article-layout';
+import SeoCompetitiveLayout from '@/components/seo/seo-competitive-layout';
 import { getAllSeoSlugs, getSeoPage } from '@/lib/content/seo';
 import { buildSeoMetadata } from '@/lib/metadata';
+import {
+  isPrioritySeoSlug,
+  type PrioritySeoSlug,
+} from '@/lib/seo/priority-landing';
 
 interface SlugPageProps {
   params: Promise<{ slug: string }>;
@@ -29,6 +34,17 @@ export default async function SeoSlugPage({ params }: SlugPageProps) {
 
   if (!page) {
     notFound();
+  }
+
+  if (isPrioritySeoSlug(slug)) {
+    return (
+      <PageContainer variant="wood">
+        <SeoCompetitiveLayout
+          page={page}
+          slug={slug as PrioritySeoSlug}
+        />
+      </PageContainer>
+    );
   }
 
   return (

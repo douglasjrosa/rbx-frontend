@@ -1,7 +1,7 @@
 Frase-chave: Embalagens Industriais de Madeira
 Slug: embalagens-industriais-madeira
 Company: Ribermax Embalagens
-Metadescription: Embalagens Industriais de Madeira: Soluções Personalizadas com Orçamento Online. Madeira Tratada para Exportação com Certificação.
+Metadescription: Embalagens Industriais de Madeira: Soluções Personalizadas com orçamento pelo WhatsApp. Madeira Tratada para Exportação com Certificação.
 
 #############################################
 Page content:
@@ -69,4 +69,4 @@ Call To Action:
 <div>
 A Ribermax Embalagens está pronta para oferecer a solução ideal para as necessidades específicas da sua empresa. Com certeza, nosso conhecimento técnico e experiência acumulada nos permitem desenvolver embalagens que garantem a integridade total de seus produtos, independentemente de suas características ou desafios logísticos.
 
-Em resumo, oferecemos um processo simples e eficiente para atender suas demandas. Primeiramente, você pode calcular o preço das suas embalagens diretamente em nosso sistema online, obtendo um orçamento instantâneo e comparando diferentes modelos. Adicionalmente, nossa equipe especializada está disponível para orientá-lo sobre a configuração mais adequada para seu caso específico. Afinal, quando se trata de proteger produtos valiosos durante o transporte, a experiência e a qualidade são investimentos que evitam prejuízos futuros. Conheça também nossas <a href="https://ribermax.com.br/embalagem-madeira-exportacao/" style="color: rgb(100, 200, 255); text-decoration: underline">embalagens de madeira para exportação</a> com certificação NIMF-15 completa!</div> 
+Em resumo, oferecemos um processo simples e eficiente para atender suas demandas. Primeiramente, você pode calcular o preço das suas embalagens diretamente em nosso atendimento comercial, obtendo um orçamento pelo WhatsApp e comparando diferentes modelos. Adicionalmente, nossa equipe especializada está disponível para orientá-lo sobre a configuração mais adequada para seu caso específico. Afinal, quando se trata de proteger produtos valiosos durante o transporte, a experiência e a qualidade são investimentos que evitam prejuízos futuros. Conheça também nossas <a href="https://ribermax.com.br/embalagem-madeira-exportacao/" style="color: rgb(100, 200, 255); text-decoration: underline">embalagens de madeira para exportação</a> com certificação NIMF-15 completa!</div> 

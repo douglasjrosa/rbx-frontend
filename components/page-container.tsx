@@ -10,7 +10,7 @@ export default function PageContainer({
   const themeClass =
     variant === 'porto'
       ? 'bg-rbx-porto bg-fixed bg-cover pb-24 md:pb-36'
-      : 'bg-rbx-wood bg-repeat pb-24 md:pb-36';
+      : 'bg-rbx-wood bg-fixed bg-repeat pb-24 md:pb-36';
 
   return (
     <div
