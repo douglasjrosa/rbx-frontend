@@ -127,7 +127,7 @@ export default function SeoCompetitiveLayout({
           />
           <div
             className={
-              'absolute inset-0 bg-rbx-white bg-auto bg-repeat opacity-70'
+              'absolute inset-0 bg-rbx-white bg-auto bg-repeat opacity-20'
             }
             aria-hidden
           />
