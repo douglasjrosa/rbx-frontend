@@ -19,6 +19,7 @@ const CONTENT_SECURITY_POLICY = [
     'https://analytics.google.com',
     'https://www.googletagmanager.com',
     'https://region1.google-analytics.com',
+    'https://tagassistant.google.com',
     'https://static.cloudflareinsights.com',
     'https://cloudflareinsights.com',
     'https://vercel.live',
@@ -30,6 +31,7 @@ const CONTENT_SECURITY_POLICY = [
   [
     'frame-src',
     'https://www.googletagmanager.com',
+    'https://tagassistant.google.com',
     'https://www.google.com',
     'https://maps.google.com',
     'https://vercel.live',
@@ -58,8 +60,9 @@ const nextConfig: NextConfig = {
             value: 'SAMEORIGIN',
           },
           {
+            // Allow Tag Assistant / GTM Preview popup communication.
             key: 'Cross-Origin-Opener-Policy',
-            value: 'same-origin',
+            value: 'same-origin-allow-popups',
           },
           {
             key: 'Content-Security-Policy',
