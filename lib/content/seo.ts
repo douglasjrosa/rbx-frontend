@@ -71,11 +71,11 @@ function extractMiddleContent(body: string): string {
       !part.startsWith('Call To Action:'),
   );
 
-  if (contentParts.length <= 1) {
+  if (contentParts.length === 0) {
     return '';
   }
 
-  return normalizeInternalLinks(contentParts.slice(1).join('\n'));
+  return normalizeInternalLinks(contentParts.join('\n'));
 }
 
 export function getAllSeoSlugs(): string[] {

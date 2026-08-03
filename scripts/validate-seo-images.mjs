@@ -37,7 +37,7 @@ function extractMiddleContent(body) {
         !part.startsWith('Page content:') &&
         !part.startsWith('Call To Action:'),
     );
-  return parts.length <= 1 ? '' : parts.slice(1).join('\n');
+  return parts.length === 0 ? '' : parts.join('\n');
 }
 
 function countBodyBlocks(filePath) {
