@@ -28,8 +28,6 @@ const CONTENT_SECURITY_POLICY = [
     'https://cloudflareinsights.com',
     'https://vercel.live',
     'wss://vercel.live',
-    // Temporary: local debug ingest for Tag Assistant investigation.
-    'http://127.0.0.1:7692',
   ].join(' '),
   "img-src 'self' data: blob: https:",
   "style-src 'self' 'unsafe-inline'",
