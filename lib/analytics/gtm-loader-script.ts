@@ -8,9 +8,14 @@ import {
  * Tiny synchronous bootstrap for production HTML:
  * - sets Consent Mode defaults (denied)
  * - exposes window.__rbxLoadGtm()
- * - auto-loads GTM only for Tag Assistant / GTM Preview sessions
+ * - auto-loads GTM for Tag Assistant / GTM Preview sessions
  *
  * Normal visitors do not download gtm.js until cookie consent is accepted.
+ *
+ * Tag Assistant signals (see Simo Ahava / Google docs):
+ * - URL params: gtm_debug, gtm_preview, gtm_auth
+ * - referrer: tagassistant.google.com / tagmanager.google.com
+ * - first-party cookie: __TAG_ASSISTANT (current) or legacy gtm_* cookies
  */
 export function buildGtmBootstrapScript(): string {
   const denied = JSON.stringify(CONSENT_DENIED);
@@ -30,11 +35,20 @@ window.__rbxLoadGtm=function(){
   f.parentNode.insertBefore(j,f);
 };
 (function(){
-  var query=location.search;
-  var isPreview=/[?&]gtm_debug=|[?&]gtm_preview=|[?&]gtm_auth=/.test(query)
-    || /tagassistant\\.google\\.com|tagmanager\\.google\\.com/.test(document.referrer)
-    || /(?:^|;\\s*)gtm_(?:auth|preview|debug)=/.test(document.cookie);
-  if(isPreview){window.__rbxLoadGtm();}
+  function isPreview(){
+    var query=location.search+location.hash;
+    return /[?&#]gtm_debug=|[?&#]gtm_preview=|[?&#]gtm_auth=/.test(query)
+      || /tagassistant\\.google\\.com|tagmanager\\.google\\.com/.test(document.referrer)
+      || /(?:^|;\\s*)(?:gtm_(?:auth|preview|debug)|__TAG_ASSISTANT)=/.test(document.cookie);
+  }
+  if(isPreview()){window.__rbxLoadGtm();return;}
+  // Tag Assistant may set __TAG_ASSISTANT shortly after the debug window opens.
+  var tries=0;
+  var timer=setInterval(function(){
+    tries+=1;
+    if(isPreview()){clearInterval(timer);window.__rbxLoadGtm();}
+    if(tries>=25){clearInterval(timer);}
+  },100);
 })();
 `.replace(/\n\s*/g, '');
 }
