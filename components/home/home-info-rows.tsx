@@ -82,7 +82,7 @@ export default function HomeInfoRowsSection({ infoRows }: HomeInfoRowsProps) {
         className="absolute inset-0 bg-cover bg-bottom bg-no-repeat"
         style={{
           backgroundColor: '#568633',
-          backgroundImage: "url('/images/fuyndo_verdeclaro_02.png')",
+          backgroundImage: "url('/images/fuyndo_verdeclaro_02.webp')",
         }}
         aria-hidden
       />

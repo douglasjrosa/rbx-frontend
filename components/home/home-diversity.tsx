@@ -70,7 +70,7 @@ export default function HomeDiversitySection({
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
             backgroundColor: '#D6D6D6',
-            backgroundImage: "url('/images/pattern_01.png')",
+            backgroundImage: "url('/images/pattern_01.webp')",
           }}
           aria-hidden
         />

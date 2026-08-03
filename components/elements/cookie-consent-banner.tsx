@@ -22,9 +22,30 @@ export default function CookieConsentBanner({
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    if (!getStoredCookieConsent()) {
-      setIsVisible(true);
+    if (getStoredCookieConsent()) {
+      return;
     }
+
+    // Delay until after the LCP window so the banner is not the LCP element.
+    const COOKIE_BANNER_DELAY_MS = 3500;
+    let timeoutId = 0;
+
+    const schedule = () => {
+      timeoutId = window.setTimeout(() => {
+        setIsVisible(true);
+      }, COOKIE_BANNER_DELAY_MS);
+    };
+
+    if (document.readyState === 'complete') {
+      schedule();
+    } else {
+      window.addEventListener('load', schedule, { once: true });
+    }
+
+    return () => {
+      window.clearTimeout(timeoutId);
+      window.removeEventListener('load', schedule);
+    };
   }, []);
 
   const handleConsent = (status: CookieConsentStatus) => {
