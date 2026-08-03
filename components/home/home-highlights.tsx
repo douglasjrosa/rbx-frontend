@@ -98,6 +98,7 @@ export default function HomeHighlightsSection({
                     className="h-20 w-20 object-contain md:h-24 md:w-24"
                     width={96}
                     height={96}
+                    sizes="96px"
                   />
                 </div>
                 <div>

@@ -206,7 +206,7 @@ export const homePage: HomePage = {
       'Fundada em 1996, tem experiência no segmento de embalagens de ' +
       'médio porte para produtos volumosos e delicados. Toda a nossa ' +
       'madeira tem origem de reflorestamento.',
-    backgroundImage: '/images/Capa_Ribermax.png',
+    backgroundImage: '/images/Capa_Ribermax.webp',
     primaryButton: {
       newTab: false,
       url: homeSectionHref(HOME_SECTIONS.produtos),

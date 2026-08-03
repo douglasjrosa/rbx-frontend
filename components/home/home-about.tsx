@@ -19,7 +19,7 @@ export default function HomeAboutSection({ about }: HomeAboutProps) {
           'absolute inset-0 bg-repeat-y opacity-[0.19] ' +
           'bg-[length:100%_auto]'
         }
-        style={{ backgroundImage: "url('/images/wood-pannel.jpg')" }}
+        style={{ backgroundImage: "url('/images/wood-pannel.webp')" }}
         aria-hidden
       />
       <div className="container relative z-10">

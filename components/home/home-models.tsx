@@ -40,6 +40,7 @@ function ModelCard({ model }: { model: HomeProductModel }) {
           className="mx-auto h-auto w-full max-w-[300px] object-contain"
           width={300}
           height={273}
+          sizes="(max-width: 640px) 90vw, (max-width: 1280px) 45vw, 300px"
         />
       </div>
       <h3
@@ -76,7 +77,7 @@ export default function HomeModelsSection({ models }: HomeModelsProps) {
       <div
         className="absolute inset-0 bg-fixed bg-center bg-repeat-y"
         style={{
-          backgroundImage: "url('/images/wood-pannel.jpg')",
+          backgroundImage: "url('/images/wood-pannel.webp')",
           backgroundSize: '100% auto',
         }}
         aria-hidden

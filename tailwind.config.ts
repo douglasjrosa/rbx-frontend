@@ -26,7 +26,7 @@ const config: Config = {
       },
       backgroundImage: {
         'rbx-wood': "url('/images/wood-min.webp')",
-        'rbx-porto': "url('/images/porto-de-santos-optimized.avif')",
+        'rbx-porto': "url('/images/porto-de-santos-hero.webp')",
         'rbx-forest': "url('/images/floresta-min-min.webp')",
         'rbx-white': "url('/images/bg_bloco-min.webp')",
         'rbx-green': "url('/images/bg_h1.webp')",

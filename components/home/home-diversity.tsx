@@ -1,10 +1,19 @@
+import dynamic from 'next/dynamic';
 import FeatureBulletList from '@/components/elements/feature-bullet-list';
 import Image from '@/components/elements/image';
-import DiversityCarousel from '@/components/home/diversity-carousel';
 import { HOME_SECTIONS } from '@/lib/home-sections';
 import { SECTION_SCROLL_MARGIN_CLASS } from '@/lib/navbar-offset';
 import type { HomeDiversity } from '@/lib/content/types';
 import { IMAGE_CARD_SHADOW_CLASS } from '@/lib/image-card-styles';
+
+const DiversityCarousel = dynamic(
+  () => import('@/components/home/diversity-carousel'),
+  {
+    loading: () => (
+      <div className="min-h-[300px] w-full md:min-h-[280px]" aria-hidden />
+    ),
+  },
+);
 
 interface HomeDiversityProps {
   diversity: HomeDiversity;

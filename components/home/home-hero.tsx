@@ -1,3 +1,4 @@
+import NextImage from 'next/image';
 import ButtonLink from '@/components/elements/button-link';
 import { SECTION_SCROLL_MARGIN_CLASS } from '@/lib/navbar-offset';
 import type { HomeHero } from '@/lib/content/types';
@@ -10,9 +11,17 @@ export default function HomeHeroSection({ hero }: HomeHeroProps) {
   return (
     <section
       id="home-hero"
-      className={`${SECTION_SCROLL_MARGIN_CLASS} relative min-h-screen bg-cover bg-center bg-no-repeat`}
-      style={{ backgroundImage: `url('${hero.backgroundImage}')` }}
+      className={`${SECTION_SCROLL_MARGIN_CLASS} relative min-h-screen overflow-hidden`}
     >
+      <NextImage
+        src={hero.backgroundImage}
+        alt=""
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover object-center"
+        aria-hidden
+      />
       <div
         className={
           'relative z-10 flex min-h-screen w-full items-center ' +
