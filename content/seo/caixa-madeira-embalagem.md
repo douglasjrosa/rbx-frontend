@@ -87,4 +87,4 @@ Call To Action:
 
 <div>Em resumo, com anos de experiência no mercado, oferecemos preços competitivos, prazos de entrega reduzidos e assistência técnica especializada. Para conhecer outras soluções de proteção para transporte, confira também nossas <a href="https://ribermax.com.br/caixa-madeira-fumigada-exportacao/" style="color: rgb(100, 200, 255); text-decoration: underline">caixas de madeira fumigada para exportação</a> com certificação internacional.</div>
 
-<div>Finalmente, entre em contato hoje mesmo pelo WhatsApp (16) 98255-0729 e solicite um orçamento personalizado sem compromisso. Inclusive, não exigimos pedido mínimo e atendemos toda a região sudeste do Brasil com soluções sob medida para suas necessidades de embalagem e transporte.</div> 
+<div>Finalmente, entre em contato hoje mesmo pelo WhatsApp (16) 98255-0729 e solicite um orçamento personalizado sem compromisso. Inclusive, trabalhamos com pedido mínimo de R$ 3.500 e atendemos toda a região sudeste do Brasil com soluções sob medida para suas necessidades de embalagem e transporte.</div> 

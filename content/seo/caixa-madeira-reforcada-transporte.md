@@ -76,5 +76,5 @@ Call To Action:
 <div>
 A Ribermax Embalagens está no mercado há mais de duas décadas na cidade de Ribeirão Preto, acumulando vasta experiência na fabricação de embalagens industriais de alta performance. Atualmente, atendemos toda a região Sudeste do Brasil com soluções personalizadas para cada necessidade específica.
 
-Entre em contato agora mesmo e calcule online o valor da sua <a href="https://ribermax.com.br/caixa-madeira-industrial/" style="color: rgb(100, 200, 255); text-decoration: underline">caixa de madeira industrial</a> reforçada. Nossa equipe está pronta para oferecer a melhor solução para o transporte seguro dos seus equipamentos valiosos!
+Entre em contato agora mesmo e solicite orçamento pelo WhatsApp da sua <a href="https://ribermax.com.br/caixa-madeira-industrial/" style="color: rgb(100, 200, 255); text-decoration: underline">caixa de madeira industrial</a> reforçada. Nossa equipe está pronta para oferecer a melhor solução para o transporte seguro dos seus equipamentos valiosos!
 </div> 

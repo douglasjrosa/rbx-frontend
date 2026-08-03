@@ -40,4 +40,4 @@ Call To Action:
 
 <div>Na RIBERMAX EMBALAGENS, com mais de 20 anos de experiência, garantimos que nossas Caixas de Madeira Industrial protegem seus produtos e mantêm sua credibilidade comercial. Portanto, não arrisque sua reputação com embalagens improvisadas.</div>
 
-<div>Faça seu orçamento online e calcule sua <strong>Caixa de Madeira Industrial</strong> com facilidade. Atendemos toda a região sudeste do Brasil com prazos ágeis de entrega. Se você procura por <a href="/engradado-madeira-equipamentos" style="color: rgb(100, 200, 255); text-decoration: underline">engradados de madeira para equipamentos</a> ou caixas industriais, certamente está no lugar certo!</div> 
+<div>Faça seu orçamento pelo WhatsApp e calcule sua <strong>Caixa de Madeira Industrial</strong> com facilidade. Atendemos toda a região sudeste do Brasil com prazos ágeis de entrega. Se você procura por <a href="/engradado-madeira-equipamentos" style="color: rgb(100, 200, 255); text-decoration: underline">engradados de madeira para equipamentos</a> ou caixas industriais, certamente está no lugar certo!</div> 

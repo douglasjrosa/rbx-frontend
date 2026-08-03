@@ -1,7 +1,7 @@
 Frase-chave: Embalagens de Madeira Sob Medida
 Slug: embalagens-madeira-medida
 Company: Ribermax Embalagens
-Metadescription: Embalagens de Madeira Sob Medida: Soluções Sem Quantidade Mínima. Entrega Rápida e Orçamento Online Imediato.
+Metadescription: Embalagens de madeira sob medida. Pedido mínimo R$ 3.500. Orçamento pelo WhatsApp com a Ribermax.
 
 #############################################
 Page content:
@@ -38,11 +38,11 @@ Pesquisas do setor logístico industrial indicam que aproximadamente 68% das emp
 Acima de tudo, as soluções personalizadas em madeira da Ribermax Embalagens oferecem benefícios concretos que transformam a logística de empresas industriais:
 
 <ul>
-<li>Produção sem quantidade mínima, permitindo pedidos unitários sem custo adicional</li>
-<li>Flexibilidade total para alteração de dimensões a cada pedido, sem investimento em ferramentais</li>
-<li>Prazos de entrega extraordinariamente curtos, chegando a menos de 24 horas em determinadas situações</li>
-<li>Sistema exclusivo de descontos automáticos que podem alcançar até 10% do valor orçado</li>
-<li>Plataforma online para cálculo imediato de preços, disponível 24/7 com acesso personalizado</li>
+<li>Pedido mínimo de R$ 3.500, com produção sob medida</li>
+<li>Flexibilidade para alteração de dimensões a cada pedido, sem investimento em ferramentais</li>
+<li>Prazo de referência de cerca de 7 dias a partir do pedido</li>
+<li>Política de descontos para clientes parceiros com demanda recorrente</li>
+<li>Orçamento pelo WhatsApp hoje; calculadora online em 01/11/2026</li>
 <li>Base integrada tipo palete, facilitando movimentação com paleteiras e empilhadeiras</li>
 </ul>
 </div>
@@ -69,4 +69,4 @@ Call To Action:
 <div>
 A Ribermax Embalagens está pronta para atender às necessidades específicas de proteção e transporte da sua empresa. Com certeza, nosso conhecimento técnico e capacidade produtiva nos permitem desenvolver embalagens que garantem a integridade total de seus produtos, com a flexibilidade e agilidade que seu negócio exige.
 
-Em resumo, nosso processo é extremamente simples e eficiente. Primeiramente, entre em contato para criarmos seu login personalizado em nosso sistema de orçamentos online, onde você mesmo poderá calcular o preço exato das embalagens com as dimensões desejadas. Adicionalmente, nesse momento já configuramos sua empresa em nossa política de descontos automáticos, garantindo sempre o melhor valor. Afinal, quando se trata de proteger seu produto e otimizar seus custos logísticos, a experiência e a tecnologia fazem toda a diferença. Conheça também nossas <a href="https://ribermax.com.br/embalagens-especiais-madeira/" style="color: rgb(100, 200, 255); text-decoration: underline">embalagens especiais de madeira</a> com soluções técnicas para aplicações complexas!</div> 
+Em resumo, nosso processo é simples e eficiente. Primeiramente, entre em contato pelo WhatsApp com as dimensões desejadas para receber o orçamento. Em 01/11/2026 lançamos a calculadora online no site. Adicionalmente, para clientes parceiros aplicamos política de descontos. Afinal, quando se trata de proteger seu produto e otimizar seus custos logísticos, a experiência faz toda a diferença. Conheça também nossas <a href="/embalagens-especiais-madeira/" style="color: rgb(100, 200, 255); text-decoration: underline">embalagens especiais de madeira</a> com soluções técnicas para aplicações complexas!</div> 

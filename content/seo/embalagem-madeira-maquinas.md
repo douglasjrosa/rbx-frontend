@@ -1,7 +1,7 @@
 Frase-chave: Embalagem de Madeira para Maquinas
 Slug: embalagem-madeira-maquinas
 Company: Ribermax Embalagens
-Metadescription: Embalagem de Madeira para Maquinas: Soluções Industriais Sob Medida e Prontas para Entrega. Calcule Seu Orçamento Online.
+Metadescription: Embalagem de Madeira para Maquinas: Soluções Industriais Sob Medida e Prontas para Entrega. Orçamento pelo WhatsApp.
 
 #############################################
 Page content:
@@ -69,4 +69,4 @@ Call To Action:
 <div>
 A Ribermax Embalagens está pronta para fornecer a solução ideal para as necessidades de proteção das suas máquinas. Com certeza, nosso conhecimento técnico e experiência nos permitem desenvolver embalagens que garantem a chegada do seu equipamento ao destino em perfeitas condições, independentemente do tamanho ou complexidade.
 
-Em resumo, você pode calcular o preço das suas embalagens diretamente em nosso sistema online para obter um orçamento instantâneo. Adicionalmente, ao realizar seu cadastro, você garante descontos automáticos e progressivos para sua empresa. Afinal, quando se trata de proteger máquinas e equipamentos valiosos, a experiência e a qualidade fazem toda a diferença. Conheça também nossas <a href="https://ribermax.com.br/caixas-madeira-equipamentos/" style="color: rgb(100, 200, 255); text-decoration: underline">caixas de madeira para equipamentos</a> com soluções completas para todos os segmentos industriais!</div> 
+Em resumo, você pode calcular o preço das suas embalagens diretamente em nosso atendimento comercial para obter um orçamento pelo WhatsApp. Adicionalmente, ao realizar seu cadastro, você garante descontos automáticos e progressivos para sua empresa. Afinal, quando se trata de proteger máquinas e equipamentos valiosos, a experiência e a qualidade fazem toda a diferença. Conheça também nossas <a href="https://ribermax.com.br/caixas-madeira-equipamentos/" style="color: rgb(100, 200, 255); text-decoration: underline">caixas de madeira para equipamentos</a> com soluções completas para todos os segmentos industriais!</div> 

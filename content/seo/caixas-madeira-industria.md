@@ -1,7 +1,7 @@
 Frase-chave: Caixas de Madeira Para Indústria
 Slug: caixas-madeira-industria
 Company: Ribermax Embalagens
-Metadescription: Caixas de Madeira Para Indústria: Embalagens Resistentes e Customizadas para Proteção de Produtos Industriais. Orçamento Online em Segundos!
+Metadescription: Caixas de Madeira Para Indústria: Embalagens Resistentes e Customizadas para Proteção de Produtos Industriais. Orçamento pelo WhatsApp
 
 #############################################
 Page content:
@@ -62,7 +62,7 @@ Em contraste com alternativas como embalagens de papelão reforçado ou plástic
 <h2>Solução Moderna para Orçamentos Rápidos</h2>
 
 <div>
-Na Ribermax Embalagens, modernizamos nossa forma de atender à indústria nacional, desenvolvendo um sistema exclusivo que permite calcular orçamentos instantaneamente. Com efeito, nossos clientes podem obter preços para o mesmo tipo de caixa em diferentes modelos de embalagem diretamente pelo nosso site, em questão de segundos.
+Na Ribermax Embalagens, orçamos caixas industriais pelo WhatsApp com agilidade. Em 01/11/2026 lançamos a calculadora online no site, para comparar modelos com as mesmas dimensões.
 </div>
 
 <div>
@@ -81,4 +81,4 @@ Call To Action:
 <div>
 A Ribermax Embalagens está pronta para fornecer a solução ideal para a proteção de seus produtos industriais. Com certeza, nossa experiência de mais de duas décadas nos permite desenvolver as embalagens mais adequadas às suas necessidades específicas, garantindo que seus produtos cheguem intactos ao destino.
 
-Em resumo, você pode calcular o preço das suas caixas de madeira para indústria agora mesmo através do nosso sistema online. Adicionalmente, oferecemos condições especiais para clientes cadastrados. Afinal, se você precisa da melhor proteção para o seu produto, acaba de encontrar a solução ideal! Entre em contato conosco e descubra como nossas <a href="https://ribermax.com.br/caixa-madeira-transporte/" style="color: rgb(100, 200, 255); text-decoration: underline">caixas de madeira para transporte</a> podem otimizar sua logística industrial e reduzir custos com avarias.</div> 
+Em resumo, você pode calcular o preço das suas caixas de madeira para indústria agora mesmo através do nosso atendimento comercial. Adicionalmente, oferecemos condições especiais para clientes cadastrados. Afinal, se você precisa da melhor proteção para o seu produto, acaba de encontrar a solução ideal! Entre em contato conosco e descubra como nossas <a href="https://ribermax.com.br/caixa-madeira-transporte/" style="color: rgb(100, 200, 255); text-decoration: underline">caixas de madeira para transporte</a> podem otimizar sua logística industrial e reduzir custos com avarias.</div> 

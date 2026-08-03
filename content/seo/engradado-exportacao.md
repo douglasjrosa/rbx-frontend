@@ -1,7 +1,7 @@
 Frase-chave: Engradado para Exportação
 Slug: engradado-exportacao
 Company: Ribermax Embalagens
-Metadescription: Engradado para Exportação: Proteção Estrutural para Produtos Exportados. Madeira Tratada Conforme NIMF-15. Solicite Orçamento Sem Pedido Mínimo.
+Metadescription: Engradado para Exportação: Proteção Estrutural para Produtos Exportados. Madeira Tratada Conforme NIMF-15. Orçamento pelo WhatsApp. Pedido mínimo R$ 3.500.
 
 #############################################
 Page content:
@@ -60,7 +60,7 @@ Em contrapartida, ao trabalhar com um fornecedor especializado como a Ribermax, 
 <li>Madeira tratada conforme normas NIMF-15, com certificação válida internacionalmente</li>
 <li>Expertise técnica acumulada ao longo de décadas de atuação no setor</li>
 <li>Melhor custo-benefício através de processos otimizados de produção</li>
-<li>Flexibilidade para pedidos de qualquer volume, sem exigência de quantidade mínima</li>
+<li>Atendimento industrial com pedido mínimo de R$ 3.500</li>
 <li>Garantia de conformidade com requisitos específicos de diferentes países importadores</li>
 </ul>
 </div>
@@ -71,6 +71,6 @@ Call To Action:
 <h3>Solicite Seu Orçamento de Engradado para Exportação</h3>
 
 <div>
-A Ribermax Embalagens revolucionou o processo de orçamentação com nosso sistema exclusivo de cálculo online. Em resumo, você pode estimar o investimento necessário para seu <strong>engradado para exportação</strong> em poucos minutos, diretamente pelo nosso site.
+A Ribermax Embalagens orça seu <strong>engradado para exportação</strong> pelo WhatsApp. Em 01/11/2026 a calculadora online entra no ar no site.
 
 Primeiramente, acesse nossa ferramenta de cálculo e insira as dimensões e especificações do seu produto. Em seguida, receba instantaneamente uma estimativa de custo baseada em parâmetros reais de produção. Finalmente, nossa equipe técnica entrará em contato para refinar os detalhes e responder a quaisquer dúvidas específicas sobre sua necessidade. Adicionalmente, oferecemos consultoria especializada para identificar a solução mais econômica e eficiente para seu caso particular. Conheça também nossas <a href="https://ribermax.com.br/embalagens-exportacao/" style="color: rgb(100, 200, 255); text-decoration: underline">embalagens completas para exportação</a> que garantem proteção total com certificação internacional!</div> 

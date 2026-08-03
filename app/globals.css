@@ -96,6 +96,19 @@ html {
   @apply prose prose-lg max-w-none prose-headings:text-rbx-green-dark;
 }
 
+.prose-rbx table {
+  @apply w-full border-collapse text-left text-base;
+}
+
+.prose-rbx th,
+.prose-rbx td {
+  @apply border border-gray-200 px-3 py-2 align-top;
+}
+
+.prose-rbx th {
+  @apply bg-amber-50 font-semibold text-rbx-accent;
+}
+
 .prose-rbx a {
   @apply text-sky-800 underline hover:text-sky-900;
 }

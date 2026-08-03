@@ -2,7 +2,7 @@ Frase-chave: Embalagens de Madeira em Ribeirão Preto
 Slug: embalagens-madeira-ribeirao-preto
 Company: Ribermax Embalagens
 Metatitle: Embalagens de madeira em Ribeirão Preto
-Metadescription: Fábrica em Ribeirão Preto: caixas e engradados sob medida para indústria. Solicite orçamento online com a Ribermax.
+Metadescription: Fábrica em Ribeirão Preto: caixas e engradados sob medida para indústria. Orçamento pelo WhatsApp com a Ribermax.
 
 #############################################
 Page content:
@@ -11,7 +11,7 @@ Page content:
 
 <div>A Ribermax é uma fábrica de <strong>embalagens de madeira em Ribeirão Preto</strong> (SP), com produção própria de caixas e engradados sob medida para indústria. Atuamos desde 1996 com um único foco: proteger equipamentos e peças no transporte e no armazenamento — no mercado interno e na exportação.</div>
 
-<div>Estamos na Vila Elisa (Rua Áustria, 585). A localização no norte do interior paulista favorece o atendimento a indústrias da região e o envio de embalagens para outras praças, com proximidade de eixos rodoviários que ligam o interior a São Paulo e ao restante do Sudeste.</div>
+<div><strong>Endereço:</strong> Rua Áustria, 585 – Vila Elisa – Ribeirão Preto/SP – CEP 14075-430. A localização no norte do interior paulista favorece o atendimento a indústrias da região e o envio de embalagens para outras praças, com proximidade de eixos rodoviários que ligam o interior a São Paulo e ao restante do Sudeste.</div>
 
 <h2>Por que comprar embalagem de madeira perto da fábrica</h2>
 
@@ -30,29 +30,19 @@ Page content:
 
 <div>Produzimos caixas e engradados de madeira com medidas internas definidas pelo cliente. A madeira é de reflorestamento. Para exportação, trabalhamos com tratamento térmico (HT) e certificado, no padrão que o mercado ainda chama de “fumigada”.</div>
 
-<div>Atendemos indústrias que precisam embalar máquinas, equipamentos e peças de médio e grande porte — inclusive demandas típicas do polo industrial da região. Se o papelão não segura o peso, o volume ou o valor do item, a embalagem de madeira passa a ser a solução estrutural.</div>
+<div>Atendemos indústrias que precisam embalar máquinas, equipamentos e peças de médio e grande porte. Se o papelão não segura o peso, o volume ou o valor do item, a embalagem de madeira passa a ser a solução estrutural.</div>
 
-<h2>Para quem faz sentido</h2>
+<h2>Região e logística</h2>
 
-<div>Escolha embalagem de madeira sob medida quando o produto for grande, pesado, delicado ou de alto valor; quando a transportadora exigir embalagem reforçada; ou quando o destino for longe / exportação e o risco de avaria for inaceitável.</div>
+<div>Além de Ribeirão Preto, atendemos com frequência o interior de São Paulo e envios para outras regiões conforme o projeto. Retirada na fábrica ou entrega combinada no orçamento — o melhor caminho depende do volume e do prazo do embarque.</div>
 
-<div>Diferenciais que usamos no dia a dia: prazo de cerca de 7 dias a partir do pedido, modelos conforme a necessidade de proteção, certificado HT para exportação e política de descontos para clientes parceiros. Não exigimos pedido mínimo.</div>
-
-<h2>Perguntas frequentes</h2>
-
-<div><strong>A Ribermax fica em Ribeirão Preto?</strong><br />Sim. Fábrica na Rua Áustria, 585 – Vila Elisa – 14075-430 – Ribeirão Preto/SP.</div>
-
-<div><strong>Vocês só atendem a região?</strong><br />Não. A base é Ribeirão Preto, mas enviamos embalagens para outras regiões conforme o projeto.</div>
-
-<div><strong>Consigo orçar rápido?</strong><br />Sim. Dá para simular no fluxo online do site ou falar com a equipe comercial pelo WhatsApp / e-mail com medidas e fotos do produto.</div>
-
-<div><strong>Fazem caixa para exportação?</strong><br />Sim. Veja o conteúdo dedicado de <a href="/caixa-madeira-fumigada-exportacao/" style="color: rgb(100, 200, 255); text-decoration: underline">caixa de madeira fumigada para exportação</a> (tratamento HT / NIMF-15).</div>
+<div>Diferenciais do dia a dia: prazo de cerca de 7 dias a partir do pedido, modelos conforme a necessidade de proteção, certificado HT para exportação, política de descontos para clientes parceiros e pedido mínimo de R$ 3.500.</div>
 
 #############################################
 Call To Action:
 
 <h3>Orçamento de embalagens de madeira em Ribeirão Preto</h3>
 
-<div>Conte medidas internas desejadas (ou dimensões do produto), peso aproximado e se o destino é mercado interno ou exportação. Retornamos com o modelo indicado e o valor.</div>
+<div>Conte medidas internas desejadas (ou dimensões do produto), peso aproximado e se o destino é mercado interno ou exportação. Retornamos pelo WhatsApp ou e-mail com o modelo indicado e o valor. Em 01/11/2026 a calculadora online entra no ar no site.</div>
 
 <div>Conheça também a página da <a href="/empresa-caixas-madeira/" style="color: rgb(100, 200, 255); text-decoration: underline">empresa de caixas de madeira</a> e da <a href="/fabrica-caixas-madeira/" style="color: rgb(100, 200, 255); text-decoration: underline">fábrica de caixas de madeira</a> para entender processo e diferenciais.</div>

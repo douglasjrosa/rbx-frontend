@@ -74,7 +74,7 @@ Page content:
 
 <h2>Personalização e Flexibilidade</h2>
 
-<div>Um diferencial importante da Ribermax é que não exigimos pedido mínimo para fabricação de caixas de madeira compensado. Por conseguinte, atendemos desde pequenas empresas com necessidades pontuais até grandes indústrias com demandas volumosas. Como resultado, cada projeto é desenvolvido considerando:
+<div>Um diferencial importante da Ribermax é que trabalhamos com pedido mínimo de R$ 3.500 para fabricação de caixas de madeira compensado. Por conseguinte, atendemos desde pequenas empresas com necessidades pontuais até grandes indústrias com demandas volumosas. Como resultado, cada projeto é desenvolvido considerando:
 <ul>
 
     <li>Dimensões exatas do produto a ser transportado</li>
@@ -95,4 +95,4 @@ Call To Action:
 
 <div>Em resumo, atendemos todo o Brasil a partir de nossa sede em Ribeirão Preto-SP, com mais de 20 anos de experiência no mercado. Para conhecer outras opções similares, confira também nossas <a href="https://ribermax.com.br/embalagem-madeira-maquinas/" style="color: rgb(100, 200, 255); text-decoration: underline">embalagens para máquinas industriais</a> com soluções específicas para cada setor.</div>
 
-<div>Finalmente, entre em contato hoje mesmo pelo WhatsApp (16) 98255-0729 e solicite um orçamento sem compromisso. Como mencionado anteriormente, não exigimos pedido mínimo e oferecemos prazo de entrega reduzido para atender suas necessidades com agilidade e eficiência.</div> 
+<div>Finalmente, entre em contato hoje mesmo pelo WhatsApp (16) 98255-0729 e solicite um orçamento sem compromisso. Como mencionado anteriormente, trabalhamos com pedido mínimo de R$ 3.500 e oferecemos prazo de entrega reduzido para atender suas necessidades com agilidade e eficiência.</div> 

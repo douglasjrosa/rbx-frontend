@@ -290,9 +290,9 @@ export const homePage: HomePage = {
   },
   cta: {
     text:
-      'Na Ribermax Embalagens, não exigimos pedido mínimo e ' +
-      'personalizamos suas embalagens conforme sua necessidade. Com ' +
-      'nossa expertise, você obtém a embalagem ideal sem complicações.',
+      'Na Ribermax Embalagens personalizamos suas embalagens conforme ' +
+      'sua necessidade, com pedido mínimo de R$ 3.500. Com nossa ' +
+      'expertise, você obtém a embalagem ideal sem complicações.',
     button: {
       newTab: false,
       url: homeSectionHref(HOME_SECTIONS.informacoes),

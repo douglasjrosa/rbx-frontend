@@ -1,7 +1,7 @@
 Frase-chave: Embalagens de Madeira
 Slug: embalagens-madeira
 Company: Ribermax Embalagens
-Metadescription: Embalagens de Madeira: Soluções Resistentes para Proteção e Transporte de Equipamentos Valiosos. Orçamento Online e Imediato.
+Metadescription: Embalagens de Madeira: Soluções Resistentes para Proteção e Transporte de Equipamentos Valiosos. Orçamento pelo WhatsApp.
 
 #############################################
 Page content:
@@ -69,4 +69,4 @@ Call To Action:
 <div>
 A Ribermax Embalagens está preparada para oferecer a solução ideal para suas necessidades de proteção e transporte. Com certeza, nosso conhecimento técnico e experiência acumulada nos permitem desenvolver embalagens que garantem a integridade total de seus produtos, independentemente de suas características ou desafios logísticos específicos.
 
-Em resumo, oferecemos um processo simples e eficiente para atender suas demandas. Primeiramente, você pode calcular o preço das suas embalagens diretamente em nosso sistema online para obter um orçamento instantâneo. Adicionalmente, nossa equipe especializada está disponível para orientá-lo sobre o modelo mais adequado para seu caso específico. Afinal, quando se trata de proteger produtos valiosos durante o transporte, a experiência e a qualidade fazem toda a diferença. Conheça também nossas <a href="https://ribermax.com.br/caixa-madeira-reforcada/" style="color: rgb(100, 200, 255); text-decoration: underline">caixas de madeira reforçadas</a> para situações que exigem resistência excepcional!</div> 
+Em resumo, oferecemos um processo simples e eficiente para atender suas demandas. Primeiramente, você pode calcular o preço das suas embalagens diretamente em nosso atendimento comercial para obter um orçamento pelo WhatsApp. Adicionalmente, nossa equipe especializada está disponível para orientá-lo sobre o modelo mais adequado para seu caso específico. Afinal, quando se trata de proteger produtos valiosos durante o transporte, a experiência e a qualidade fazem toda a diferença. Conheça também nossas <a href="https://ribermax.com.br/caixa-madeira-reforcada/" style="color: rgb(100, 200, 255); text-decoration: underline">caixas de madeira reforçadas</a> para situações que exigem resistência excepcional!</div> 
