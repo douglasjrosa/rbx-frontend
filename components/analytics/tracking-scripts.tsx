@@ -72,7 +72,7 @@ export default function TrackingScripts() {
         },
         body: JSON.stringify({
           sessionId: 'adcb21',
-          runId: 'ta-pre',
+          runId: 'ta-post',
           hypothesisId: 'E',
           location: 'tracking-scripts.tsx:mount',
           message: 'tracking disabled (non-production)',
@@ -95,7 +95,7 @@ export default function TrackingScripts() {
         },
         body: JSON.stringify({
           sessionId: 'adcb21',
-          runId: 'ta-pre',
+          runId: 'ta-post',
           hypothesisId: 'B',
           location: 'tracking-scripts.tsx:sync',
           message: 'consent sync',
@@ -136,7 +136,7 @@ export default function TrackingScripts() {
         },
         body: JSON.stringify({
           sessionId: 'adcb21',
-          runId: 'ta-pre',
+          runId: 'ta-post',
           hypothesisId: 'C',
           location: 'tracking-scripts.tsx:late-probe',
           message: '3s probe for Tag Assistant window',

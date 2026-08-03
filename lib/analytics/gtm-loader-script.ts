@@ -11,6 +11,9 @@ import {
  * - auto-loads GTM for Tag Assistant / GTM Preview sessions
  *
  * Normal visitors do not download gtm.js until cookie consent is accepted.
+ *
+ * IMPORTANT: never use // line comments inside the returned script string.
+ * Newlines are stripped, so // would comment out the rest of the script.
  */
 export function buildGtmBootstrapScript(): string {
   const denied = JSON.stringify(CONSENT_DENIED);
@@ -20,14 +23,13 @@ window.dataLayer=window.dataLayer||[];
 function gtag(){dataLayer.push(arguments);}
 gtag('consent','default',Object.assign(${denied},{wait_for_update:${CONSENT_WAIT_FOR_UPDATE_MS}}));
 window.__rbxDbg=function(hypothesisId,message,data){
-  // #region agent log
   try{
     fetch('http://127.0.0.1:7692/ingest/ab94cee0-84cd-4479-a918-2856d96f6bdc',{
       method:'POST',
       headers:{'Content-Type':'application/json','X-Debug-Session-Id':'adcb21'},
       body:JSON.stringify({
         sessionId:'adcb21',
-        runId:'ta-pre',
+        runId:'ta-post',
         hypothesisId:hypothesisId,
         location:'gtm-loader-script.ts',
         message:message,
@@ -36,7 +38,6 @@ window.__rbxDbg=function(hypothesisId,message,data){
       })
     }).catch(function(){});
   }catch(e){}
-  // #endregion
 };
 window.__rbxLoadGtm=function(reason){
   if(window.__rbxGtmLoaded){
@@ -94,7 +95,7 @@ window.__rbxLoadGtm=function(reason){
       clearInterval(timer);
       window.__rbxDbg('A','preview poll exhausted without GTM',Object.assign({tries:tries},signals));
       window.__rbxDbg('E','final DOM probe after poll',{
-        gtmScriptCount:document.querySelectorAll('script[src*=\"gtm.js\"]').length,
+        gtmScriptCount:document.querySelectorAll('script[src*="gtm.js"]').length,
         dataLayerLen:Array.isArray(window.dataLayer)?window.dataLayer.length:-1,
         hasGtmGlobal:typeof window.google_tag_manager!=='undefined',
         gtmLoadedFlag:!!window.__rbxGtmLoaded
