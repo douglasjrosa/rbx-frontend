@@ -95,7 +95,7 @@ export default function TrackingScripts() {
         },
         body: JSON.stringify({
           sessionId: 'adcb21',
-          runId: 'ta-post',
+          runId: 'ta-post2',
           hypothesisId: 'B',
           location: 'tracking-scripts.tsx:sync',
           message: 'consent sync',
@@ -136,7 +136,7 @@ export default function TrackingScripts() {
         },
         body: JSON.stringify({
           sessionId: 'adcb21',
-          runId: 'ta-post',
+          runId: 'ta-post2',
           hypothesisId: 'C',
           location: 'tracking-scripts.tsx:late-probe',
           message: '3s probe for Tag Assistant window',
@@ -153,6 +153,8 @@ export default function TrackingScripts() {
             href: window.location.href,
             referrer: document.referrer,
             cookieHasTagAssistant: document.cookie.includes('__TAG_ASSISTANT'),
+            hasOpener: Boolean(window.opener),
+            openerClosed: Boolean(window.opener && window.opener.closed),
           },
           timestamp: Date.now(),
         }),

@@ -29,7 +29,7 @@ window.__rbxDbg=function(hypothesisId,message,data){
       headers:{'Content-Type':'application/json','X-Debug-Session-Id':'adcb21'},
       body:JSON.stringify({
         sessionId:'adcb21',
-        runId:'ta-post',
+        runId:'ta-post2',
         hypothesisId:hypothesisId,
         location:'gtm-loader-script.ts',
         message:message,
@@ -79,7 +79,9 @@ window.__rbxLoadGtm=function(reason){
   }
   function isPreview(){return previewSignals().isPreview;}
   var initial=previewSignals();
+  initial.hasOpener=Boolean(window.opener);
   window.__rbxDbg('A','bootstrap preview check',initial);
+  window.__rbxDbg('F','opener probe at bootstrap',{hasOpener:Boolean(window.opener)});
   window.__rbxDbg('B','consent default denied set',{waitForUpdate:${CONSENT_WAIT_FOR_UPDATE_MS}});
   if(initial.isPreview){window.__rbxLoadGtm('initial-preview');return;}
   var tries=0;

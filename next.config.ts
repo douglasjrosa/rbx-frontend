@@ -81,11 +81,6 @@ const nextConfig: NextConfig = {
             value: 'SAMEORIGIN',
           },
           {
-            // Allow Tag Assistant / GTM Preview popup communication.
-            key: 'Cross-Origin-Opener-Policy',
-            value: 'same-origin-allow-popups',
-          },
-          {
             key: 'Content-Security-Policy',
             value: CONTENT_SECURITY_POLICY,
           },
