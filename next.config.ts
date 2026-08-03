@@ -1,6 +1,7 @@
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import type { NextConfig } from 'next';
+import { buildSeoCanonicalRedirectRules } from './lib/seo/seo-redirects';
 
 const isDevelopment = process.env.NODE_ENV !== 'production';
 const configDirectory = path.dirname(fileURLToPath(import.meta.url));
@@ -71,9 +72,6 @@ const nextConfig: NextConfig = {
     return config;
   },
   async redirects() {
-    const { buildSeoCanonicalRedirectRules } = await import(
-      './lib/seo/seo-redirects'
-    );
     return buildSeoCanonicalRedirectRules();
   },
   async headers() {
