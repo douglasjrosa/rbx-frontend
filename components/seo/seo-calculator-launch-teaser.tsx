@@ -62,12 +62,23 @@ function CountdownCell({ label, value }: { label: string; value: number }) {
   );
 }
 
-export default function SeoCalculatorLaunchTeaser() {
-  const [parts, setParts] = useState<CountdownParts | null>(() =>
-    getCountdownParts(Date.now()),
+function CountdownSkeleton() {
+  return (
+    <div className="flex flex-wrap gap-2" aria-hidden>
+      {['Dias', 'Horas', 'Min', 'Seg'].map((label) => (
+        <CountdownCell key={label} label={label} value={0} />
+      ))}
+    </div>
   );
+}
+
+export default function SeoCalculatorLaunchTeaser() {
+  // Null until mount so SSR and hydration markup stay identical (React #418).
+  const [parts, setParts] = useState<CountdownParts | null>(null);
+  const [hasMounted, setHasMounted] = useState(false);
 
   useEffect(() => {
+    setHasMounted(true);
     const tick = () => setParts(getCountdownParts(Date.now()));
     tick();
     const id = window.setInterval(tick, 1000);
@@ -102,8 +113,10 @@ export default function SeoCalculatorLaunchTeaser() {
             da fábrica.
           </p>
 
-          <div className="mt-6">
-            {parts ? (
+          <div className="mt-6" aria-live="polite">
+            {!hasMounted ? (
+              <CountdownSkeleton />
+            ) : parts ? (
               <div className="flex flex-wrap gap-2">
                 <CountdownCell label="Dias" value={parts.days} />
                 <CountdownCell label="Horas" value={parts.hours} />
