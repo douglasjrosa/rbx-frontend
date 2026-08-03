@@ -1,5 +1,11 @@
+'use client';
+
 import classNames from 'classnames';
 import CustomLink from './custom-link';
+import {
+  trackGtmEvent,
+  type GtmEventName,
+} from '@/lib/analytics/data-layer';
 import type { NavLink } from '@/lib/content/types';
 
 interface ButtonLinkProps {
@@ -7,6 +13,8 @@ interface ButtonLinkProps {
   appearance: string;
   compact?: boolean;
   large?: boolean;
+  eventName?: GtmEventName;
+  eventLocation?: string;
 }
 
 function ButtonContent({
@@ -14,7 +22,7 @@ function ButtonContent({
   appearance,
   compact,
   large,
-}: ButtonLinkProps) {
+}: Omit<ButtonLinkProps, 'eventName' | 'eventLocation'>) {
   return (
     <div
       className={classNames(
@@ -71,9 +79,23 @@ export default function ButtonLink({
   appearance,
   compact = false,
   large = false,
+  eventName,
+  eventLocation,
 }: ButtonLinkProps) {
+  const handleNavigate = () => {
+    if (!eventName || !eventLocation) {
+      return;
+    }
+
+    trackGtmEvent(eventName, {
+      event_location: eventLocation,
+      link_url: button.url,
+      link_text: button.text,
+    });
+  };
+
   return (
-    <CustomLink link={button}>
+    <CustomLink link={button} onNavigate={handleNavigate}>
       <ButtonContent
         button={button}
         appearance={appearance}

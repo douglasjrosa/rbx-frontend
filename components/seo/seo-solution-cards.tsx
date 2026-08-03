@@ -1,5 +1,8 @@
+'use client';
+
 import NextImage from 'next/image';
 import Link from 'next/link';
+import { GTM_EVENTS, trackGtmEvent } from '@/lib/analytics/data-layer';
 import { SEO_SOLUTION_CARDS } from '@/lib/seo/priority-landing';
 
 export default function SeoSolutionCards() {
@@ -24,6 +27,13 @@ export default function SeoSolutionCards() {
                 'border border-gray-200 bg-white shadow-sm transition ' +
                 'hover:border-rbx-brown/40 hover:shadow-md'
               }
+              onClick={() => {
+                trackGtmEvent(GTM_EVENTS.SEO_SOLUTION_CARD_CLICK, {
+                  event_location: 'seo_solution_cards',
+                  link_url: card.href,
+                  card_title: card.title,
+                });
+              }}
             >
               <div className="relative aspect-[4/3] bg-gray-50">
                 <NextImage

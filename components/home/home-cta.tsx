@@ -1,6 +1,7 @@
 'use client';
 
 import ButtonLink from '@/components/elements/button-link';
+import { GTM_EVENTS } from '@/lib/analytics/data-layer';
 import type { HomeCta } from '@/lib/content/types';
 
 interface HomeCtaProps {
@@ -19,7 +20,12 @@ export default function HomeCtaSection({ cta }: HomeCtaProps) {
         >
           {cta.text}
         </p>
-        <ButtonLink button={cta.button} appearance="white-outline" />
+        <ButtonLink
+          button={cta.button}
+          appearance="white-outline"
+          eventName={GTM_EVENTS.CTA_CLICK}
+          eventLocation="home_mid_cta"
+        />
       </div>
     </section>
   );

@@ -1,6 +1,7 @@
 'use client';
 
 import ButtonLink from '@/components/elements/button-link';
+import { GTM_EVENTS } from '@/lib/analytics/data-layer';
 import Image from '@/components/elements/image';
 import type { HomeCustomPackaging } from '@/lib/content/types';
 
@@ -65,6 +66,8 @@ export default function HomeCustomPackagingSection({
               <ButtonLink
                 button={customPackaging.button}
                 appearance="rbx-primary"
+                eventName={GTM_EVENTS.CTA_CLICK}
+                eventLocation="home_custom_packaging_cta"
               />
             </div>
           </div>

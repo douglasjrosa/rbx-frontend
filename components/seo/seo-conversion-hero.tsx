@@ -1,3 +1,5 @@
+'use client';
+
 import TrackedAnchor from '@/components/analytics/tracked-anchor';
 import { GTM_EVENTS } from '@/lib/analytics/data-layer';
 import type { PriorityLandingConfig } from '@/lib/seo/priority-landing';
@@ -58,8 +60,10 @@ export default function SeoConversionHero({
         >
           Orçar no WhatsApp
         </TrackedAnchor>
-        <a
+        <TrackedAnchor
           href="#calculadora-lancamento"
+          eventName={GTM_EVENTS.CALCULATOR_TEASER_CLICK}
+          eventLocation="seo_hero"
           className={
             'inline-flex items-center justify-center rounded-md ' +
             'border-2 border-white px-6 py-3 text-sm font-semibold ' +
@@ -68,7 +72,7 @@ export default function SeoConversionHero({
           }
         >
           Calculadora em breve
-        </a>
+        </TrackedAnchor>
       </div>
     </section>
   );

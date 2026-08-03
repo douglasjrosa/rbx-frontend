@@ -2,6 +2,7 @@
 
 import ButtonLink from '@/components/elements/button-link';
 import Image from '@/components/elements/image';
+import { GTM_EVENTS } from '@/lib/analytics/data-layer';
 import type { HomeInfoRow, HomeInfoRows } from '@/lib/content/types';
 
 interface HomeInfoRowsProps {
@@ -48,6 +49,12 @@ function InfoRow({ row }: { row: HomeInfoRow }) {
               : 'rbx-primary-on-green'
           }
           large
+          eventName={GTM_EVENTS.CTA_CLICK}
+          eventLocation={
+            row.buttonVariant === 'secondary'
+              ? 'home_info_row_secondary'
+              : 'home_info_row_primary'
+          }
         />
       </div>
     </div>

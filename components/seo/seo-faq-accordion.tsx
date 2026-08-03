@@ -1,6 +1,7 @@
 'use client';
 
 import { useId, useState } from 'react';
+import { GTM_EVENTS, trackGtmEvent } from '@/lib/analytics/data-layer';
 import type { SeoFaqItem } from '@/lib/seo/priority-landing';
 
 interface SeoFaqAccordionProps {
@@ -36,9 +37,18 @@ export default function SeoFaqAccordion({ faqs }: SeoFaqAccordionProps) {
                     'text-rbx-accent transition hover:bg-amber-50/60 ' +
                     'md:px-5 md:text-lg'
                   }
-                  onClick={() =>
-                    setOpenIndex(isOpen ? null : index)
-                  }
+                  onClick={() => {
+                    const willOpen = !isOpen;
+                    setOpenIndex(willOpen ? index : null);
+
+                    if (willOpen) {
+                      trackGtmEvent(GTM_EVENTS.SEO_FAQ_OPEN, {
+                        event_location: 'seo_faq',
+                        faq_question: faq.question,
+                        faq_index: index,
+                      });
+                    }
+                  }}
                 >
                   <span>{faq.question}</span>
                   <span
@@ -57,7 +67,10 @@ export default function SeoFaqAccordion({ faqs }: SeoFaqAccordionProps) {
                 role="region"
                 aria-labelledby={buttonId}
                 hidden={!isOpen}
-                className="px-4 pb-4 text-sm leading-relaxed text-gray-700 md:px-5 md:text-base"
+                className={
+                  'px-4 pb-4 text-sm leading-relaxed text-gray-700 ' +
+                  'md:px-5 md:text-base'
+                }
               >
                 {faq.answer}
               </div>

@@ -1,6 +1,7 @@
 'use client';
 
 import ButtonLink from '@/components/elements/button-link';
+import { GTM_EVENTS } from '@/lib/analytics/data-layer';
 import Image from '@/components/elements/image';
 import LazyBackground from '@/components/elements/lazy-background';
 import { HOME_SECTIONS } from '@/lib/home-sections';
@@ -137,6 +138,8 @@ export default function HomeModelsSection({ models }: HomeModelsProps) {
           <ButtonLink
             button={models.button}
             appearance="rbx-primary"
+            eventName={GTM_EVENTS.CTA_CLICK}
+            eventLocation="home_models_cta"
           />
         </div>
       </div>

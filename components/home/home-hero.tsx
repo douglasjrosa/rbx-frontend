@@ -1,5 +1,6 @@
 import NextImage from 'next/image';
 import ButtonLink from '@/components/elements/button-link';
+import { GTM_EVENTS } from '@/lib/analytics/data-layer';
 import { SECTION_SCROLL_MARGIN_CLASS } from '@/lib/navbar-offset';
 import type { HomeHero } from '@/lib/content/types';
 
@@ -45,10 +46,14 @@ export default function HomeHeroSection({ hero }: HomeHeroProps) {
             <ButtonLink
               button={hero.primaryButton}
               appearance="white-outline"
+              eventName={GTM_EVENTS.CTA_CLICK}
+              eventLocation="home_hero_primary"
             />
             <ButtonLink
               button={hero.secondaryButton}
               appearance="white-outline"
+              eventName={GTM_EVENTS.CTA_CLICK}
+              eventLocation="home_hero_secondary"
             />
           </div>
         </div>
