@@ -24,9 +24,9 @@ export default function SeoProofStrip() {
     <section
       aria-label="Diferenciais Ribermax"
       className={
-        'relative overflow-hidden rounded-2xl ' +
+        'relative w-full overflow-hidden ' +
         'bg-gradient-to-br from-rbx-green-primary to-rbx-green-dark ' +
-        'p-4 shadow-lg md:p-5'
+        'px-4 py-6 shadow-lg md:px-6 md:py-8'
       }
     >
       <div
@@ -46,8 +46,8 @@ export default function SeoProofStrip() {
 
       <ul
         className={
-          'relative grid grid-cols-1 gap-3 sm:grid-cols-2 ' +
-          'lg:grid-cols-5 lg:gap-3'
+          'relative mx-auto grid max-w-7xl grid-cols-1 gap-3 ' +
+          'sm:grid-cols-2 lg:grid-cols-5 lg:gap-3'
         }
       >
         {SEO_PROOF_ITEMS.map((item) => {

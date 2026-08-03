@@ -69,8 +69,13 @@ export default function SeoCompetitiveLayout({
       >
         <div className="container mx-auto max-w-7xl space-y-8 md:space-y-10">
           <SeoConversionHero title={title} config={config} />
-          <SeoProofStrip />
+        </div>
 
+        <div className="mt-8 w-full md:mt-10">
+          <SeoProofStrip />
+        </div>
+
+        <div className="container mx-auto mt-8 max-w-7xl space-y-8 md:mt-10 md:space-y-10">
           <div className="space-y-10 rounded-2xl bg-white px-6 py-8 shadow-lg md:px-12 md:py-12">
             {rows.map((row, index) => {
               const imageOnLeft = index % 2 === 1;
