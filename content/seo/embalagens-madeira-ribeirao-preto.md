@@ -1,7 +1,8 @@
 Frase-chave: Embalagens de Madeira em Ribeirão Preto
 Slug: embalagens-madeira-ribeirao-preto
 Company: Ribermax Embalagens
-Metadescription: Embalagens de Madeira em Ribeirão Preto: Soluções Sob Medida para Indústrias. Orçamento Online com Simulação Imediata.
+Metatitle: Embalagens de madeira em Ribeirão Preto
+Metadescription: Fábrica em Ribeirão Preto: caixas e engradados sob medida para indústria. Solicite orçamento online com a Ribermax.
 
 #############################################
 Page content:

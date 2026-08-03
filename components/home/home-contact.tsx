@@ -128,7 +128,8 @@ export default function HomeContactSection({ contact }: HomeContactProps) {
               eventLocation="contact_section"
               className={
                 'mt-2 inline-block text-base font-semibold ' +
-                'text-rbx-green-dark underline hover:text-rbx-green'
+                'text-rbx-green-primary underline ' +
+                'hover:text-rbx-green-dark'
               }
             >
               Como chegar no Google Maps

@@ -1,7 +1,8 @@
 Frase-chave: Fabricação de Embalagens de Madeira
 Slug: fabricacao-embalagens-madeira
 Company: Ribermax Embalagens
-Metadescription: Fabricação de Embalagens de Madeira: Tecnologia Exclusiva de Orçamento Online. Madeira de Reflorestamento. 20+ Anos de Experiência.
+Metatitle: Fabricação de embalagens de madeira industrial
+Metadescription: Mais de 20 anos fabricando embalagens de madeira de reflorestamento. Orçamento online rápido na Ribermax.
 
 #############################################
 Page content:

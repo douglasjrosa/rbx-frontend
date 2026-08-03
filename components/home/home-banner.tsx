@@ -1,26 +1,16 @@
 'use client';
 
-import NextImage from 'next/image';
 import type { HomeBanner } from '@/lib/content/types';
 
 interface HomeBannerProps {
   banner: HomeBanner;
 }
 
-const PORTO_BANNER_IMAGE = '/images/porto-de-santos-hero.webp';
-
 export default function HomeBannerSection({ banner }: HomeBannerProps) {
   return (
-    <section
-      className="relative min-h-screen w-full overflow-hidden"
-    >
-      <NextImage
-        src={PORTO_BANNER_IMAGE}
-        alt=""
-        fill
-        sizes="100vw"
-        loading="lazy"
-        className="object-cover object-center"
+    <section className="relative min-h-screen w-full overflow-hidden">
+      <div
+        className="absolute inset-0 bg-rbx-porto bg-fixed bg-cover bg-center"
         aria-hidden
       />
       <div className="absolute inset-0 bg-black/40" aria-hidden />

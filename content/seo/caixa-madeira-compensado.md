@@ -2,7 +2,8 @@ Frase-chave: Caixa de Madeira Compensado
 Slug: caixa-madeira-compensado
 Produto: Equipamentos e máquinas industriais
 Company: Ribermax Embalagens
-Metadescription: Caixa de Madeira Compensado Ribermax: embalagens resistentes e leves para transporte seguro. Foco 100% em Custo X Benefício. Orçamentos...
+Metatitle: Caixa de madeira compensado leve e firme
+Metadescription: Caixas em compensado: resistência com menor peso e bom custo-benefício. Orçamento sob medida na Ribermax.
 
 #############################################
 Page content:

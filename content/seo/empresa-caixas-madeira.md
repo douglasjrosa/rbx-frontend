@@ -1,7 +1,8 @@
 Frase-chave: Empresa de Caixas de Madeira
 Slug: empresa-caixas-madeira
 Company: Ribermax Embalagens
-Metadescription: Empresa de Caixas de Madeira: Soluções Eficientes com Orçamento Online Imediato. Embalagens Industriais Sob Medida para Proteção Total.
+Metatitle: Empresa de caixas de madeira sob medida
+Metadescription: Fabricante de caixas de madeira desde 1996. Projetos industriais sob medida, sem pedido mínimo. Peça orçamento.
 
 #############################################
 Page content:

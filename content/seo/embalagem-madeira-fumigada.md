@@ -1,7 +1,8 @@
 Frase-chave: Embalagem de Madeira Fumigada
 Slug: embalagem-madeira-fumigada
 Company: Ribermax Embalagens
-Metadescription: Embalagem de Madeira Fumigada: Soluções Certificadas com Tratamento Térmico HT. Garanta Conformidade com NIMF-15 para Exportações.
+Metatitle: Embalagem de madeira fumigada certificada
+Metadescription: Embalagens de madeira com HT para exportação segura e conformidade fitossanitária. Solicite orçamento na Ribermax.
 
 #############################################
 Page content:

@@ -1,7 +1,8 @@
 Frase-chave: Embalagem Fumigada
 Slug: embalagem-fumigada
 Company: Ribermax Embalagens
-Metadescription: Embalagem Fumigada: Conheça o Atual Tratamento Térmico HT que Substitui a Fumigação. Soluções Certificadas 15x Mais Econômicas.
+Metatitle: Embalagem fumigada: HT no lugar do MB
+Metadescription: Entenda fumigação vs tratamento térmico HT e escolha embalagem certificada NIMF-15. Orçamento com a Ribermax.
 
 #############################################
 Page content:

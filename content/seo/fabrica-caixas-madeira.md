@@ -1,7 +1,8 @@
 Frase-chave: Fábrica de Caixas de Madeira
 Slug: fabrica-caixas-madeira
 Company: Ribermax Embalagens
-Metadescription: Fábrica de Caixas de Madeira: Produção Exclusiva com Tecnologia Avançada. Caixas e Engradados Sob Medida. Orçamento 100% Online.
+Metatitle: Fábrica de caixas e engradados de madeira
+Metadescription: Produção própria de caixas e engradados sob medida em Ribeirão Preto. Orçamento 100% online com a Ribermax.
 
 #############################################
 Page content:

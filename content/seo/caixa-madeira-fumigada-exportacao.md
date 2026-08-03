@@ -4,7 +4,8 @@ Slug: caixa-madeira-fumigada-exportacao
 
 Company: Ribermax Embalagens
 
-Metadescription: Caixa de Madeira Fumigada para Exportação Certificada. Proteja Sua Mercadoria e Evite Problemas Alfandegários com Embalagens Tratadas NIMF15.
+Metatitle: Caixa fumigada NIMF-15 para exportação
+Metadescription: Caixas de madeira com tratamento HT (NIMF-15). Evite retenção na alfândega. Orçamento sob medida com a Ribermax.
 
 #############################################
 Page content:

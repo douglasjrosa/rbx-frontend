@@ -58,7 +58,7 @@ export default function Footer() {
                       aria-label={social.name}
                       className={
                         'flex h-10 w-10 items-center justify-center ' +
-                        'rounded-full bg-rbx-green-secondary text-rbx-accent ' +
+                        'rounded-full bg-rbx-green-primary text-white ' +
                         'transition-opacity hover:opacity-90'
                       }
                     >

@@ -1,7 +1,8 @@
 Frase-chave: Caixa de madeira sob medida
 Slug: caixa-madeira-medida
 Company: Ribermax Embalagens
-Metadescription: Caixa de Madeira Sob Medida: Projetos Personalizados para Proteção Total de Equipamentos. Garanta Segurança no Transporte.
+Metatitle: Caixa de madeira sob medida sem mínimo
+Metadescription: Caixas projetadas no seu tamanho, para transporte seguro. Sem pedido mínimo e orçamento online na Ribermax.
 
 #############################################
 Page content:

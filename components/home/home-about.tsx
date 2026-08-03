@@ -6,7 +6,7 @@ import { HOME_SECTIONS } from '@/lib/home-sections';
 import { SECTION_SCROLL_MARGIN_CLASS } from '@/lib/navbar-offset';
 import type { HomeAbout } from '@/lib/content/types';
 
-const WOOD_PANEL_IMAGE = '/images/wood-pannel-sm.webp';
+const WOOD_PANEL_IMAGE = '/images/wood-pannel.webp';
 
 interface HomeAboutProps {
   about: HomeAbout;

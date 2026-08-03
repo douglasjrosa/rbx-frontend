@@ -1,7 +1,8 @@
 Frase-chave: Caixas de madeira para equipamentos
 Slug: caixas-madeira-equipamentos
 Company: Ribermax Embalagens
-Metadescription: Caixas de Madeira p/ Equipamentos: Proteção p/ Transporte Seguro. Embalagens Resistentes que Garantem a Integridade de Máquinas Industriais.
+Metatitle: Caixas de madeira para equipamentos industriais
+Metadescription: Proteja máquinas e equipamentos no transporte com caixas sob medida. Produção própria e orçamento rápido na Ribermax.
 
 #############################################
 Page content:

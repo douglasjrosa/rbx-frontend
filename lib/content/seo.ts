@@ -8,18 +8,20 @@ const SEPARATOR = '#############################################';
 
 function parseHeader(raw: string): Pick<
   SeoPage,
-  'keyword' | 'slug' | 'metaDescription' | 'company'
+  'keyword' | 'slug' | 'metaTitle' | 'metaDescription' | 'company'
 > {
   const keyword =
     raw.match(/^Frase-chave:\s*(.+)$/m)?.[1]?.trim() ?? '';
   const slug = raw.match(/^Slug:\s*(.+)$/m)?.[1]?.trim() ?? '';
+  const metaTitle =
+    raw.match(/^Metatitle:\s*(.+)$/m)?.[1]?.trim() || undefined;
   const metaDescription =
     raw.match(/^Metadescription:\s*(.+)$/m)?.[1]?.trim() ?? '';
   const company =
     raw.match(/^Company:\s*(.+)$/m)?.[1]?.trim() ??
     'Ribermax Embalagens';
 
-  return { keyword, slug, metaDescription, company };
+  return { keyword, slug, metaTitle, metaDescription, company };
 }
 
 function extractSection(raw: string, label: string): string {
@@ -50,6 +52,7 @@ export function parseSeoMarkdown(raw: string, filename: string): SeoPage {
   return {
     slug: parsedHeader.slug || fallbackSlug,
     keyword: parsedHeader.keyword,
+    metaTitle: parsedHeader.metaTitle,
     metaDescription: parsedHeader.metaDescription,
     company: parsedHeader.company,
     mainContent: extractSection(body, 'Page content'),

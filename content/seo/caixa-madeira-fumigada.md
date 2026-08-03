@@ -4,7 +4,8 @@ Slug: caixa-madeira-fumigada
 
 Company: Ribermax Embalagens
 
-Metadescription: Caixa de madeira fumigada certificada para exportação. Proteja seus equipamentos com embalagens tratadas e evite problemas na alfândega.
+Metatitle: Caixa de madeira fumigada com tratamento HT
+Metadescription: Caixa fumigada na prática é tratamento térmico HT. Certificação para exportação e proteção da carga. Orçamento Ribermax.
 
 #############################################
 Page content:

@@ -1,7 +1,8 @@
 Frase-chave: Fornecedor de Caixa de Madeira
 Slug: fornecedor-caixa-madeira
 Company: Ribermax Embalagens
-Metadescription: Fornecedor de Caixa de Madeira: Parceria em Soluções de Embalagens Resistentes. Orçamento Online Exclusivo. Atuamos Desde 1996.
+Metatitle: Fornecedor de caixas de madeira B2B
+Metadescription: Fornecedor industrial de caixas de madeira desde 1996. Parceria B2B, projetos sob medida e orçamento online.
 
 #############################################
 Page content:
