@@ -63,11 +63,55 @@ export function GoogleTagManagerNoScript() {
 export default function TrackingScripts() {
   useEffect(() => {
     if (!isTrackingEnabled()) {
+      // #region agent log
+      fetch('http://127.0.0.1:7692/ingest/ab94cee0-84cd-4479-a918-2856d96f6bdc', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'X-Debug-Session-Id': 'adcb21',
+        },
+        body: JSON.stringify({
+          sessionId: 'adcb21',
+          runId: 'ta-pre',
+          hypothesisId: 'E',
+          location: 'tracking-scripts.tsx:mount',
+          message: 'tracking disabled (non-production)',
+          data: {},
+          timestamp: Date.now(),
+        }),
+      }).catch(() => {});
+      // #endregion
       return;
     }
 
     const syncConsentAndLoader = () => {
-      if (!hasAnalyticsConsent()) {
+      const consented = hasAnalyticsConsent();
+      // #region agent log
+      fetch('http://127.0.0.1:7692/ingest/ab94cee0-84cd-4479-a918-2856d96f6bdc', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'X-Debug-Session-Id': 'adcb21',
+        },
+        body: JSON.stringify({
+          sessionId: 'adcb21',
+          runId: 'ta-pre',
+          hypothesisId: 'B',
+          location: 'tracking-scripts.tsx:sync',
+          message: 'consent sync',
+          data: {
+            consented,
+            gtmLoadedFlag: Boolean(window.__rbxGtmLoaded),
+            gtmScriptCount: document.querySelectorAll(
+              'script[src*="googletagmanager.com/gtm.js"]',
+            ).length,
+          },
+          timestamp: Date.now(),
+        }),
+      }).catch(() => {});
+      // #endregion
+
+      if (!consented) {
         return;
       }
 
@@ -82,7 +126,42 @@ export default function TrackingScripts() {
       syncConsentAndLoader,
     );
 
+    const lateProbe = window.setTimeout(() => {
+      // #region agent log
+      fetch('http://127.0.0.1:7692/ingest/ab94cee0-84cd-4479-a918-2856d96f6bdc', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'X-Debug-Session-Id': 'adcb21',
+        },
+        body: JSON.stringify({
+          sessionId: 'adcb21',
+          runId: 'ta-pre',
+          hypothesisId: 'C',
+          location: 'tracking-scripts.tsx:late-probe',
+          message: '3s probe for Tag Assistant window',
+          data: {
+            consented: hasAnalyticsConsent(),
+            gtmLoadedFlag: Boolean(window.__rbxGtmLoaded),
+            gtmScriptCount: document.querySelectorAll(
+              'script[src*="googletagmanager.com/gtm.js"]',
+            ).length,
+            hasGtmGlobal: typeof window.google_tag_manager !== 'undefined',
+            dataLayerLen: Array.isArray(window.dataLayer)
+              ? window.dataLayer.length
+              : -1,
+            href: window.location.href,
+            referrer: document.referrer,
+            cookieHasTagAssistant: document.cookie.includes('__TAG_ASSISTANT'),
+          },
+          timestamp: Date.now(),
+        }),
+      }).catch(() => {});
+      // #endregion
+    }, 3000);
+
     return () => {
+      window.clearTimeout(lateProbe);
       window.removeEventListener(
         COOKIE_CONSENT_CHANGED_EVENT,
         syncConsentAndLoader,
