@@ -24,6 +24,7 @@ declare global {
       message: string,
       data?: Record<string, unknown>,
     ) => void;
+    google_tag_manager?: unknown;
     gtag?: (...args: unknown[]) => void;
   }
 }
