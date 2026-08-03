@@ -1,6 +1,10 @@
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import type { NextConfig } from 'next';
 
 const isDevelopment = process.env.NODE_ENV !== 'production';
+const configDirectory = path.dirname(fileURLToPath(import.meta.url));
+const emptyPolyfillPath = path.join(configDirectory, 'lib', 'empty-polyfill.js');
 
 const CONTENT_SECURITY_POLICY = [
   "default-src 'self'",
@@ -49,6 +53,21 @@ const nextConfig: NextConfig = {
   experimental: {
     inlineCss: true,
     optimizePackageImports: ['react-icons'],
+  },
+  // Browserslist already targets modern engines; drop unconditional polyfills.
+  turbopack: {
+    resolveAlias: {
+      'next/dist/build/polyfills/polyfill-module': './lib/empty-polyfill.js',
+      '../build/polyfills/polyfill-module': './lib/empty-polyfill.js',
+    },
+  },
+  webpack: (config) => {
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      'next/dist/build/polyfills/polyfill-module': emptyPolyfillPath,
+      'next/dist/build/polyfills/polyfill-module.js': emptyPolyfillPath,
+    };
+    return config;
   },
   async headers() {
     return [

@@ -1,32 +1,15 @@
-'use client';
-
-import { Suspense, useState, useEffect } from 'react';
+import { Suspense } from 'react';
 import AnalyticsPageView from '@/components/analytics/analytics-page-view';
-import Navbar from './elements/navbar';
-import NavbarHeightSync from './navbar-height-sync';
-import Footer from './elements/footer';
-import CookieConsentBanner from './elements/cookie-consent-banner';
-import WhatsAppButton from './elements/whatsapp-button';
-import { siteConfig } from '@/content/site';
+import DeferredChrome from '@/components/deferred-chrome';
+import Navbar from '@/components/elements/navbar';
+import Footer from '@/components/elements/footer';
+import NavbarHeightSync from '@/components/navbar-height-sync';
 
 interface SiteLayoutProps {
   children: React.ReactNode;
 }
 
 export default function SiteLayout({ children }: SiteLayoutProps) {
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  const {
-    cookieConsent,
-    whatsappImage,
-    whatsappPhone,
-    whatsappMsg,
-  } = siteConfig;
-
   return (
     <div className="flex flex-col min-h-screen">
       <Suspense fallback={null}>
@@ -37,21 +20,10 @@ export default function SiteLayout({ children }: SiteLayoutProps) {
           <Navbar />
           <NavbarHeightSync />
         </div>
-        <div className="relative z-10">
-          {children}
-        </div>
+        <div className="relative z-10">{children}</div>
       </div>
       <Footer />
-      {mounted && whatsappImage && whatsappPhone && (
-        <WhatsAppButton
-          media={whatsappImage}
-          phone={whatsappPhone}
-          message={whatsappMsg}
-        />
-      )}
-      {mounted && cookieConsent && (
-        <CookieConsentBanner data={cookieConsent} />
-      )}
+      <DeferredChrome />
     </div>
   );
 }

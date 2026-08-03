@@ -1,10 +1,10 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
+import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { MdMenu } from 'react-icons/md';
-import MobileNavMenu from './mobile-nav-menu';
 import ButtonLink from './button-link';
 import Image from './image';
 import CustomLink from './custom-link';
@@ -15,6 +15,12 @@ import {
 } from '@/lib/home-sections';
 import { HOME_NAV_HASH_EVENT, HOME_NAV_HASH_UNLOCK_EVENT } from '@/lib/home-nav-events';
 import { getNavbarOffsetPx } from '@/lib/navbar-offset';
+
+const MobileNavMenu = dynamic(() => import('./mobile-nav-menu'), {
+  ssr: false,
+});
+
+const NAVBAR_LOGO_SIZES = '150px';
 
 function parseHomeHash(url: string): string | null {
   if (url === '/' || url === '/#') {
@@ -163,7 +169,8 @@ export default function Navbar() {
               alternativeText="Logomarca Ribermax"
               width={150}
               height={39}
-              priority
+              priority={isHome}
+              sizes={NAVBAR_LOGO_SIZES}
             />
           </Link>
 

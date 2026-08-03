@@ -24,7 +24,8 @@ export default function SeoContentImage({
     slot.height,
   );
 
-  const sizes = `(max-width: 768px) 100vw, ${maxWidth}px`;
+  const sizes =
+    `(max-width: 768px) min(100vw, ${maxWidth}px), ${maxWidth}px`;
 
   return (
     <figure
