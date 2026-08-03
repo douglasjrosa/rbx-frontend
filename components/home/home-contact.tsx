@@ -86,7 +86,7 @@ export default function HomeContactSection({ contact }: HomeContactProps) {
                 'mt-6 inline-flex w-full items-center ' +
                 'justify-center gap-2 rounded-md bg-rbx-green-primary ' +
                 'px-6 py-3 text-lg font-semibold text-white ' +
-                'transition-colors hover:bg-rbx-green-secondary'
+                'transition-colors hover:bg-[#0b3d24]'
               }
             >
               <FaWhatsapp className="h-6 w-6 shrink-0" aria-hidden />
@@ -128,7 +128,7 @@ export default function HomeContactSection({ contact }: HomeContactProps) {
               eventLocation="contact_section"
               className={
                 'mt-2 inline-block text-base font-semibold ' +
-                'text-rbx-green-primary underline ' +
+                'text-[#0b3d24] underline ' +
                 'hover:text-rbx-green-dark'
               }
             >

@@ -50,7 +50,11 @@ function StatCard({ stat }: { stat: HomeStatCard }) {
           style={{ backgroundColor: '#658737' }}
         />
         <div
-          className="absolute inset-0 bg-rbx-brown-deep/59"
+          className="absolute inset-0 bg-rbx-brown-deep/85"
+          aria-hidden
+        />
+        <div
+          className="absolute inset-0 bg-black/25"
           aria-hidden
         />
         <div className="relative z-10 flex flex-col items-center justify-center">

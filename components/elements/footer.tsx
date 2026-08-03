@@ -16,13 +16,14 @@ const SOCIAL_ICON_COMPONENTS = {
   typeof FaFacebookF | typeof FaLinkedinIn | typeof FaInstagram
 >;
 
-const FOOTER_HEADING_CLASS = 'text-lg font-medium text-[#b5d08a]';
+const FOOTER_HEADING_CLASS = 'text-lg font-medium text-[#c5e09a]';
+const FOOTER_BODY_CLASS = 'text-base leading-relaxed text-neutral-100';
 
 export default function Footer() {
   const { footer } = siteConfig;
 
   return (
-    <footer className="bg-[#1f1f1f] text-white">
+    <footer className="bg-[#1f1f1f] text-neutral-100">
       <div className="container py-12 md:py-14">
         <div
           className={
@@ -40,7 +41,7 @@ export default function Footer() {
             />
             <p
               className={
-                'max-w-sm text-[15px] leading-relaxed text-white'
+                'max-w-sm text-[15px] leading-relaxed text-neutral-100'
               }
             >
               {footer.tagline}
@@ -58,7 +59,7 @@ export default function Footer() {
                       aria-label={social.name}
                       className={
                         'flex h-10 w-10 items-center justify-center ' +
-                        'rounded-full bg-rbx-green-primary text-white ' +
+                        'rounded-full bg-[#0b3d24] text-white ' +
                         'transition-opacity hover:opacity-90'
                       }
                     >
@@ -78,14 +79,14 @@ export default function Footer() {
               {footer.contacts.map((contact) => (
                 <div
                   key={contact.email}
-                  className="text-base leading-relaxed"
+                  className={FOOTER_BODY_CLASS}
                 >
                   <p>{contact.label}</p>
                   <p>
                     {contact.email === COMMERCIAL_EMAIL ? (
                       <TrackedAnchor
                         href={`mailto:${contact.email}`}
-                        className="hover:underline"
+                        className="text-neutral-100 underline hover:text-white"
                         eventName={GTM_EVENTS.EMAIL_CLICK}
                         eventLocation="footer"
                       >
@@ -94,7 +95,7 @@ export default function Footer() {
                     ) : (
                       <a
                         href={`mailto:${contact.email}`}
-                        className="hover:underline"
+                        className="text-neutral-100 underline hover:text-white"
                       >
                         {contact.email}
                       </a>
@@ -109,12 +110,12 @@ export default function Footer() {
             <h2 className={FOOTER_HEADING_CLASS}>
               {footer.certificationTitle}
             </h2>
-            <p className="text-base leading-relaxed">
+            <p className={FOOTER_BODY_CLASS}>
               <a
                 href={footer.certificationUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:underline"
+                className="text-neutral-100 underline hover:text-white"
               >
                 {footer.certificationLabel}
               </a>
