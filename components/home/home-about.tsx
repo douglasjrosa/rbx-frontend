@@ -1,7 +1,10 @@
 import Image from '@/components/elements/image';
+import LazyBackground from '@/components/elements/lazy-background';
 import { HOME_SECTIONS } from '@/lib/home-sections';
 import { SECTION_SCROLL_MARGIN_CLASS } from '@/lib/navbar-offset';
 import type { HomeAbout } from '@/lib/content/types';
+
+const WOOD_PANEL_IMAGE = '/images/wood-pannel-sm.webp';
 
 interface HomeAboutProps {
   about: HomeAbout;
@@ -14,13 +17,12 @@ export default function HomeAboutSection({ about }: HomeAboutProps) {
       className={`${SECTION_SCROLL_MARGIN_CLASS} relative py-12 md:py-16`}
     >
       <div className="absolute inset-0 bg-rbx-brown-panel" aria-hidden />
-      <div
+      <LazyBackground
+        src={WOOD_PANEL_IMAGE}
         className={
           'absolute inset-0 bg-repeat-y opacity-[0.19] ' +
           'bg-[length:100%_auto]'
         }
-        style={{ backgroundImage: "url('/images/wood-pannel.webp')" }}
-        aria-hidden
       />
       <div className="container relative z-10">
         <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-2 lg:gap-12">

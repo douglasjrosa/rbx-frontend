@@ -30,6 +30,13 @@ html {
   @apply text-4xl leading-snug font-semibold;
 }
 
+/* Defer paint/layout for below-the-fold home sections. */
+.home-below-fold > section,
+.home-below-fold > div > section {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 900px;
+}
+
 @media (min-width: 768px) {
   .title {
     @apply text-5xl;

@@ -22,24 +22,26 @@ export default function HomePage() {
     <>
       <HashScrollHandler />
       {page.hero && <HomeHeroSection hero={page.hero} />}
-      {page.banner && <HomeBannerSection banner={page.banner} />}
-      {page.highlights && (
-        <HomeHighlightsSection highlights={page.highlights} />
-      )}
-      {page.cta && <HomeCtaSection cta={page.cta} />}
-      {page.models && <HomeModelsSection models={page.models} />}
-      {page.customPackaging && (
-        <HomeCustomPackagingSection customPackaging={page.customPackaging} />
-      )}
-      {page.infoRows && <HomeInfoRowsSection infoRows={page.infoRows} />}
-      {page.about && <HomeAboutSection about={page.about} />}
-      {page.differentials && (
-        <HomeDifferentialsSection differentials={page.differentials} />
-      )}
-      {page.diversity && (
-        <HomeDiversitySection diversity={page.diversity} />
-      )}
-      {page.contact && <HomeContactSection contact={page.contact} />}
+      <div className="home-below-fold">
+        {page.banner && <HomeBannerSection banner={page.banner} />}
+        {page.highlights && (
+          <HomeHighlightsSection highlights={page.highlights} />
+        )}
+        {page.cta && <HomeCtaSection cta={page.cta} />}
+        {page.models && <HomeModelsSection models={page.models} />}
+        {page.customPackaging && (
+          <HomeCustomPackagingSection customPackaging={page.customPackaging} />
+        )}
+        {page.infoRows && <HomeInfoRowsSection infoRows={page.infoRows} />}
+        {page.about && <HomeAboutSection about={page.about} />}
+        {page.differentials && (
+          <HomeDifferentialsSection differentials={page.differentials} />
+        )}
+        {page.diversity && (
+          <HomeDiversitySection diversity={page.diversity} />
+        )}
+        {page.contact && <HomeContactSection contact={page.contact} />}
+      </div>
     </>
   );
 }

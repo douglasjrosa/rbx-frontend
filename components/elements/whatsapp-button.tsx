@@ -32,6 +32,7 @@ export default function WhatsAppButton({
           media={media}
           width={90}
           height={90}
+          sizes="90px"
           alternativeText="Ícone do Whatsapp"
         />
       </TrackedAnchor>

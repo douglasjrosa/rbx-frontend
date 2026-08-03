@@ -1,8 +1,12 @@
 import ButtonLink from '@/components/elements/button-link';
 import Image from '@/components/elements/image';
+import LazyBackground from '@/components/elements/lazy-background';
 import { HOME_SECTIONS } from '@/lib/home-sections';
 import { SECTION_SCROLL_MARGIN_CLASS } from '@/lib/navbar-offset';
 import type { HomeModels, HomeProductModel } from '@/lib/content/types';
+
+const WOOD_PANEL_IMAGE = '/images/wood-pannel-sm.webp';
+const GREEN_WALLPAPER_IMAGE = '/images/green-wallpaper-sm.webp';
 
 interface HomeModelsProps {
   models: HomeModels;
@@ -74,13 +78,10 @@ export default function HomeModelsSection({ models }: HomeModelsProps) {
       id={HOME_SECTIONS.produtos}
       className={`${SECTION_SCROLL_MARGIN_CLASS} relative pb-16 pt-10 md:pb-20 md:pt-12`}
     >
-      <div
+      <LazyBackground
+        src={WOOD_PANEL_IMAGE}
         className="absolute inset-0 bg-fixed bg-center bg-repeat-y"
-        style={{
-          backgroundImage: "url('/images/wood-pannel.webp')",
-          backgroundSize: '100% auto',
-        }}
-        aria-hidden
+        style={{ backgroundSize: '100% auto' }}
       />
 
       <div className="container relative z-10 flex flex-col items-center gap-5">
@@ -90,16 +91,13 @@ export default function HomeModelsSection({ models }: HomeModelsProps) {
             'px-6 py-6 md:px-8 md:py-7'
           }
         >
-          <div
+          <LazyBackground
+            src={GREEN_WALLPAPER_IMAGE}
             className={
               'pointer-events-none absolute inset-y-0 left-0 w-40 ' +
               'bg-left bg-no-repeat md:w-52'
             }
-            style={{
-              backgroundImage: "url('/images/green-wallpaper.webp')",
-              backgroundSize: 'auto 100%',
-            }}
-            aria-hidden
+            style={{ backgroundSize: 'auto 100%' }}
           />
           <div className="relative z-10 flex flex-col items-center">
             <h2
