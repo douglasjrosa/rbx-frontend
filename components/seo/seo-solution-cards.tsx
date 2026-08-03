@@ -6,10 +6,10 @@ export default function SeoSolutionCards() {
   return (
     <section className="space-y-4">
       <div>
-        <h2 className="text-2xl font-bold text-rbx-accent md:text-3xl">
+        <h2 className="text-2xl font-bold text-white md:text-3xl">
           Tipos de embalagem
         </h2>
-        <p className="mt-2 max-w-2xl text-gray-700">
+        <p className="mt-2 max-w-2xl text-white/90">
           Escolha o caminho certo para o seu produto — comparamos proteção e
           custo na cotação.
         </p>

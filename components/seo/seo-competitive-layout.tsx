@@ -113,11 +113,20 @@ export default function SeoCompetitiveLayout({
 
         <div
           className={
-            'mt-8 w-full bg-rbx-white bg-auto bg-repeat py-10 ' +
-            'md:mt-10 md:py-14'
+            'relative mt-8 w-full overflow-hidden py-10 md:mt-10 md:py-14'
           }
         >
-          <div className="container mx-auto max-w-7xl space-y-8 md:space-y-10">
+          <div
+            className="absolute inset-0 bg-rbx-green-dark/90"
+            aria-hidden
+          />
+          <div
+            className={
+              'absolute inset-0 bg-rbx-white bg-auto bg-repeat opacity-45'
+            }
+            aria-hidden
+          />
+          <div className="relative container mx-auto max-w-7xl space-y-8 md:space-y-10">
             <SeoSolutionCards />
             <SeoFaqAccordion faqs={config.faqs} />
           </div>

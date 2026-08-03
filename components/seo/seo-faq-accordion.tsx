@@ -13,7 +13,7 @@ export default function SeoFaqAccordion({ faqs }: SeoFaqAccordionProps) {
 
   return (
     <section className="space-y-4">
-      <h2 className="text-2xl font-bold text-rbx-accent md:text-3xl">
+      <h2 className="text-2xl font-bold text-white md:text-3xl">
         Perguntas frequentes
       </h2>
       <div className="divide-y divide-gray-200 overflow-hidden rounded-xl border border-gray-200 bg-white">
