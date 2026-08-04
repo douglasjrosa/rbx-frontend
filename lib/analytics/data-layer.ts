@@ -1,3 +1,7 @@
+import {
+  trackGoogleAdsWhatsAppConversion,
+} from '@/lib/analytics/google-ads-conversion';
+
 export const GTM_EVENTS = {
   WHATSAPP_CLICK: 'whatsapp_click',
   EMAIL_CLICK: 'email_click',
@@ -61,4 +65,8 @@ export function trackGtmEvent(
     ...getPageContext(),
     ...params,
   });
+
+  if (event === GTM_EVENTS.WHATSAPP_CLICK) {
+    trackGoogleAdsWhatsAppConversion();
+  }
 }

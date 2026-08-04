@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { GTM_CONTAINER_ID } from '@/lib/analytics/config';
 import { CONSENT_GRANTED } from '@/lib/analytics/consent-mode';
+import { ensureGoogleAdsTagLoaded } from '@/lib/analytics/google-ads-conversion';
 import { isTrackingEnabled } from '@/lib/analytics/is-tracking-enabled';
 import {
   COOKIE_CONSENT_CHANGED_EVENT,
@@ -73,6 +74,7 @@ export default function TrackingScripts() {
 
       updateConsentGranted();
       loadGtmIfNeeded();
+      ensureGoogleAdsTagLoaded();
       updateConsentGranted();
     };
 

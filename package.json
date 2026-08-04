@@ -11,7 +11,12 @@
     "lint": "npx next lint",
     "validate-seo": "node scripts/validate-seo-images.mjs",
     "generate-seo-images": "node scripts/generate-seo-page-images.mjs",
-    "download-images": "node scripts/download-images.mjs"
+    "download-images": "node scripts/download-images.mjs",
+    "ads:auth": "node scripts/google-ads/auth-oauth.mjs",
+    "ads:accounts": "node scripts/google-ads/list-accounts.mjs",
+    "ads:conversions:list": "node scripts/google-ads/list-conversion-actions.mjs",
+    "ads:conversions:remove-legacy": "node scripts/google-ads/remove-conversion-actions.mjs",
+    "ads:conversions:whatsapp": "node scripts/google-ads/create-whatsapp-click-conversion.mjs"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.16",
@@ -32,8 +37,11 @@
     "@types/react-dom": "^19.1.0",
     "@types/sanitize-html": "^2.16.0",
     "autoprefixer": "^10.4.21",
+    "dotenv": "^17.4.2",
     "eslint": "^9.27.0",
     "eslint-config-next": "^16.2.9",
+    "google-ads-api": "^24.1.0",
+    "google-auth-library": "^11.0.0",
     "postcss": "^8.5.4",
     "tailwindcss": "^3.4.17",
     "typescript": "^5.8.3"

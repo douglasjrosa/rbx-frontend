@@ -30,6 +30,11 @@ yarn-error.log*
 .env.development.local
 .env.test.local
 .env.production.local
+.env.google-ads.local
+scripts/google-ads/.tokens.json
+
+# local scratch
+.tmp/
 
 # PWA files
 **/public/sw.js
@@ -39,3 +44,6 @@ yarn-error.log*
 **/public/workbox-*.js.map
 **/public/worker-*.js.map
 .vercel
+
+# TypeScript incremental
+tsconfig.tsbuildinfo
