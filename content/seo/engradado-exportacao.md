@@ -1,7 +1,7 @@
 Frase-chave: Engradado para Exportação
 Slug: engradado-exportacao
 Company: Ribermax Embalagens
-Metadescription: Engradado para Exportação: Proteção Estrutural para Produtos Exportados. Madeira Tratada Conforme NIMF-15. Orçamento pelo WhatsApp. Pedido mínimo R$ 3.500.
+Metadescription: Engradado para Exportação: Proteção Estrutural para Produtos Exportados. Madeira Tratada Conforme NIMF-15. Orçamento pelo WhatsApp. Sem pedido mínimo.
 
 #############################################
 Page content:
@@ -60,7 +60,7 @@ Em contrapartida, ao trabalhar com um fornecedor especializado como a Ribermax, 
 <li>Madeira tratada conforme normas NIMF-15, com certificação válida internacionalmente</li>
 <li>Expertise técnica acumulada ao longo de décadas de atuação no setor</li>
 <li>Melhor custo-benefício através de processos otimizados de produção</li>
-<li>Atendimento industrial com pedido mínimo de R$ 3.500</li>
+<li>Atendimento industrial sem pedido mínimo.</li>
 <li>Garantia de conformidade com requisitos específicos de diferentes países importadores</li>
 </ul>
 </div>

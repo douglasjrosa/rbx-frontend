@@ -21,7 +21,7 @@ Page content:
 <li>Caixas fechadas para maior proteção (linhas econômica, estruturada, reforçada)</li>
 <li>Engradados quando a estrutura aberta atende com melhor custo</li>
 <li>Projetos sob medida, sem forçar grade de tamanhos prontos</li>
-<li>Pedido mínimo de R$ 3.500</li>
+<li>Sem pedido mínimo.</li>
 <li>Prazo de referência de cerca de 7 dias após o pedido</li>
 </ul>
 
@@ -46,6 +46,6 @@ Call To Action:
 
 <h3>Peça orçamento na fábrica</h3>
 
-<div>Informe medidas internas (ou do produto), peso aproximado e destino. Retornamos com modelo recomendado e valor — direto de quem fabrica. Pedido mínimo de R$ 3.500.</div>
+<div>Informe medidas internas (ou do produto), peso aproximado e destino. Retornamos com modelo recomendado e valor — direto de quem fabrica. Sem pedido mínimo.</div>
 
 <div>Para proteção de máquinas e dispositivos, veja <a href="/caixas-madeira-equipamentos/" style="color: rgb(100, 200, 255); text-decoration: underline">caixas de madeira para equipamentos</a>.</div>

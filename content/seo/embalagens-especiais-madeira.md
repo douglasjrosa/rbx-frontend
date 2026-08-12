@@ -58,7 +58,7 @@ Na Ribermax Embalagens, desenvolvemos nossas soluções através de um meticulos
 </div>
 
 <div>
-Com mais de 20 anos no mercado, nossa linha de produção incorpora rigorosos critérios de qualidade em cada etapa do processo. Consequentemente, oferecemos embalagens que não apenas protegem o produto durante o transporte, mas também agregam valor à percepção da marca. Além disso, nosso sistema permite a produção de quantidades customizadas, atendendo perfeitamente às necessidades específicas de cada cliente, com pedido mínimo de R$ 3.500 e produção sob medida. Em resumo, as embalagens especiais de madeira da Ribermax representam a combinação ideal entre proteção técnica e eficiência econômica, razão pela qual nossos clientes frequentemente padronizam seus produtos com nossas soluções após a primeira experiência.
+Com mais de 20 anos no mercado, nossa linha de produção incorpora rigorosos critérios de qualidade em cada etapa do processo. Consequentemente, oferecemos embalagens que não apenas protegem o produto durante o transporte, mas também agregam valor à percepção da marca. Além disso, nosso sistema permite a produção de quantidades customizadas, atendendo perfeitamente às necessidades específicas de cada cliente, sem pedido mínimo e produção sob medida. Em resumo, as embalagens especiais de madeira da Ribermax representam a combinação ideal entre proteção técnica e eficiência econômica, razão pela qual nossos clientes frequentemente padronizam seus produtos com nossas soluções após a primeira experiência.
 </div>
 
 #############################################

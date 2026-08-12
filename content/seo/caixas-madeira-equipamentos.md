@@ -74,7 +74,7 @@ Page content:
 <li>Destino: mercado interno ou exportação (HT)</li>
 </ul>
 
-<div>Prazo de referência: cerca de 7 dias a partir do pedido. Pedido mínimo de R$ 3.500. Orçamento pelo WhatsApp ou e-mail; em 01/11/2026 a calculadora online entra no site.</div>
+<div>Prazo de referência: cerca de 7 dias a partir do pedido. Sem pedido mínimo. Orçamento pelo WhatsApp ou e-mail; em 01/11/2026 a calculadora online entra no site.</div>
 
 #############################################
 Call To Action:

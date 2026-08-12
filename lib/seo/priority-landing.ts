@@ -146,7 +146,7 @@ export const PRIORITY_LANDINGS: Record<PrioritySeoSlug, PriorityLandingConfig> =
         {
           question: 'Tem pedido mínimo?',
           answer:
-            `Sim. Trabalhamos com pedido mínimo de ${MIN_ORDER_LABEL}.`,
+            `Não. ${MIN_ORDER_LABEL}.`,
         },
         {
           question: 'Qual o prazo?',
@@ -190,7 +190,7 @@ export const PRIORITY_LANDINGS: Record<PrioritySeoSlug, PriorityLandingConfig> =
         {
           question: 'Tem pedido mínimo?',
           answer:
-            `Sim. Pedido mínimo de ${MIN_ORDER_LABEL}.`,
+            `Não. ${MIN_ORDER_LABEL}.`,
         },
         {
           question: 'Fazem caixa para exportação?',
@@ -228,7 +228,7 @@ export const PRIORITY_LANDINGS: Record<PrioritySeoSlug, PriorityLandingConfig> =
         {
           question: 'Tem pedido mínimo?',
           answer:
-            `Sim. Pedido mínimo de ${MIN_ORDER_LABEL}.`,
+            `Não. ${MIN_ORDER_LABEL}.`,
         },
         {
           question: 'Atendem exportação?',
@@ -275,7 +275,7 @@ export const PRIORITY_LANDINGS: Record<PrioritySeoSlug, PriorityLandingConfig> =
         {
           question: 'Tem pedido mínimo?',
           answer:
-            `Sim. Pedido mínimo de ${MIN_ORDER_LABEL}.`,
+            `Não. ${MIN_ORDER_LABEL}.`,
         },
         {
           question: 'Dá para exportar com a embalagem de vocês?',
@@ -320,7 +320,7 @@ export const PRIORITY_LANDINGS: Record<PrioritySeoSlug, PriorityLandingConfig> =
         {
           question: 'Tem pedido mínimo?',
           answer:
-            `Sim. Pedido mínimo de ${MIN_ORDER_LABEL}.`,
+            `Não. ${MIN_ORDER_LABEL}.`,
         },
         {
           question: 'Qual o prazo médio?',

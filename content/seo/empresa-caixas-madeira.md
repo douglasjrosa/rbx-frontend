@@ -22,7 +22,7 @@ Page content:
 <li>Modelos testados para diferentes necessidades de proteção</li>
 <li>Produção própria, sem depender de intermediário para fabricar</li>
 <li>Opção de tratamento HT e certificado para exportação</li>
-<li>Pedido mínimo de R$ 3.500</li>
+<li>Sem pedido mínimo.</li>
 </ul>
 
 #############################################
@@ -49,6 +49,6 @@ Call To Action:
 
 <h3>Fale com a Ribermax</h3>
 
-<div>Envie medidas, peso aproximado e destino da carga. Retornamos com a indicação de embalagem e o orçamento. Pedido mínimo de R$ 3.500.</div>
+<div>Envie medidas, peso aproximado e destino da carga. Retornamos com a indicação de embalagem e o orçamento. Sem pedido mínimo.</div>
 
 <div>Para proteção específica de máquinas, veja também <a href="/caixas-madeira-equipamentos/" style="color: rgb(100, 200, 255); text-decoration: underline">caixas de madeira para equipamentos</a>.</div>

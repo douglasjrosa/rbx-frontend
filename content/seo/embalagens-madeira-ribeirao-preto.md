@@ -36,7 +36,7 @@ Page content:
 
 <div>Além de Ribeirão Preto, atendemos com frequência o interior de São Paulo e envios para outras regiões conforme o projeto. Retirada na fábrica ou entrega combinada no orçamento — o melhor caminho depende do volume e do prazo do embarque.</div>
 
-<div>Diferenciais do dia a dia: prazo de cerca de 7 dias a partir do pedido, modelos conforme a necessidade de proteção, certificado HT para exportação, política de descontos para clientes parceiros e pedido mínimo de R$ 3.500.</div>
+<div>Diferenciais do dia a dia: prazo de cerca de 7 dias a partir do pedido, modelos conforme a necessidade de proteção, certificado HT para exportação, política de descontos para clientes parceiros e sem pedido mínimo.</div>
 
 #############################################
 Call To Action:

@@ -1,7 +1,7 @@
 Frase-chave: Embalagens de Madeira Sob Medida
 Slug: embalagens-madeira-medida
 Company: Ribermax Embalagens
-Metadescription: Embalagens de madeira sob medida. Pedido mínimo R$ 3.500. Orçamento pelo WhatsApp com a Ribermax.
+Metadescription: Embalagens de madeira sob medida. Sem pedido mínimo. Orçamento pelo WhatsApp com a Ribermax.
 
 #############################################
 Page content:
@@ -38,7 +38,7 @@ Pesquisas do setor logístico industrial indicam que aproximadamente 68% das emp
 Acima de tudo, as soluções personalizadas em madeira da Ribermax Embalagens oferecem benefícios concretos que transformam a logística de empresas industriais:
 
 <ul>
-<li>Pedido mínimo de R$ 3.500, com produção sob medida</li>
+<li>sem pedido mínimo, com produção sob medida</li>
 <li>Flexibilidade para alteração de dimensões a cada pedido, sem investimento em ferramentais</li>
 <li>Prazo de referência de cerca de 7 dias a partir do pedido</li>
 <li>Política de descontos para clientes parceiros com demanda recorrente</li>

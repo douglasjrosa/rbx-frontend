@@ -225,12 +225,12 @@ export const homePage: HomePage = {
   highlights: {
     stats: [
       {
-        value: '+ 25 Anos',
+        value: '30 Anos',
         description:
           'desenvolvendo soluções em embalagens de madeira',
       },
       {
-        value: '+ 3000',
+        value: '+ 500.000',
         description:
           'embalagens produzidas com muita dedicação por nossa equipe',
       },
@@ -291,7 +291,7 @@ export const homePage: HomePage = {
   cta: {
     text:
       'Na Ribermax Embalagens personalizamos suas embalagens conforme ' +
-      'sua necessidade, com pedido mínimo de R$ 3.500. Com nossa ' +
+      'sua necessidade — sem pedido mínimo. Com nossa ' +
       'expertise, você obtém a embalagem ideal sem complicações.',
     button: {
       newTab: false,
@@ -302,7 +302,7 @@ export const homePage: HomePage = {
   models: {
     title: 'Modelos Exclusivos de Embalagens',
     description:
-      'Ao longo da nossa história de mais de 25 anos de mercado, ' +
+      'Ao longo da nossa história de 30 anos de mercado, ' +
       'desenvolvemos vários tipos e padrões de embalagem justamente ' +
       'para ajustar nossas caixas e engradados aos produtos específicos ' +
       'de clientes como você que precisa de algo sob medida.',

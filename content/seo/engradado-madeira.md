@@ -73,4 +73,4 @@ Call To Action:
 <div>
 A Ribermax Embalagens orça engradados sob medida pelo WhatsApp, com agilidade para a indústria. Em 01/11/2026 lançamos a calculadora online no site.
 
-Em resumo, envie as medidas do seu produto e compare conosco as opções de modelo. Pedido mínimo de R$ 3.500. Afinal, quando se busca economia sem comprometer a segurança, a escolha certa faz toda a diferença. Conheça também nossas <a href="/engradado-madeira/" style="color: rgb(100, 200, 255); text-decoration: underline">soluções de engradado de madeira</a> para necessidades específicas de proteção!</div> 
+Em resumo, envie as medidas do seu produto e compare conosco as opções de modelo. Sem pedido mínimo. Afinal, quando se busca economia sem comprometer a segurança, a escolha certa faz toda a diferença. Conheça também nossas <a href="/engradado-madeira/" style="color: rgb(100, 200, 255); text-decoration: underline">soluções de engradado de madeira</a> para necessidades específicas de proteção!</div> 

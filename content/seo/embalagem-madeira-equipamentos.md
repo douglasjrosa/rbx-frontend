@@ -1,7 +1,7 @@
 Frase-chave: Embalagem de Madeira para Equipamentos
 Slug: embalagem-madeira-equipamentos
 Company: Ribermax Embalagens
-Metadescription: Embalagem de Madeira para Equipamentos: Soluções Sob Medida que Protegem e Valorizam Seu Produto. Orçamento Rápido e Pedido Mínimo R$ 3.500.
+Metadescription: Embalagem de Madeira para Equipamentos: Soluções Sob Medida que Protegem e Valorizam Seu Produto. Orçamento Rápido e sem pedido mínimo.
 
 #############################################
 Page content:
@@ -58,7 +58,7 @@ Na Ribermax Embalagens, desenvolvemos soluções sob medida que atendem perfeita
 </div>
 
 <div>
-Com mais de 20 anos de experiência no mercado de Ribeirão Preto, nossa empresa diferencia-se por oferecer atendimento ágil e flexível. Sobretudo, trabalhamos com pedido mínimo de R$ 3.500, o que nos permite atender desde pequenos fabricantes até grandes indústrias. Além disso, em 01/11/2026 lançamos a calculadora online; enquanto isso, orçamento pelo WhatsApp. Em consequência, nossos clientes conseguem resolver suas necessidades de embalagem com praticidade sem comprometer seus prazos de entrega.
+Com mais de 20 anos de experiência no mercado de Ribeirão Preto, nossa empresa diferencia-se por oferecer atendimento ágil e flexível. Sobretudo, trabalhamos sem pedido mínimo, o que nos permite atender desde pequenos fabricantes até grandes indústrias. Além disso, em 01/11/2026 lançamos a calculadora online; enquanto isso, orçamento pelo WhatsApp. Em consequência, nossos clientes conseguem resolver suas necessidades de embalagem com praticidade sem comprometer seus prazos de entrega.
 </div>
 
 #############################################
