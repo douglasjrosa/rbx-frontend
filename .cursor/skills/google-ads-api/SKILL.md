@@ -19,6 +19,13 @@ For local scripts and env, see [project-scripts.md](project-scripts.md).
 
 Official docs: https://developers.google.com/google-ads/api/docs/start
 
+## Read-only developer token
+
+If the developer token (or access level) **cannot mutate** production, use the
+API only for **reads** (GAQL / list scripts). Perform creates, updates, pauses,
+budget/bid/keyword/ad edits in the Ads UI via the
+`google-ads-browser-ui` skill (`cursor-ide-browser`).
+
 ## When to use the API vs alternatives
 
 | Need | Prefer |

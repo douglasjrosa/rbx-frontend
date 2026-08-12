@@ -16,7 +16,8 @@
     "ads:accounts": "node scripts/google-ads/list-accounts.mjs",
     "ads:conversions:list": "node scripts/google-ads/list-conversion-actions.mjs",
     "ads:conversions:remove-legacy": "node scripts/google-ads/remove-conversion-actions.mjs",
-    "ads:conversions:whatsapp": "node scripts/google-ads/create-whatsapp-click-conversion.mjs"
+    "ads:conversions:whatsapp": "node scripts/google-ads/create-whatsapp-click-conversion.mjs",
+    "ads:bravio:optimize": "node scripts/google-ads/optimize-bravio-for-relaunch.mjs"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.16",
