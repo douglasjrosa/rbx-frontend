@@ -31,6 +31,7 @@ const CONTENT_SECURITY_POLICY = [
     'https://tagassistant.google.com',
     // Google Ads conversion beacons + remarketing collect endpoints
     'https://www.google.com',
+    'https://www.google.com.br',
     'https://www.googleadservices.com',
     'https://googleads.g.doubleclick.net',
     'https://stats.g.doubleclick.net',
