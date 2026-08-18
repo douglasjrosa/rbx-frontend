@@ -10,3 +10,9 @@ export const GA4_MEASUREMENT_ID = 'G-EZBXGS37NW';
 export const GOOGLE_ADS_ID = 'AW-971663871';
 export const GOOGLE_ADS_WHATSAPP_SEND_TO =
   'AW-971663871/Pz8-CMTm-NscEP_Tqc8D';
+
+/** Shared event name for GTM, Ads tag, and server conversion beacon. */
+export const WHATSAPP_CLICK_EVENT = 'whatsapp_click';
+
+/** First-party localStorage key for cookie consent (keep in sync). */
+export const COOKIE_CONSENT_STORAGE_KEY = 'rbx-cookie-consent';

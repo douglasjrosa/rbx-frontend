@@ -2,8 +2,8 @@ import { buildGtmBootstrapScript } from '@/lib/analytics/gtm-loader-script';
 import { isTrackingEnabled } from '@/lib/analytics/is-tracking-enabled';
 
 /**
- * Server-rendered bootstrap so GTM Preview can detect the container early
- * without downloading gtm.js for regular visitors.
+ * Server-rendered bootstrap: Consent Mode defaults, click-id capture, and
+ * deferred gtm.js (engagement / idle). Preview + returning consent load ASAP.
  */
 export default function GtmBootstrap() {
   if (!isTrackingEnabled()) {

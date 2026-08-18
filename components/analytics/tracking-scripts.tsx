@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { captureAdsClickIdsFromUrl } from '@/lib/analytics/ads-click-ids';
 import { GTM_CONTAINER_ID } from '@/lib/analytics/config';
 import { CONSENT_GRANTED } from '@/lib/analytics/consent-mode';
 import { ensureGoogleAdsTagLoaded } from '@/lib/analytics/google-ads-conversion';
@@ -66,6 +67,8 @@ export default function TrackingScripts() {
     if (!isTrackingEnabled()) {
       return;
     }
+
+    captureAdsClickIdsFromUrl();
 
     const syncConsentAndLoader = () => {
       if (!hasAnalyticsConsent()) {

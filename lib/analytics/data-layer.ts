@@ -1,9 +1,14 @@
 import {
+  CONVERSION_BEACON_WHATSAPP_EVENT,
+  sendConversionBeacon,
+} from '@/lib/analytics/conversion-beacon';
+import { WHATSAPP_CLICK_EVENT } from '@/lib/analytics/config';
+import {
   trackGoogleAdsWhatsAppConversion,
 } from '@/lib/analytics/google-ads-conversion';
 
 export const GTM_EVENTS = {
-  WHATSAPP_CLICK: 'whatsapp_click',
+  WHATSAPP_CLICK: WHATSAPP_CLICK_EVENT,
   EMAIL_CLICK: 'email_click',
   MAPS_DIRECTIONS_CLICK: 'maps_directions_click',
   CTA_CLICK: 'cta_click',
@@ -68,5 +73,13 @@ export function trackGtmEvent(
 
   if (event === GTM_EVENTS.WHATSAPP_CLICK) {
     trackGoogleAdsWhatsAppConversion();
+    sendConversionBeacon(CONVERSION_BEACON_WHATSAPP_EVENT, {
+      event_location:
+        typeof params.event_location === 'string'
+          ? params.event_location
+          : undefined,
+      link_url:
+        typeof params.link_url === 'string' ? params.link_url : undefined,
+    });
   }
 }

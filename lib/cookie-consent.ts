@@ -1,6 +1,7 @@
+import { COOKIE_CONSENT_STORAGE_KEY } from '@/lib/analytics/config';
 import { GTM_EVENTS, trackGtmEvent } from '@/lib/analytics/data-layer';
 
-export const COOKIE_CONSENT_STORAGE_KEY = 'rbx-cookie-consent';
+export { COOKIE_CONSENT_STORAGE_KEY };
 
 export const COOKIE_CONSENT_CHANGED_EVENT = 'rbx-cookie-consent-changed';
 

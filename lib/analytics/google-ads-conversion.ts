@@ -10,8 +10,9 @@ declare global {
 }
 
 /**
- * Loads the Google Ads gtag.js config after analytics consent.
- * Safe to call multiple times.
+ * Loads the Google Ads gtag.js config (Consent Mode still applies).
+ * Safe to call multiple times. Prefer the deferred bootstrap loader for
+ * performance; this is a fallback / post-consent ensure.
  */
 export function ensureGoogleAdsTagLoaded(): void {
   if (typeof window === 'undefined' || window.__rbxAdsTagLoaded) {
