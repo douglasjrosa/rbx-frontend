@@ -7,7 +7,7 @@ import {
   REPORT_LOCATION_OPTIONS,
 } from '@/lib/denuncias/constants';
 
-type FormStatus = 'idle' | 'submitting' | 'success' | 'error';
+type FormStatus = 'idle' | 'submitting' | 'error';
 
 const FIELD_CLASS =
   'w-full rounded-md border border-gray-300 bg-white px-3 py-2 ' +
@@ -17,7 +17,11 @@ const FIELD_CLASS =
 const LABEL_CLASS =
   'mb-1.5 block text-left text-base font-semibold text-rbx-accent';
 
-export default function ReportForm() {
+interface ReportFormProps {
+  onSubmitted: (reportCode: string) => void;
+}
+
+export default function ReportForm({ onSubmitted }: ReportFormProps) {
   const [description, setDescription] = useState('');
   const [unknownWhen, setUnknownWhen] = useState(false);
   const [occurredAt, setOccurredAt] = useState('');
@@ -49,9 +53,10 @@ export default function ReportForm() {
       const payload = (await response.json()) as {
         ok?: boolean;
         error?: string;
+        reportCode?: string;
       };
 
-      if (!response.ok || !payload.ok) {
+      if (!response.ok || !payload.ok || !payload.reportCode) {
         setStatus('error');
         setErrorMessage(
           payload.error || 'Não foi possível enviar a denúncia.',
@@ -64,12 +69,13 @@ export default function ReportForm() {
         unknown_when: unknownWhen,
       });
 
-      setStatus('success');
       setDescription('');
       setUnknownWhen(false);
       setOccurredAt('');
       setLocation('');
       setHoneypot('');
+      setStatus('idle');
+      onSubmitted(payload.reportCode);
     } catch {
       setStatus('error');
       setErrorMessage(
@@ -77,34 +83,6 @@ export default function ReportForm() {
       );
     }
   };
-
-  if (status === 'success') {
-    return (
-      <div
-        className="rounded-md border border-rbx-green bg-green-50 px-4 py-5 text-left"
-        role="status"
-      >
-        <p className="text-lg font-semibold text-rbx-green-dark">
-          Denúncia enviada com sucesso.
-        </p>
-        <p className="mt-2 text-base leading-relaxed text-rbx-accent">
-          Obrigado. Seu relato foi encaminhado de forma anônima para a
-          equipe responsável.
-        </p>
-        <button
-          type="button"
-          className={
-            'mt-4 rounded-md bg-rbx-green-primary px-4 py-2 text-base ' +
-            'font-semibold text-white transition-colors ' +
-            'hover:bg-rbx-green-secondary'
-          }
-          onClick={() => setStatus('idle')}
-        >
-          Enviar outra denúncia
-        </button>
-      </div>
-    );
-  }
 
   return (
     <form className="space-y-5 text-left" onSubmit={handleSubmit} noValidate>

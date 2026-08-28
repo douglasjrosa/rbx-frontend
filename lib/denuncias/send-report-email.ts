@@ -23,7 +23,10 @@ function formatOccurredAt(isoLocalValue: string): string {
   }).format(date);
 }
 
-function buildEmailBody(payload: ValidReportPayload): string {
+function buildEmailBody(
+  payload: ValidReportPayload,
+  reportCode: string,
+): string {
   const whenLine = payload.unknownWhen
     ? 'Data e hora: não informado (autor não soube dizer quando aconteceu)'
     : `Data e hora: ${formatOccurredAt(payload.occurredAt ?? '')}`;
@@ -34,6 +37,8 @@ function buildEmailBody(payload: ValidReportPayload): string {
 
   return [
     'Nova denúncia anônima recebida pelo site Ribermax.',
+    '',
+    `Código de acompanhamento: ${reportCode}`,
     '',
     '--- Relato ---',
     payload.description,
@@ -46,6 +51,7 @@ function buildEmailBody(payload: ValidReportPayload): string {
 
 export async function sendAnonymousReportEmail(
   payload: ValidReportPayload,
+  reportCode: string,
 ): Promise<void> {
   const host = requireEnv('SMTP_HOST');
   const user = requireEnv('SMTP_USER');
@@ -76,7 +82,7 @@ export async function sendAnonymousReportEmail(
     from: `"Canal de Denúncias Ribermax" <${fromEmail}>`,
     to: toEmail,
     ...(bccEmail ? { bcc: bccEmail } : {}),
-    subject: '[Denúncia anônima] Relato recebido pelo site',
-    text: buildEmailBody(payload),
+    subject: `[Denúncia ${reportCode}] Relato recebido pelo site`,
+    text: buildEmailBody(payload, reportCode),
   });
 }

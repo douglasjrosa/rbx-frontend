@@ -1,5 +1,18 @@
 export const REPORT_TO_EMAIL = 'rh@ribermax.com.br';
 
+export const REPORT_BLOB_FOLDER = 'denuncias';
+
+export const REPORT_CODE_PREFIX = 'RMX-';
+
+export const REPORT_INITIAL_STATUS = 'received';
+
+export const REPORT_INITIAL_TIMELINE_MESSAGE =
+  'Anonymous report received through the channel. Under review by HR.';
+
+export const MAX_LOG_MESSAGE_LENGTH = 2000;
+
+export const MAX_LOG_STATUS_LENGTH = 100;
+
 export const MAX_REPORT_DESCRIPTION_LENGTH = 5000;
 
 export const MIN_REPORT_DESCRIPTION_LENGTH = 10;
