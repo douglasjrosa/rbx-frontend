@@ -4,10 +4,10 @@ export const REPORT_BLOB_FOLDER = 'denuncias';
 
 export const REPORT_CODE_PREFIX = 'RMX-';
 
-export const REPORT_INITIAL_STATUS = 'received';
+export const REPORT_INITIAL_STATUS = 'Recebida';
 
 export const REPORT_INITIAL_TIMELINE_MESSAGE =
-  'Anonymous report received through the channel. Under review by HR.';
+  'Denúncia recebida pelo canal anônimo. Em análise pelo RH.';
 
 export const MAX_LOG_MESSAGE_LENGTH = 2000;
 

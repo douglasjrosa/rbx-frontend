@@ -1,6 +1,10 @@
 'use client';
 
 import { useState, type FormEvent } from 'react';
+import {
+  formatReportStatusLabel,
+  formatReportTimelineMessage,
+} from '@/lib/denuncias/format-timeline';
 
 type TrackingStatus = 'idle' | 'loading' | 'success' | 'not_found' | 'error';
 
@@ -134,10 +138,10 @@ export default function ReportTrackingCard() {
                 {formatTimelineDate(entry.at)}
               </p>
               <p className="mt-1 text-base font-semibold text-rbx-accent">
-                {entry.status}
+                {formatReportStatusLabel(entry.status)}
               </p>
               <p className="mt-1 text-base leading-relaxed text-rbx-accent">
-                {entry.message}
+                {formatReportTimelineMessage(entry.message)}
               </p>
             </li>
           ))}

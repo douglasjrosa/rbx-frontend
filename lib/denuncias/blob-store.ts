@@ -1,4 +1,4 @@
-import { get, put } from '@vercel/blob';
+import { del, get, list, put } from '@vercel/blob';
 import {
   REPORT_BLOB_FOLDER,
   REPORT_INITIAL_STATUS,
@@ -115,4 +115,106 @@ export async function appendReportLog(
   });
 
   return updated;
+}
+
+export interface ReportSummary {
+  reportCode: string;
+  status: string;
+  createdAt: string;
+  updatedAt: string;
+}
+
+export async function listReports(): Promise<ReportSummary[]> {
+  const result = await list({ prefix: `${REPORT_BLOB_FOLDER}/` });
+  const summaries = await Promise.all(
+    result.blobs.map(async (blob) => {
+      const reportCode = blob.pathname
+        .replace(`${REPORT_BLOB_FOLDER}/`, '')
+        .replace(/\.json$/, '');
+      const record = await getReport(reportCode);
+
+      if (!record) {
+        return null;
+      }
+
+      return {
+        reportCode: record.reportCode,
+        status: record.status,
+        createdAt: record.createdAt,
+        updatedAt: record.updatedAt,
+      };
+    }),
+  );
+
+  return summaries
+    .filter((summary): summary is ReportSummary => summary !== null)
+    .sort(
+      (left, right) =>
+        new Date(right.updatedAt).getTime() -
+        new Date(left.updatedAt).getTime(),
+    );
+}
+
+export async function updateReport(
+  reportCode: string,
+  input: {
+    status?: string;
+    timelineEntry?: InsertReportLogInput;
+    removeTimelineEntryId?: string;
+  },
+): Promise<ReportRecord> {
+  const existing = await getReport(reportCode);
+
+  if (!existing) {
+    throw new Error('Report not found.');
+  }
+
+  let timeline = [...existing.timeline];
+  let status = existing.status;
+  let updatedAt = existing.updatedAt;
+
+  if (input.removeTimelineEntryId) {
+    timeline = timeline.filter(
+      (entry) => entry.id !== input.removeTimelineEntryId,
+    );
+    updatedAt = new Date().toISOString();
+  }
+
+  if (input.timelineEntry) {
+    const entry = createTimelineEntry(
+      input.timelineEntry.status,
+      input.timelineEntry.message,
+    );
+    timeline = [...timeline, entry];
+    status = input.timelineEntry.status;
+    updatedAt = entry.at;
+  } else if (input.status) {
+    status = input.status.trim();
+    updatedAt = new Date().toISOString();
+  }
+
+  const updated: ReportRecord = {
+    ...existing,
+    status,
+    updatedAt,
+    timeline,
+  };
+
+  await put(getReportBlobPath(reportCode), JSON.stringify(updated), {
+    access: 'private',
+    contentType: 'application/json',
+    allowOverwrite: true,
+  });
+
+  return updated;
+}
+
+export async function deleteReport(reportCode: string): Promise<void> {
+  const existing = await getReport(reportCode);
+
+  if (!existing) {
+    throw new Error('Report not found.');
+  }
+
+  await del(getReportBlobPath(reportCode));
 }
