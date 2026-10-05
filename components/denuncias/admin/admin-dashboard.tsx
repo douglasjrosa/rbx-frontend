@@ -52,7 +52,7 @@ export default function AdminDashboard({
     setListError('');
 
     try {
-      const response = await fetch('/api/denuncias/admin/reports');
+      const response = await fetch('/api/denuncias/admin/reports/');
       const payload = (await response.json()) as {
         ok?: boolean;
         reports?: ReportListItem[];
@@ -91,7 +91,7 @@ export default function AdminDashboard({
 
       try {
         const response = await fetch(
-          `/api/denuncias/admin/reports/${encodeURIComponent(reportCode)}`,
+          `/api/denuncias/admin/reports/${encodeURIComponent(reportCode)}/`,
         );
         const payload = (await response.json()) as {
           ok?: boolean;
@@ -136,7 +136,7 @@ export default function AdminDashboard({
   };
 
   const handleLogout = async () => {
-    await fetch('/api/denuncias/admin/logout', { method: 'POST' });
+    await fetch('/api/denuncias/admin/logout/', { method: 'POST' });
     onLogout();
   };
 
@@ -152,7 +152,7 @@ export default function AdminDashboard({
 
     try {
       const response = await fetch(
-        `/api/denuncias/admin/reports/${encodeURIComponent(selectedCode)}`,
+        `/api/denuncias/admin/reports/${encodeURIComponent(selectedCode)}/`,
         {
           method: 'PATCH',
           headers: { 'Content-Type': 'application/json' },
@@ -195,7 +195,7 @@ export default function AdminDashboard({
 
     try {
       const response = await fetch(
-        `/api/denuncias/admin/reports/${encodeURIComponent(selectedCode)}`,
+        `/api/denuncias/admin/reports/${encodeURIComponent(selectedCode)}/`,
         {
           method: 'PATCH',
           headers: { 'Content-Type': 'application/json' },
@@ -232,7 +232,7 @@ export default function AdminDashboard({
 
     try {
       const response = await fetch(
-        `/api/denuncias/admin/reports/${encodeURIComponent(selectedCode)}`,
+        `/api/denuncias/admin/reports/${encodeURIComponent(selectedCode)}/`,
         {
           method: 'PATCH',
           headers: { 'Content-Type': 'application/json' },
@@ -277,7 +277,7 @@ export default function AdminDashboard({
 
     try {
       const response = await fetch(
-        `/api/denuncias/admin/reports/${encodeURIComponent(selectedCode)}`,
+        `/api/denuncias/admin/reports/${encodeURIComponent(selectedCode)}/`,
         { method: 'DELETE' },
       );
       const payload = (await response.json()) as {
@@ -291,7 +291,7 @@ export default function AdminDashboard({
       }
 
       setSelectedReport(null);
-      const refreshed = await fetch('/api/denuncias/admin/reports');
+      const refreshed = await fetch('/api/denuncias/admin/reports/');
       const refreshedPayload = (await refreshed.json()) as {
         ok?: boolean;
         reports?: ReportListItem[];

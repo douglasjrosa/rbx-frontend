@@ -51,7 +51,7 @@ export default function ReportTrackingCard() {
       const params = new URLSearchParams({
         reportCode: reportCode.trim(),
       });
-      const response = await fetch(`/api/denuncias/status?${params.toString()}`);
+      const response = await fetch(`/api/denuncias/status/?${params.toString()}`);
       const payload = (await response.json()) as {
         ok?: boolean;
         error?: string;

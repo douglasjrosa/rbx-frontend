@@ -36,7 +36,7 @@ export default function ReportForm({ onSubmitted }: ReportFormProps) {
     setErrorMessage('');
 
     try {
-      const response = await fetch('/api/denuncias', {
+      const response = await fetch('/api/denuncias/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

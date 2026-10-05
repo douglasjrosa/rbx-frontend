@@ -19,7 +19,7 @@ export default function DenunciasAdminPage({
   useEffect(() => {
     const checkSession = async () => {
       try {
-        const response = await fetch('/api/denuncias/admin/session');
+        const response = await fetch('/api/denuncias/admin/session/');
         const payload = (await response.json()) as {
           authenticated?: boolean;
           configured?: boolean;

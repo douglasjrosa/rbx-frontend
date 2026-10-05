@@ -60,6 +60,7 @@ const CONTENT_SECURITY_POLICY = [
 ].join('; ');
 
 const nextConfig: NextConfig = {
+  output: 'standalone',
   reactStrictMode: true,
   trailingSlash: true,
   images: {
